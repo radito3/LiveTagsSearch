@@ -10,12 +10,7 @@ namespace LiveTagsSearch.Models
         public string Name { get; }
         public Icon Icon { get; }
         public FileStream Content { get; }
-        public List<Tag> Tags { get; }
-
-        public class Tag
-        {
-            public string Name { get; }
-        }
+        public List<string> Tags { get; }
 
         private static Dictionary<string, Icon> fileIcons = new Dictionary<string, Icon>
         {
@@ -31,7 +26,7 @@ namespace LiveTagsSearch.Models
             Content = System.IO.File.OpenRead(name);
             string mimeType = MimeMapping.GetMimeMapping(name);
             Icon = evaluateIcon(mimeType);
-            Tags = new List<Tag>();
+            Tags = new List<string>();
         }
 
         private Icon evaluateIcon(string val)
@@ -50,12 +45,12 @@ namespace LiveTagsSearch.Models
             return result;
         }
 
-        public void AddTag(Tag tag)
+        public void AddTag(string tag)
         {
             Tags.Add(tag);
         }
 
-        public void DeleteTag(Tag tag)
+        public void DeleteTag(string tag)
         {
             Tags.Remove(tag);
         }
