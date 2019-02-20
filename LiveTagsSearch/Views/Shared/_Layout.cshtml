@@ -23,6 +23,7 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Search", "Index", "Search")</li>    
                 </ul>
             </div>
         </div>
@@ -31,7 +32,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.2019 - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Today.Day/@DateTime.Today.Month/2019 - My ASP.NET Application</p>
         </footer>
     </div>
 

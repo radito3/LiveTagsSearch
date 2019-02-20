@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Drawing;
 using System.IO;
 using System.Web;
 
@@ -8,30 +7,29 @@ namespace LiveTagsSearch.Models
     public class File
     {
         public string Name { get; }
-        public Icon Icon { get; }
+        public string IconPath { get; }
         public FileStream Content { get; }
         public List<string> Tags { get; }
 
-        private static Dictionary<string, Icon> fileIcons = new Dictionary<string, Icon>
+        public static Dictionary<string, string> fileIcons = new Dictionary<string, string>
         {
-            {"text/plain", new Icon("./Content/txt-file-icon.png")},
-            {"image", new Icon("./Content/picture-icon.png")},
-            {"application/octet-stream", new Icon("./Content/exe-file-icon.png")},
-            {"other", new Icon("./Content/file-icon.png")}
+            {"text/plain", "Content/txt-file-icon.png"},
+            {"image", "Content/picture-icon.png"},
+            {"application/octet-stream", "Content/exe-file-icon.png"},
+            {"other", "Content/file-icon.png"}
         };
 
         public File(string name)
         {
             Name = name;
             Content = System.IO.File.OpenRead(name);
-            string mimeType = MimeMapping.GetMimeMapping(name);
-            Icon = evaluateIcon(mimeType);
+            IconPath = EvaluateIcon(MimeMapping.GetMimeMapping(name));
             Tags = new List<string>();
         }
 
-        private Icon evaluateIcon(string val)
+        private string EvaluateIcon(string val)
         {
-            Icon result;
+            string result;
             if (fileIcons.TryGetValue(val, out result)) return result;
             
             if (val.StartsWith("image"))
@@ -53,6 +51,12 @@ namespace LiveTagsSearch.Models
         public void DeleteTag(string tag)
         {
             Tags.Remove(tag);
+        }
+
+        public bool IsRenderable()
+        {
+            var type = MimeMapping.GetMimeMapping(Name);
+            return type.StartsWith("text") || type.StartsWith("image");
         }
     }
 }
