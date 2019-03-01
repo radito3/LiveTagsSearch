@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b03e8051-0db3-4611-a205-b5c18135ed9c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LiveTagsSearch/Views/Search/Index.cshtml" afterDir="false" />
+    <list default="true" id="b03e8051-0db3-4611-a205-b5c18135ed9c" name="Default Changelist" comment="Add Search Controller &amp; Search page">
+      <change afterPath="$PROJECT_DIR$/LiveTagsSearch/Views/Search/Search.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LiveTagsSearch/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LiveTagsSearch/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LiveTagsSearch/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LiveTagsSearch/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LiveTagsSearch/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LiveTagsSearch/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LiveTagsSearch/LiveTagsSearch.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/LiveTagsSearch/LiveTagsSearch.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LiveTagsSearch/Models/File.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LiveTagsSearch/Models/File.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LiveTagsSearch/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LiveTagsSearch/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LiveTagsSearch/Views/Home/About.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LiveTagsSearch/Views/Home/About.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LiveTagsSearch/Views/Home/Contact.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LiveTagsSearch/Views/Home/Contact.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LiveTagsSearch/Views/Search/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LiveTagsSearch/Views/Search/Index.cshtml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,17 +23,19 @@
     <session id="-1173152747">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.38" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.47" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="config" value="1" />
-          <entry key="cs" value="42" />
-          <entry key="cshtml" value="12" />
+          <entry key="config" value="2" />
+          <entry key="cs" value="51" />
+          <entry key="cshtml" value="20" />
           <entry key="csproj" value="1" />
           <entry key="css" value="1" />
           <entry key="ico" value="1" />
@@ -40,27 +45,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="42" />
+          <entry key="C#" value="51" />
           <entry key="CSS" value="1" />
-          <entry key="Config" value="1" />
+          <entry key="Config" value="2" />
           <entry key="Csproj" value="1" />
           <entry key="Image" value="2" />
-          <entry key="Razor" value="12" />
+          <entry key="Razor" value="20" />
           <entry key="Solution File" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="2873" />
-          <entry key="cshtml" value="738" />
-          <entry key="txt" value="68" />
+          <entry key="cs" value="4158" />
+          <entry key="cshtml" value="1495" />
+          <entry key="txt" value="122" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="2873" />
-          <entry key="PLAIN_TEXT" value="68" />
-          <entry key="Razor" value="738" />
+          <entry key="C#" value="4158" />
+          <entry key="PLAIN_TEXT" value="122" />
+          <entry key="Razor" value="1495" />
         </counts>
       </usages-collector>
     </session>
@@ -70,22 +75,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            <state relative-caret-position="1444">
+              <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
               <folding>
-                <marker date="1550686268491" expanded="true" signature="6:161" ph="..." />
-                <marker date="1550686268491" expanded="true" signature="199:2014" ph="{...}" />
-                <marker date="1550686268491" expanded="true" signature="248:2012" ph="{...}" />
-                <marker date="1550686268491" expanded="true" signature="288:671" ph="{...}" />
-                <marker date="1550686268491" expanded="true" signature="355:491" ph="/* var filesTask = LiveSearchFilesAsync(); ... */" />
-                <marker date="1550686268491" expanded="true" signature="560:659" ph="{...}" />
-                <marker date="1550686268491" expanded="true" signature="761:863" ph="{...}" />
-                <marker date="1550686268491" expanded="true" signature="957:1056" ph="{...}" />
-                <marker date="1550686268491" expanded="true" signature="1156:1262" ph="{...}" />
-                <marker date="1550686268491" expanded="true" signature="1313:1450" ph="{...}" />
-                <marker date="1550686268491" expanded="true" signature="1584:1726" ph="{...}" />
-                <marker date="1550686268491" expanded="true" signature="1817:2006" ph="{...}" />
+                <marker date="1551459653101" expanded="true" signature="6:150" ph="..." />
+                <marker date="1551459653101" expanded="true" signature="188:2657" ph="{...}" />
+                <marker date="1551459653101" expanded="true" signature="237:2655" ph="{...}" />
+                <marker date="1551459653101" expanded="true" signature="335:925" ph="{...}" />
+                <marker date="1551459653101" expanded="true" signature="402:538" ph="/* var filesTask = LiveSearchFilesAsync(); ... */" />
+                <marker date="1551459653101" expanded="true" signature="705:842" ph="/* foreach (var file in files) ... */" />
+                <marker date="1551459653101" expanded="true" signature="1163:1265" ph="{...}" />
+                <marker date="1551459653101" expanded="true" signature="1359:1458" ph="{...}" />
+                <marker date="1551459653101" expanded="true" signature="1558:1664" ph="{...}" />
+                <marker date="1551459653101" expanded="true" signature="1737:1874" ph="{...}" />
+                <marker date="1551459653101" expanded="true" signature="2008:2150" ph="{...}" />
+                <marker date="1551459653101" expanded="true" signature="2214:2347" ph="{...}" />
+                <marker date="1551459653101" expanded="true" signature="2357:2649" ph="/* [NonAction] ... */" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Search/Search.cshtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="46" selection-start-column="46" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -93,70 +108,28 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Search/Index.cshtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state relative-caret-position="323">
+              <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
               <folding>
-                <marker date="1550686664023" expanded="true" signature="73:1042" ph="&lt;table.../&gt;" />
-                <marker date="1550686664023" expanded="true" signature="95:220" ph="&lt;tr.../&gt;" />
-                <marker date="1550686664023" expanded="true" signature="104:131" ph="&lt;th.../&gt;" />
-                <marker date="1550686664023" expanded="true" signature="136:200" ph="&lt;th.../&gt;" />
-                <marker date="1550686664023" expanded="true" signature="222:1032" ph="@..." />
-                <marker date="1550686664023" expanded="true" signature="250:1032" ph="{...}" />
-                <marker date="1550686664023" expanded="true" signature="257:1030" ph="&lt;tr.../&gt;" />
-                <marker date="1550686664023" expanded="true" signature="270:351" ph="&lt;td.../&gt;" />
-                <marker date="1550686664023" expanded="true" signature="360:431" ph="&lt;td.../&gt;" />
-                <marker date="1550686664023" expanded="true" signature="440:842" ph="&lt;td.../&gt;" />
-                <marker date="1550686664023" expanded="true" signature="457:596" ph="@..." />
-                <marker date="1550686664023" expanded="true" signature="483:596" ph="{...}" />
-                <marker date="1550686664023" expanded="true" signature="688:828" ph="@..." />
-                <marker date="1550686664023" expanded="true" signature="714:828" ph="{...}" />
-                <marker date="1550686664023" expanded="true" signature="851:1020" ph="&lt;td.../&gt;" />
-                <marker date="1550686664023" expanded="true" signature="868:1006" ph="@..." />
-                <marker date="1550686664023" expanded="true" signature="893:1006" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Models/File.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-              <folding>
-                <marker date="1550686591973" expanded="true" signature="6:68" ph="..." />
-                <marker date="1550686591973" expanded="true" signature="101:1688" ph="{...}" />
-                <marker date="1550686591973" expanded="true" signature="125:1686" ph="{...}" />
-                <marker date="1550686591973" expanded="true" signature="394:631" ph="{...}" />
-                <marker date="1550686591973" expanded="true" signature="666:874" ph="{...}" />
-                <marker date="1550686591973" expanded="true" signature="923:1315" ph="{...}" />
-                <marker date="1550686591973" expanded="true" signature="1085:1173" ph="{...}" />
-                <marker date="1550686591973" expanded="true" signature="1190:1278" ph="{...}" />
-                <marker date="1550686591973" expanded="true" signature="1355:1402" ph="{...}" />
-                <marker date="1550686591973" expanded="true" signature="1445:1495" ph="{...}" />
-                <marker date="1550686591973" expanded="true" signature="1531:1680" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Shared/_Layout.cshtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-              <folding>
-                <marker date="1550682228723" expanded="true" signature="16:1679" ph="&lt;html.../&gt;" />
-                <marker date="1550682228723" expanded="true" signature="23:279" ph="&lt;head.../&gt;" />
-                <marker date="1550682228723" expanded="true" signature="280:1671" ph="&lt;body.../&gt;" />
-                <marker date="1550682228723" expanded="true" signature="291:1310" ph="&lt;div.../&gt;" />
-                <marker date="1550682228723" expanded="true" signature="352:1299" ph="&lt;div.../&gt;" />
-                <marker date="1550682228723" expanded="true" signature="388:850" ph="&lt;div.../&gt;" />
-                <marker date="1550682228723" expanded="true" signature="432:709" ph="&lt;button.../&gt;" />
-                <marker date="1550682228723" expanded="true" signature="863:1284" ph="&lt;div.../&gt;" />
-                <marker date="1550682228723" expanded="true" signature="918:1265" ph="&lt;ul.../&gt;" />
-                <marker date="1550682228723" expanded="true" signature="1315:1532" ph="&lt;div.../&gt;" />
-                <marker date="1550682228723" expanded="true" signature="1397:1521" ph="&lt;footer.../&gt;" />
+                <marker date="1551459904173" expanded="true" signature="95:555" ph="&lt;script.../&gt;" />
+                <marker date="1551459904173" expanded="true" signature="136:540" ph="/* don't know if this will be needed ... */" />
+                <marker date="1551459904173" expanded="true" signature="977:1946" ph="&lt;table.../&gt;" />
+                <marker date="1551459904173" expanded="true" signature="999:1124" ph="&lt;tr.../&gt;" />
+                <marker date="1551459904173" expanded="true" signature="1008:1035" ph="&lt;th.../&gt;" />
+                <marker date="1551459904173" expanded="true" signature="1040:1104" ph="&lt;th.../&gt;" />
+                <marker date="1551459904173" expanded="true" signature="1126:1936" ph="@..." />
+                <marker date="1551459904173" expanded="true" signature="1154:1936" ph="{...}" />
+                <marker date="1551459904173" expanded="true" signature="1161:1934" ph="&lt;tr.../&gt;" />
+                <marker date="1551459904173" expanded="true" signature="1174:1255" ph="&lt;td.../&gt;" />
+                <marker date="1551459904173" expanded="true" signature="1264:1335" ph="&lt;td.../&gt;" />
+                <marker date="1551459904173" expanded="true" signature="1344:1746" ph="&lt;td.../&gt;" />
+                <marker date="1551459904173" expanded="true" signature="1361:1500" ph="@..." />
+                <marker date="1551459904173" expanded="true" signature="1387:1500" ph="{...}" />
+                <marker date="1551459904173" expanded="true" signature="1592:1732" ph="@..." />
+                <marker date="1551459904173" expanded="true" signature="1618:1732" ph="{...}" />
+                <marker date="1551459904173" expanded="true" signature="1755:1924" ph="&lt;td.../&gt;" />
+                <marker date="1551459904173" expanded="true" signature="1772:1910" ph="@..." />
+                <marker date="1551459904173" expanded="true" signature="1797:1910" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -174,9 +147,12 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CC73190B-AB9D-435C-8315-10FF295C572A/fd/3adeabcb/FileContentResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Shared/Error.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CC73190B-AB9D-435C-8315-10FF295C572A/f9/97fcdc80/Filter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B78DCEFD-6C18-4245-BE8B-F4A1E52466D9/25/50d87ccf/DateTime.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Home/Contact.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Views/_ViewStart.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CC73190B-AB9D-435C-8315-10FF295C572A/b8/1b921d8d/Controller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CC73190B-AB9D-435C-8315-10FF295C572A/64/2e41ccff/HandleErrorAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Home/About.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Web.config" root0="FORCE_HIGHLIGHTING" />
@@ -190,11 +166,14 @@
     <setting file="file://$PROJECT_DIR$/LiveTagsSearch/App_Start/BundleConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LiveTagsSearch/App_Start/RouteConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B78DCEFD-6C18-4245-BE8B-F4A1E52466D9/a6/8d2c6e23/Array.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Search/Search.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CC73190B-AB9D-435C-8315-10FF295C572A/c9/1d140104/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B78DCEFD-6C18-4245-BE8B-F4A1E52466D9/47/1313c572/Enum.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B78DCEFD-6C18-4245-BE8B-F4A1E52466D9/2e/b2b82326/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B78DCEFD-6C18-4245-BE8B-F4A1E52466D9/38/0e9a6edd/FileStream.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CC73190B-AB9D-435C-8315-10FF295C572A/a2/56fe6013/AsyncManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B78DCEFD-6C18-4245-BE8B-F4A1E52466D9/d4/0d07628e/FileInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B78DCEFD-6C18-4245-BE8B-F4A1E52466D9/b3/a65fe0f1/DirectoryInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B78DCEFD-6C18-4245-BE8B-F4A1E52466D9/9c/91b071fa/Action.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B78DCEFD-6C18-4245-BE8B-F4A1E52466D9/65/b994a512/Task`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E515015D-172D-4EEC-8766-CB81D8862EE6/94/3d5c4cc6/Icon.cs" root0="SKIP_HIGHLIGHTING" />
@@ -209,10 +188,15 @@
       <list>
         <option value="$PROJECT_DIR$/LiveTagsSearch/Views/Home/Index.cshtml" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/Views/Controller1.cs" />
-        <option value="$PROJECT_DIR$/LiveTagsSearch/Views/Search/Search.cshtml" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/Views/Shared/_Layout.cshtml" />
-        <option value="$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs" />
+        <option value="$PROJECT_DIR$/LiveTagsSearch/Filters/Filter.cs" />
+        <option value="$PROJECT_DIR$/LiveTagsSearch/App_Start/FilterConfig.cs" />
+        <option value="$PROJECT_DIR$/LiveTagsSearch/Controllers/HomeController.cs" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/Models/File.cs" />
+        <option value="$PROJECT_DIR$/LiveTagsSearch/Views/Search/Search.cshtml" />
+        <option value="$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs" />
+        <option value="$PROJECT_DIR$/LiveTagsSearch/Views/Home/Contact.cshtml" />
+        <option value="$PROJECT_DIR$/LiveTagsSearch/Views/Home/About.cshtml" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/Views/Search/Index.cshtml" />
       </list>
     </option>
@@ -245,6 +229,18 @@
               <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
               <item name="LiveTagsSearch" type="34e6ba20:FileSystemExplorerNode" />
               <item name="LiveTagsSearch" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="LiveTagsSearch" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="LiveTagsSearch" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="App_Start" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="LiveTagsSearch" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="LiveTagsSearch" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="Content" type="34e6ba20:FileSystemExplorerNode" />
             </path>
             <path>
               <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
@@ -341,7 +337,9 @@
       <updated>1550318904831</updated>
       <workItem from="1550318907326" duration="144000" />
       <workItem from="1550319505331" duration="7463000" />
-      <workItem from="1550675329380" duration="10736000" />
+      <workItem from="1550675329380" duration="11223000" />
+      <workItem from="1550759861788" duration="709000" />
+      <workItem from="1551451450896" duration="8347000" />
     </task>
     <task id="LOCAL-00001" summary="Add File model &amp; file type icons">
       <created>1550336048370</created>
@@ -357,11 +355,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550336536606</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add Search Controller &amp; Search page">
+      <created>1550686761628</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1550686761628</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18343000" />
+    <option name="totallyTimeSpent" value="27886000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -376,21 +381,21 @@
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25641027" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2628205" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32930845" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32930845" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39956093" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32930845" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.32930845" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" weight="0.32930845" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32930845" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" weight="0.32930845" />
       <window_info anchor="bottom" id="REST Client" order="14" />
@@ -413,7 +418,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add File model &amp; file type icons" />
     <MESSAGE value="Update tags impl in File model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update tags impl in File model" />
+    <MESSAGE value="Add Search Controller &amp; Search page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Search Controller &amp; Search page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -427,9 +433,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/WebApplication1/WebApplication1.sln" />
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Shared/Error.cshtml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/455C0C5C-BC80-4C5A-BC3A-F7275091C0C5/a0/29b167ab/WebPageBase.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
@@ -444,21 +447,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/App_Start/FilterConfig.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Properties/AssemblyInfo.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Content/site.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Web.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/favicon.ico">
       <provider selected="true" editor-type-id="images" />
@@ -532,27 +525,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Controller1.cs" />
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Home/About.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Controllers/HomeController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/_ViewStart.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CC73190B-AB9D-435C-8315-10FF295C572A/c9/1d140104/ControllerBase.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
@@ -602,292 +574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1159">
           <caret line="343" column="41" selection-start-line="343" selection-start-column="41" selection-end-line="343" selection-end-column="41" />
-          <folding>
-            <marker date="1550336578202" expanded="true" signature="0:345" ph="/* Decompiled with JetBrains decompiler ... */" />
-            <marker date="1550336578202" expanded="false" signature="353:701" ph="..." />
-            <marker date="1550336578202" expanded="true" signature="727:70113" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="1056:70111" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="1763:1925" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="1779:1861" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="1871:1919" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="1931:2074" ph="///Provides asynchronous operations. ... " />
-            <marker date="1550336578202" expanded="true" signature="2111:2184" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="2127:2178" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="2190:2387" ph="///Gets whether to disable the asynchronous support for the controller. ... " />
-            <marker date="1550336578202" expanded="true" signature="2434:2494" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="2450:2488" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="2500:2613" ph="///Gets the action invoker for the controller. ... " />
-            <marker date="1550336578202" expanded="true" signature="2653:2891" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="2669:2822" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="2832:2885" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="2897:2983" ph="///Gets or sets the binder. ... " />
-            <marker date="1550336578202" expanded="true" signature="3036:3244" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="3052:3181" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="3191:3238" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="3250:3382" ph="///Gets HTTP-specific information about an individual HTTP request. ... " />
-            <marker date="1550336578202" expanded="true" signature="3421:3595" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="3437:3589" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="3601:3787" ph="///Gets the model state dictionary object that contains the state of the model and of model-binding validation. ... " />
-            <marker date="1550336578202" expanded="true" signature="3830:3909" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="3846:3903" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="3915:4021" ph="///Gets the HTTP context profile. ... " />
-            <marker date="1550336578202" expanded="true" signature="4052:4206" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="4068:4200" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="4212:4343" ph="///Gets the HttpRequestBase object for the current HTTP request. ... " />
-            <marker date="1550336578202" expanded="true" signature="4378:4536" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="4394:4530" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="4542:4714" ph="///Gets the HttpResponseBase object for the current HTTP response. ... " />
-            <marker date="1550336578202" expanded="true" signature="4751:4911" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="4767:4905" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="4957:5194" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="4973:5123" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="5133:5188" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="5200:5310" ph="///Gets the route data for the current request. ... " />
-            <marker date="1550336578202" expanded="true" signature="5341:5507" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="5357:5501" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="5513:5691" ph="///Gets the HttpServerUtilityBase object that provides methods that are used during Web request processing. ... " />
-            <marker date="1550336578202" expanded="true" signature="5731:5894" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="5747:5888" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="5900:6076" ph="///Gets the HttpSessionStateBase object for the current HTTP request. ... " />
-            <marker date="1550336578202" expanded="true" signature="6116:6279" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="6132:6273" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="6285:6452" ph="///Gets the temporary-data provider object that is used to store data for the next request. ... " />
-            <marker date="1550336578202" expanded="true" signature="6498:6751" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="6514:6679" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="6689:6745" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="6757:6904" ph="///Gets the URL helper object that is used to generate URLs by using routing. ... " />
-            <marker date="1550336578202" expanded="true" signature="6949:7123" ph="///Gets the user security information for the current HTTP request. ... " />
-            <marker date="1550336578202" expanded="true" signature="7150:7300" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="7166:7294" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="7306:7416" ph="///Gets the view engine collection. ... " />
-            <marker date="1550336578202" expanded="true" signature="7469:7643" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="7485:7567" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="7577:7637" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="7649:7854" ph="///Creates a content result object by using a string. ... " />
-            <marker date="1550336578202" expanded="true" signature="7915:7978" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="7984:8282" ph="///Creates a content result object by using a string and the content type. ... " />
-            <marker date="1550336578202" expanded="true" signature="8363:8441" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="8447:8832" ph="///Creates a content result object by using a string, the content type, and content encoding. ... " />
-            <marker date="1550336578202" expanded="true" signature="8947:9113" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="8993:9106" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="9119:9214" ph="///Creates an action invoker. ... " />
-            <marker date="1550336578202" expanded="true" signature="9273:9812" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="9818:9929" ph="///Creates a temporary data provider. ... " />
-            <marker date="1550336578202" expanded="true" signature="9994:10287" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="10459:10539" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="10545:10776" ph="///Releases unmanaged resources and optionally releases managed resources. ... " />
-            <marker date="1550336578202" expanded="true" signature="10827:10839" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="10963:11318" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="11014:11245" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="11259:11312" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="11324:11641" ph="///Creates a FileContentResult object by using the file contents and file type. ... " />
-            <marker date="1550336578202" expanded="true" signature="11728:11806" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="11812:12294" ph="///Creates a FileContentResult object by using the file contents, content type, and the destination file name. ... " />
-            <marker date="1550336578202" expanded="true" signature="12414:12613" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="12619:12928" ph="///Creates a FileStreamResult object by using the Stream object and content type. ... " />
-            <marker date="1550336578202" expanded="true" signature="13012:13088" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="13094:13559" ph="///Creates a FileStreamResult object using the Stream object, the content type, and the target file name. ... " />
-            <marker date="1550336578202" expanded="true" signature="13676:13868" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="13874:14188" ph="///Creates a FilePathResult object by using the file name and the content type. ... " />
-            <marker date="1550336578202" expanded="true" signature="14268:14342" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="14348:14821" ph="///Creates a FilePathResult object by using the file name, the content type, and the file download name. ... " />
-            <marker date="1550336578202" expanded="true" signature="14934:15114" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="15176:15313" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="15319:15536" ph="///Called when a request matches this controller, but no method with the specified action name is found in the co ... " />
-            <marker date="1550336578202" expanded="true" signature="15602:16124" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="15824:15878" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="16036:16115" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="16130:16341" ph="///Returns an instance of the &lt;see cref=&quot;T:System.Web.Mvc.HttpNotFoundResult&quot; /&gt; class. ... " />
-            <marker date="1550336578202" expanded="true" signature="16398:16457" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="16463:16746" ph="///Returns an instance of the &lt;see cref=&quot;T:System.Web.Mvc.HttpNotFoundResult&quot; /&gt; class. ... " />
-            <marker date="1550336578202" expanded="true" signature="16835:16903" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="16909:17203" ph="///Creates a &lt;see cref=&quot;T:System.Web.Mvc.JavaScriptResult&quot; /&gt; object. ... " />
-            <marker date="1550336578202" expanded="true" signature="17277:17346" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="17352:17824" ph="///Creates a &lt;see cref=&quot;T:System.Web.Mvc.JsonResult&quot; /&gt; object that serializes the specified object to JavaScript ... " />
-            <marker date="1550336578202" expanded="true" signature="17876:17979" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="17985:18401" ph="///Creates a &lt;see cref=&quot;T:System.Web.Mvc.JsonResult&quot; /&gt; object that serializes the specified object to JavaScript ... " />
-            <marker date="1550336578202" expanded="true" signature="18473:18574" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="18580:19064" ph="///Creates a &lt;see cref=&quot;T:System.Web.Mvc.JsonResult&quot; /&gt; object that serializes the specified object to JavaScript ... " />
-            <marker date="1550336578202" expanded="true" signature="19170:19271" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="19277:19692" ph="///Creates a JsonResult object that serializes the specified object to JavaScript Object Notation (JSON) format u ... " />
-            <marker date="1550336578202" expanded="true" signature="19774:19858" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="19864:20399" ph="///Creates a &lt;see cref=&quot;T:System.Web.Mvc.JsonResult&quot; /&gt; object that serializes the specified object to JavaScript ... " />
-            <marker date="1550336578202" expanded="true" signature="20501:20583" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="20589:21205" ph="///Creates a &lt;see cref=&quot;T:System.Web.Mvc.JsonResult&quot; /&gt; object that serializes the specified object to JavaScript ... " />
-            <marker date="1550336578202" expanded="true" signature="21341:21538" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="21384:21531" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="21544:21721" ph="///Initializes data that might not be available when the constructor is called. ... " />
-            <marker date="1550336578202" expanded="true" signature="21791:21890" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="21896:22056" ph="///Called before the action method is invoked. ... " />
-            <marker date="1550336578202" expanded="true" signature="22139:22151" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="22157:22316" ph="///Called after the action method is invoked. ... " />
-            <marker date="1550336578202" expanded="true" signature="22397:22409" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="22415:22565" ph="///Called when authorization occurs. ... " />
-            <marker date="1550336578202" expanded="true" signature="22646:22658" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="22664:22824" ph="///Called when authorization challenge occurs. ... " />
-            <marker date="1550336578202" expanded="true" signature="22923:22935" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="22941:23091" ph="///Called when authorization occurs. ... " />
-            <marker date="1550336578202" expanded="true" signature="23170:23182" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="23188:23361" ph="///Called when an unhandled exception occurs in the action. ... " />
-            <marker date="1550336578202" expanded="true" signature="23432:23444" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="23450:23654" ph="///Called after the action result that is returned by an action method is executed. ... " />
-            <marker date="1550336578202" expanded="true" signature="23735:23747" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="23753:23958" ph="///Called before the action result that is returned by an action method is executed. ... " />
-            <marker date="1550336578202" expanded="true" signature="24041:24053" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="24059:24234" ph="///Creates a &lt;see cref=&quot;T:System.Web.Mvc.PartialViewResult&quot; /&gt; object that renders a partial view. ... " />
-            <marker date="1550336578202" expanded="true" signature="24289:24362" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="24368:24656" ph="///Creates a &lt;see cref=&quot;T:System.Web.Mvc.PartialViewResult&quot; /&gt; object that renders a partial view, by using the s ... " />
-            <marker date="1550336578202" expanded="true" signature="24723:24788" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="24794:25097" ph="///Creates a &lt;see cref=&quot;T:System.Web.Mvc.PartialViewResult&quot; /&gt; object that renders a partial view, by using the s ... " />
-            <marker date="1550336578202" expanded="true" signature="25167:25235" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="25241:25637" ph="///Creates a &lt;see cref=&quot;T:System.Web.Mvc.PartialViewResult&quot; /&gt; object that renders a partial view, by using the s ... " />
-            <marker date="1550336578202" expanded="true" signature="25729:26123" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="26165:26314" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="26356:26505" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="26511:26747" ph="///Creates a &lt;see cref=&quot;T:System.Web.Mvc.RedirectResult&quot; /&gt; object that redirects to the specified URL. ... " />
-            <marker date="1550336578202" expanded="true" signature="26814:26985" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="26991:27332" ph="///Returns an instance of the &lt;see cref=&quot;T:System.Web.Mvc.RedirectResult&quot; /&gt; class with the Permanent property se ... " />
-            <marker date="1550336578202" expanded="true" signature="27408:27585" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="27591:27790" ph="///Redirects to the specified action using the action name. ... " />
-            <marker date="1550336578202" expanded="true" signature="27871:27960" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="27966:28252" ph="///Redirects to the specified action using the action name and route values. ... " />
-            <marker date="1550336578202" expanded="true" signature="28353:28457" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="28463:28753" ph="///Redirects to the specified action using the action name and route dictionary. ... " />
-            <marker date="1550336578202" expanded="true" signature="28868:28956" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="28962:29254" ph="///Redirects to the specified action using the action name and controller name. ... " />
-            <marker date="1550336578202" expanded="true" signature="29358:29463" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="29469:29850" ph="///Redirects to the specified action using the action name, controller name, and route dictionary. ... " />
-            <marker date="1550336578202" expanded="true" signature="29974:30094" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="30100:30477" ph="///Redirects to the specified action using the action name, controller name, and route values. ... " />
-            <marker date="1550336578202" expanded="true" signature="30623:30921" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="30927:31367" ph="///Returns an instance of the &lt;see cref=&quot;T:System.Web.Mvc.RedirectResult&quot; /&gt; class with the Permanent property se ... " />
-            <marker date="1550336578202" expanded="true" signature="31457:31555" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="31561:32062" ph="///Returns an instance of the &lt;see cref=&quot;T:System.Web.Mvc.RedirectResult&quot; /&gt; class with the Permanent property se ... " />
-            <marker date="1550336578202" expanded="true" signature="32172:32285" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="32291:32792" ph="///Returns an instance of the &lt;see cref=&quot;T:System.Web.Mvc.RedirectResult&quot; /&gt; class with the Permanent property se ... " />
-            <marker date="1550336578202" expanded="true" signature="32916:33013" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="33019:33532" ph="///Returns an instance of the &lt;see cref=&quot;T:System.Web.Mvc.RedirectResult&quot; /&gt; class with the Permanent property se ... " />
-            <marker date="1550336578202" expanded="true" signature="33645:33759" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="33765:34366" ph="///Returns an instance of the &lt;see cref=&quot;T:System.Web.Mvc.RedirectResult&quot; /&gt; class with the Permanent property se ... " />
-            <marker date="1550336578202" expanded="true" signature="34499:34628" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="34634:35235" ph="///Returns an instance of the &lt;see cref=&quot;T:System.Web.Mvc.RedirectResult&quot; /&gt; class with the Permanent property se ... " />
-            <marker date="1550336578202" expanded="true" signature="35390:35695" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="35701:35924" ph="///Redirects to the specified route using the specified route values. ... " />
-            <marker date="1550336578202" expanded="true" signature="36005:36096" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="36102:36319" ph="///Redirects to the specified route using the route dictionary. ... " />
-            <marker date="1550336578202" expanded="true" signature="36414:36489" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="36495:36699" ph="///Redirects to the specified route using the route name. ... " />
-            <marker date="1550336578202" expanded="true" signature="36778:36865" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="36871:37162" ph="///Redirects to the specified route using the route name and route values. ... " />
-            <marker date="1550336578202" expanded="true" signature="37261:37363" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="37369:37664" ph="///Redirects to the specified route using the route name and route dictionary. ... " />
-            <marker date="1550336578202" expanded="true" signature="37785:37896" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="37902:38220" ph="///Returns an instance of the RedirectResult class with the Permanent property set to true using the specified ro ... " />
-            <marker date="1550336578202" expanded="true" signature="38310:38410" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="38416:38761" ph="///Returns an instance of the RedirectResult class with the Permanent property set to true using the specified ro ... " />
-            <marker date="1550336578202" expanded="true" signature="38865:38949" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="38955:39300" ph="///Returns an instance of the RedirectResult class with the Permanent property set to true using the specified ro ... " />
-            <marker date="1550336578202" expanded="true" signature="39388:39484" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="39490:39921" ph="///Returns an instance of the RedirectResult class with the Permanent property set to true using the specified ro ... " />
-            <marker date="1550336578202" expanded="true" signature="40029:40140" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="40146:40529" ph="///Returns an instance of the RedirectResult class with the Permanent property set to true using the specified ro ... " />
-            <marker date="1550336578202" expanded="true" signature="40659:40776" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="40782:41268" ph="///Updates the specified model instance using values from the controller's current value provider. ... " />
-            <marker date="1550336578202" expanded="true" signature="41354:41484" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="41490:42090" ph="///Updates the specified model instance using values from the controller's current value provider and a prefix. ... " />
-            <marker date="1550336578202" expanded="true" signature="42191:42314" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="42320:42775" ph="///Updates the specified model instance using values from the controller's current value provider and included pr ... " />
-            <marker date="1550336578202" expanded="true" signature="42889:43021" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="43027:43742" ph="///Updates the specified model instance using values from the controller's current value provider, a prefix, and  ... " />
-            <marker date="1550336578202" expanded="true" signature="43871:43996" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="44002:44954" ph="///Updates the specified model instance using values from the controller's current value provider, a prefix, a li ... " />
-            <marker date="1550336578202" expanded="true" signature="45111:45238" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="45244:45662" ph="///Updates the specified model instance using values from the value provider. ... " />
-            <marker date="1550336578202" expanded="true" signature="45778:45903" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="45909:46445" ph="///Updates the specified model instance using values from the value provider and a list of properties to include. ... " />
-            <marker date="1550336578202" expanded="true" signature="46576:46694" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="46700:47247" ph="///Updates the specified model instance using values from the value provider and a list of properties to include. ... " />
-            <marker date="1550336578202" expanded="true" signature="47391:47518" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="47524:48171" ph="///Updates the specified model instance using values from the value provider, a prefix, and included properties. ... " />
-            <marker date="1550336578202" expanded="true" signature="48330:48450" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="48456:49341" ph="///Updates the specified model instance using values from the value provider, a prefix, a list of properties to e ... " />
-            <marker date="1550336578202" expanded="true" signature="49528:50374" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="50039:50328" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="50380:50590" ph="///Validates the specified model instance. ... " />
-            <marker date="1550336578202" expanded="true" signature="50649:50719" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="50725:51057" ph="///Validates the specified model instance using an HTML prefix. ... " />
-            <marker date="1550336578202" expanded="true" signature="51131:51644" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="51650:51909" ph="///Updates the specified model instance using values from the controller's current value provider. ... " />
-            <marker date="1550336578202" expanded="true" signature="51992:52112" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="52118:52489" ph="///Updates the specified model instance using values from the controller's current value provider and a prefix. ... " />
-            <marker date="1550336578202" expanded="true" signature="52587:52700" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="52706:53065" ph="///Updates the specified model instance using values from the controller object's current value provider. ... " />
-            <marker date="1550336578202" expanded="true" signature="53176:53298" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="53304:53790" ph="///Updates the specified model instance using values from the controller's current value provider, a prefix, and  ... " />
-            <marker date="1550336578202" expanded="true" signature="53916:54031" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="54037:54750" ph="///Updates the specified model instance using values from the controller's current value provider, a prefix, a li ... " />
-            <marker date="1550336578202" expanded="true" signature="54904:55021" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="55027:55366" ph="///Updates the specified model instance using values from the value provider. ... " />
-            <marker date="1550336578202" expanded="true" signature="55479:55594" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="55600:56068" ph="///Updates the specified model instance using values from the value provider, a prefix, and a list of properties  ... " />
-            <marker date="1550336578202" expanded="true" signature="56196:56304" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="56310:56789" ph="///Updates the specified model instance using values from the value provider, a prefix, and a list of properties  ... " />
-            <marker date="1550336578202" expanded="true" signature="56930:57047" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="57053:57633" ph="///Updates the specified model instance using values from the value provider, a prefix, and a list of properties  ... " />
-            <marker date="1550336578202" expanded="true" signature="57789:57899" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="57905:58710" ph="///Updates the specified model instance using values from the value provider, a prefix, a list of properties to e ... " />
-            <marker date="1550336578202" expanded="true" signature="58894:59255" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="59191:59246" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="59261:59382" ph="///Validates the specified model instance. ... " />
-            <marker date="1550336578202" expanded="true" signature="59438:59498" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="59504:59747" ph="///Validates the specified model instance using an HTML prefix. ... " />
-            <marker date="1550336578202" expanded="true" signature="59818:60115" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="60051:60106" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="60121:60363" ph="///Creates a &lt;see cref=&quot;T:System.Web.Mvc.ViewResult&quot; /&gt; object that renders a view to the response. ... " />
-            <marker date="1550336578202" expanded="true" signature="60404:60485" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="60491:60749" ph="///Creates a &lt;see cref=&quot;T:System.Web.Mvc.ViewResult&quot; /&gt; object by using the model that renders a view to the resp ... " />
-            <marker date="1550336578202" expanded="true" signature="60802:60875" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="60881:61145" ph="///Creates a &lt;see cref=&quot;T:System.Web.Mvc.ViewResult&quot; /&gt; object by using the view name that renders a view. ... " />
-            <marker date="1550336578202" expanded="true" signature="61201:61277" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="61283:61696" ph="///Creates a &lt;see cref=&quot;T:System.Web.Mvc.ViewResult&quot; /&gt; object using the view name and master-page name that rend ... " />
-            <marker date="1550336578202" expanded="true" signature="61771:61844" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="61850:62175" ph="///Creates a &lt;see cref=&quot;T:System.Web.Mvc.ViewResult&quot; /&gt; object that renders the specified IView object. ... " />
-            <marker date="1550336578202" expanded="true" signature="62245:62313" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="62319:62800" ph="///Creates a &lt;see cref=&quot;T:System.Web.Mvc.ViewResult&quot; /&gt; object using the view name, master-page name, and model t ... " />
-            <marker date="1550336578202" expanded="true" signature="62897:63277" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="63283:63528" ph="///Creates a &lt;see cref=&quot;T:System.Web.Mvc.ViewResult&quot; /&gt; object that renders the specified IView object. ... " />
-            <marker date="1550336578202" expanded="true" signature="63579:63636" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="63642:63995" ph="///Creates a &lt;see cref=&quot;T:System.Web.Mvc.ViewResult&quot; /&gt; object that renders the specified &lt;see cref=&quot;T:System.Web ... " />
-            <marker date="1550336578202" expanded="true" signature="64068:64331" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="64448:64525" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="64589:64637" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="64643:64959" ph="///Begins execution of the specified request context ... " />
-            <marker date="1550336578202" expanded="true" signature="65076:66006" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="65118:65306" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="66012:66262" ph="///Begins to invoke the action in the current controller context. ... " />
-            <marker date="1550336578202" expanded="true" signature="66352:68153" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="66403:68067" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="66655:67752" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="67128:67322" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="67421:67548" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="67792:67952" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="68086:68147" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="68159:68317" ph="///Ends the invocation of the action in the current controller context. ... " />
-            <marker date="1550336578202" expanded="true" signature="68381:68460" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="68466:68578" ph="///Ends the execute core. ... " />
-            <marker date="1550336578202" expanded="true" signature="68646:68824" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="68662:68751" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="68765:68818" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="68904:68961" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="69039:69095" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="69181:69237" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="69341:69406" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="69489:69544" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="69615:69666" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="69746:69803" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="69881:69937" ph="{...}" />
-            <marker date="1550336578202" expanded="true" signature="69974:70107" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -902,12 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding>
-            <marker date="1550319120584" expanded="false" signature="6:47" ph="..." />
-            <marker date="1550319120584" expanded="true" signature="73:471" ph="{...}" />
-            <marker date="1550319120584" expanded="true" signature="104:469" ph="{...}" />
-            <marker date="1550319120584" expanded="true" signature="176:463" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -915,6 +595,188 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-775">
           <caret line="176" column="81" selection-start-line="176" selection-start-column="71" selection-end-line="176" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CC73190B-AB9D-435C-8315-10FF295C572A/fd/3adeabcb/FileContentResult.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B78DCEFD-6C18-4245-BE8B-F4A1E52466D9/38/0e9a6edd/FileStream.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4940">
+          <caret line="278" column="18" selection-start-line="278" selection-start-column="18" selection-end-line="278" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B78DCEFD-6C18-4245-BE8B-F4A1E52466D9/b3/a65fe0f1/DirectoryInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1045">
+          <caret line="92" column="46" lean-forward="true" selection-start-line="92" selection-start-column="46" selection-end-line="92" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B78DCEFD-6C18-4245-BE8B-F4A1E52466D9/d4/0d07628e/FileInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="89" column="19" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CC73190B-AB9D-435C-8315-10FF295C572A/f9/97fcdc80/Filter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CC73190B-AB9D-435C-8315-10FF295C572A/64/2e41ccff/HandleErrorAttribute.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/App_Start/FilterConfig.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+          <folding>
+            <marker date="1551457449905" expanded="true" signature="47:247" ph="{...}" />
+            <marker date="1551457449905" expanded="true" signature="79:245" ph="{...}" />
+            <marker date="1551457449905" expanded="true" signature="166:239" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Filters/Filter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Shared/Error.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1550319112440" expanded="true" signature="16:260" ph="&lt;html.../&gt;" />
+            <marker date="1550319112440" expanded="true" signature="23:120" ph="&lt;head.../&gt;" />
+            <marker date="1550319112440" expanded="true" signature="121:252" ph="&lt;body.../&gt;" />
+            <marker date="1550319112440" expanded="true" signature="132:244" ph="&lt;hgroup.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/_ViewStart.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding>
+            <marker date="1550319112448" expanded="true" signature="0:50" ph="@..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Web.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Controllers/HomeController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="58" lean-forward="true" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+          <folding>
+            <marker date="1551459345391" expanded="true" signature="59:526" ph="{...}" />
+            <marker date="1551459345391" expanded="true" signature="106:524" ph="{...}" />
+            <marker date="1551459345391" expanded="true" signature="148:195" ph="{...}" />
+            <marker date="1551459345391" expanded="true" signature="232:341" ph="{...}" />
+            <marker date="1551459345391" expanded="true" signature="380:518" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Shared/_Layout.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="70" lean-forward="true" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
+          <folding>
+            <marker date="1550682228723" expanded="true" signature="16:1679" ph="&lt;html.../&gt;" />
+            <marker date="1550682228723" expanded="true" signature="23:279" ph="&lt;head.../&gt;" />
+            <marker date="1550682228723" expanded="true" signature="280:1671" ph="&lt;body.../&gt;" />
+            <marker date="1550682228723" expanded="true" signature="291:1310" ph="&lt;div.../&gt;" />
+            <marker date="1550682228723" expanded="true" signature="352:1299" ph="&lt;div.../&gt;" />
+            <marker date="1550682228723" expanded="true" signature="388:850" ph="&lt;div.../&gt;" />
+            <marker date="1550682228723" expanded="true" signature="432:709" ph="&lt;button.../&gt;" />
+            <marker date="1550682228723" expanded="true" signature="863:1284" ph="&lt;div.../&gt;" />
+            <marker date="1550682228723" expanded="true" signature="918:1265" ph="&lt;ul.../&gt;" />
+            <marker date="1550682228723" expanded="true" signature="1315:1532" ph="&lt;div.../&gt;" />
+            <marker date="1550682228723" expanded="true" signature="1397:1521" ph="&lt;footer.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1444">
+          <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
+          <folding>
+            <marker date="1551459653101" expanded="true" signature="6:150" ph="..." />
+            <marker date="1551459653101" expanded="true" signature="188:2657" ph="{...}" />
+            <marker date="1551459653101" expanded="true" signature="237:2655" ph="{...}" />
+            <marker date="1551459653101" expanded="true" signature="335:925" ph="{...}" />
+            <marker date="1551459653101" expanded="true" signature="402:538" ph="/* var filesTask = LiveSearchFilesAsync(); ... */" />
+            <marker date="1551459653101" expanded="true" signature="705:842" ph="/* foreach (var file in files) ... */" />
+            <marker date="1551459653101" expanded="true" signature="1163:1265" ph="{...}" />
+            <marker date="1551459653101" expanded="true" signature="1359:1458" ph="{...}" />
+            <marker date="1551459653101" expanded="true" signature="1558:1664" ph="{...}" />
+            <marker date="1551459653101" expanded="true" signature="1737:1874" ph="{...}" />
+            <marker date="1551459653101" expanded="true" signature="2008:2150" ph="{...}" />
+            <marker date="1551459653101" expanded="true" signature="2214:2347" ph="{...}" />
+            <marker date="1551459653101" expanded="true" signature="2357:2649" ph="/* [NonAction] ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Models/File.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+          <folding>
+            <marker date="1551459371636" expanded="true" signature="6:68" ph="..." />
+            <marker date="1551459371636" expanded="true" signature="101:2010" ph="{...}" />
+            <marker date="1551459371636" expanded="true" signature="125:2008" ph="{...}" />
+            <marker date="1551459371636" expanded="true" signature="394:682" ph="{...}" />
+            <marker date="1551459371636" expanded="true" signature="717:1239" ph="{...}" />
+            <marker date="1551459371636" expanded="true" signature="989:1153" ph="{...}" />
+            <marker date="1551459371636" expanded="true" signature="1288:1637" ph="{...}" />
+            <marker date="1551459371636" expanded="true" signature="1677:1724" ph="{...}" />
+            <marker date="1551459371636" expanded="true" signature="1767:1817" ph="{...}" />
+            <marker date="1551459371636" expanded="true" signature="1853:2002" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Search/Search.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="46" selection-start-column="46" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Home/About.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding>
+            <marker date="1551459890692" expanded="true" signature="0:33" ph="@..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -934,103 +796,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CC73190B-AB9D-435C-8315-10FF295C572A/fd/3adeabcb/FileContentResult.cs">
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Home/Contact.cshtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B78DCEFD-6C18-4245-BE8B-F4A1E52466D9/38/0e9a6edd/FileStream.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4940">
-          <caret line="278" column="18" selection-start-line="278" selection-start-column="18" selection-end-line="278" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Shared/_Layout.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        <state relative-caret-position="57">
+          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
           <folding>
-            <marker date="1550682228723" expanded="true" signature="16:1679" ph="&lt;html.../&gt;" />
-            <marker date="1550682228723" expanded="true" signature="23:279" ph="&lt;head.../&gt;" />
-            <marker date="1550682228723" expanded="true" signature="280:1671" ph="&lt;body.../&gt;" />
-            <marker date="1550682228723" expanded="true" signature="291:1310" ph="&lt;div.../&gt;" />
-            <marker date="1550682228723" expanded="true" signature="352:1299" ph="&lt;div.../&gt;" />
-            <marker date="1550682228723" expanded="true" signature="388:850" ph="&lt;div.../&gt;" />
-            <marker date="1550682228723" expanded="true" signature="432:709" ph="&lt;button.../&gt;" />
-            <marker date="1550682228723" expanded="true" signature="863:1284" ph="&lt;div.../&gt;" />
-            <marker date="1550682228723" expanded="true" signature="918:1265" ph="&lt;ul.../&gt;" />
-            <marker date="1550682228723" expanded="true" signature="1315:1532" ph="&lt;div.../&gt;" />
-            <marker date="1550682228723" expanded="true" signature="1397:1521" ph="&lt;footer.../&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding>
-            <marker date="1550686268491" expanded="true" signature="6:161" ph="..." />
-            <marker date="1550686268491" expanded="true" signature="199:2014" ph="{...}" />
-            <marker date="1550686268491" expanded="true" signature="248:2012" ph="{...}" />
-            <marker date="1550686268491" expanded="true" signature="288:671" ph="{...}" />
-            <marker date="1550686268491" expanded="true" signature="355:491" ph="/* var filesTask = LiveSearchFilesAsync(); ... */" />
-            <marker date="1550686268491" expanded="true" signature="560:659" ph="{...}" />
-            <marker date="1550686268491" expanded="true" signature="761:863" ph="{...}" />
-            <marker date="1550686268491" expanded="true" signature="957:1056" ph="{...}" />
-            <marker date="1550686268491" expanded="true" signature="1156:1262" ph="{...}" />
-            <marker date="1550686268491" expanded="true" signature="1313:1450" ph="{...}" />
-            <marker date="1550686268491" expanded="true" signature="1584:1726" ph="{...}" />
-            <marker date="1550686268491" expanded="true" signature="1817:2006" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Models/File.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-          <folding>
-            <marker date="1550686591973" expanded="true" signature="6:68" ph="..." />
-            <marker date="1550686591973" expanded="true" signature="101:1688" ph="{...}" />
-            <marker date="1550686591973" expanded="true" signature="125:1686" ph="{...}" />
-            <marker date="1550686591973" expanded="true" signature="394:631" ph="{...}" />
-            <marker date="1550686591973" expanded="true" signature="666:874" ph="{...}" />
-            <marker date="1550686591973" expanded="true" signature="923:1315" ph="{...}" />
-            <marker date="1550686591973" expanded="true" signature="1085:1173" ph="{...}" />
-            <marker date="1550686591973" expanded="true" signature="1190:1278" ph="{...}" />
-            <marker date="1550686591973" expanded="true" signature="1355:1402" ph="{...}" />
-            <marker date="1550686591973" expanded="true" signature="1445:1495" ph="{...}" />
-            <marker date="1550686591973" expanded="true" signature="1531:1680" ph="{...}" />
+            <marker date="1551459892845" expanded="true" signature="0:35" ph="@..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Search/Index.cshtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="323">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
           <folding>
-            <marker date="1550686664023" expanded="true" signature="73:1042" ph="&lt;table.../&gt;" />
-            <marker date="1550686664023" expanded="true" signature="95:220" ph="&lt;tr.../&gt;" />
-            <marker date="1550686664023" expanded="true" signature="104:131" ph="&lt;th.../&gt;" />
-            <marker date="1550686664023" expanded="true" signature="136:200" ph="&lt;th.../&gt;" />
-            <marker date="1550686664023" expanded="true" signature="222:1032" ph="@..." />
-            <marker date="1550686664023" expanded="true" signature="250:1032" ph="{...}" />
-            <marker date="1550686664023" expanded="true" signature="257:1030" ph="&lt;tr.../&gt;" />
-            <marker date="1550686664023" expanded="true" signature="270:351" ph="&lt;td.../&gt;" />
-            <marker date="1550686664023" expanded="true" signature="360:431" ph="&lt;td.../&gt;" />
-            <marker date="1550686664023" expanded="true" signature="440:842" ph="&lt;td.../&gt;" />
-            <marker date="1550686664023" expanded="true" signature="457:596" ph="@..." />
-            <marker date="1550686664023" expanded="true" signature="483:596" ph="{...}" />
-            <marker date="1550686664023" expanded="true" signature="688:828" ph="@..." />
-            <marker date="1550686664023" expanded="true" signature="714:828" ph="{...}" />
-            <marker date="1550686664023" expanded="true" signature="851:1020" ph="&lt;td.../&gt;" />
-            <marker date="1550686664023" expanded="true" signature="868:1006" ph="@..." />
-            <marker date="1550686664023" expanded="true" signature="893:1006" ph="{...}" />
+            <marker date="1551459904173" expanded="true" signature="95:555" ph="&lt;script.../&gt;" />
+            <marker date="1551459904173" expanded="true" signature="136:540" ph="/* don't know if this will be needed ... */" />
+            <marker date="1551459904173" expanded="true" signature="977:1946" ph="&lt;table.../&gt;" />
+            <marker date="1551459904173" expanded="true" signature="999:1124" ph="&lt;tr.../&gt;" />
+            <marker date="1551459904173" expanded="true" signature="1008:1035" ph="&lt;th.../&gt;" />
+            <marker date="1551459904173" expanded="true" signature="1040:1104" ph="&lt;th.../&gt;" />
+            <marker date="1551459904173" expanded="true" signature="1126:1936" ph="@..." />
+            <marker date="1551459904173" expanded="true" signature="1154:1936" ph="{...}" />
+            <marker date="1551459904173" expanded="true" signature="1161:1934" ph="&lt;tr.../&gt;" />
+            <marker date="1551459904173" expanded="true" signature="1174:1255" ph="&lt;td.../&gt;" />
+            <marker date="1551459904173" expanded="true" signature="1264:1335" ph="&lt;td.../&gt;" />
+            <marker date="1551459904173" expanded="true" signature="1344:1746" ph="&lt;td.../&gt;" />
+            <marker date="1551459904173" expanded="true" signature="1361:1500" ph="@..." />
+            <marker date="1551459904173" expanded="true" signature="1387:1500" ph="{...}" />
+            <marker date="1551459904173" expanded="true" signature="1592:1732" ph="@..." />
+            <marker date="1551459904173" expanded="true" signature="1618:1732" ph="{...}" />
+            <marker date="1551459904173" expanded="true" signature="1755:1924" ph="&lt;td.../&gt;" />
+            <marker date="1551459904173" expanded="true" signature="1772:1910" ph="@..." />
+            <marker date="1551459904173" expanded="true" signature="1797:1910" ph="{...}" />
           </folding>
         </state>
       </provider>

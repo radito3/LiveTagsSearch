@@ -53,6 +53,7 @@
           </e>
           <e p="Search" t="Include">
             <e p="Index.cshtml" t="Include" />
+            <e p="Search.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
             <e p="Error.cshtml" t="Include" />

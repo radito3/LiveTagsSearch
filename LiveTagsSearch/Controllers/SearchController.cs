@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.IO;
-using System.Threading.Tasks;
+using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using File = LiveTagsSearch.Models.File;
@@ -9,6 +9,9 @@ namespace LiveTagsSearch.Controllers
 {
     public class SearchController : Controller
     {
+
+        private string CurrentDirectory = "./";
+        
         public ViewResult Index()
         {
             ViewBag.Title = "Search Page";
@@ -17,14 +20,22 @@ namespace LiveTagsSearch.Controllers
 //            filesTask.Wait();
 //
 //            ViewBag.Files = filesTask.Result;
-                
-            return View(new List<File>
-            {
-                new File("packages.config"),
-                new File("Web.config")
-            });
+
+            string[] files = Directory.GetFiles(CurrentDirectory);
+            string[] dirs = Directory.GetDirectories(CurrentDirectory);
+            
+            
+//            foreach (var file in files)
+//            {
+//                System.Diagnostics.Debug.WriteLine(file);    
+//            }
+
+            return View(Combine(files, dirs).Select(f => new File(f)));
         }
 
+        [NonAction]
+        private static T[] Combine<T>(params IEnumerable<T>[] items) => items.SelectMany(i => i).Distinct().ToArray();
+        
         [ActionName("view_tags")]
         public ActionResult GetTags(List<string> tags)
         {
@@ -46,6 +57,7 @@ namespace LiveTagsSearch.Controllers
             return View("Index");
         }
 
+        //gives error
         public ActionResult Render(FileStream fs)
         {
             return new FileContentResult(System.IO.File.ReadAllBytes(fs.Name), MimeMapping.GetMimeMapping(fs.Name));
@@ -58,17 +70,25 @@ namespace LiveTagsSearch.Controllers
             byte[] img = System.IO.File.ReadAllBytes("Content/file-icon.png");
             return File(img, "image/png");
         }
-        
-        [NonAction]
-        private async Task<List<File>> LiveSearchFilesAsync()
-        {
-            List<File> files = new List<File>();
-            
-            //search asyncrhonously for files by name
 
+        [ChildActionOnly]
+        public ActionResult Search()
+        {
+            //return the searched files
             
-            
-            return files;
+            return PartialView("Search", new List<File>());
         }
+        
+//        [NonAction]
+//        private async Task<List<File>> LiveSearchFilesAsync()
+//        {
+//            List<File> files = new List<File>();
+//            
+//            //search asynchronously for files by name
+//
+//            
+//            
+//            return files;
+//        }
     }
 }

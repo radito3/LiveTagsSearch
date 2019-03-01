@@ -11,14 +11,14 @@ namespace LiveTagsSearch.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "LiveTagsSearch project 2019";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "For any bugs, submit a pull request to the official repo";
 
             return View();
         }
