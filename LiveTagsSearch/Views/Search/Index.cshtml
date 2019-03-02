@@ -1,7 +1,42 @@
-@model IEnumerable<LiveTagsSearch.Models.File>
+@model LiveTagsSearch.Models.FileModel
 
 <h3>@ViewBag.Title</h3>
-<h4>@ViewBag.Dir</h4>
+
+@using (Html.BeginForm("Search", "Search", FormMethod.Post))
+{
+    <table>
+        <tr class="form-group">
+            <td class="col-md-4">
+                @Html.TextBox("Search", (string) ViewBag.CurrentDirectory, new { @class = "col-md-10 form-control"})
+            </td>
+            <td class="col-md-3">
+                <input type="submit" value="Search" class="btn btn-default" />
+            </td>
+            <td class="col-md-1">
+                <input type="button" 
+                       class="glyphicon glyphicon-arrow-left" @*the icon and colour don't show up*@
+                       style="color: forestgreen" 
+                       date-toggle="tooltip" title="Move a directory back"/>
+            </td>
+        </tr>
+    </table>
+}
+
+@* TODO *@
+@* when a button is typed (will create a js func to handle KeyUp events)  *@
+@* the string is passed to the partial view action  *@
+@* which searches for files (tag searching MAY be in another page...) *@
+@* the partial view is rendered with the received files *@
+
+
+@Html.Action("Search") @*//for the partial view (the list of searched files)*@
+
+
+
+
+
+
+
 
 <script type="text/javascript">
     
@@ -20,55 +55,3 @@
 //    });
     
 </script>
-
-//TODO
-//add a search field and a search button
-//when a button is typed (will create a js func to handle KeyUp events) 
-//the string is passed to the partial view action 
-//which searches for files (tag searching MAY be in another page...)
-//the partial view is rendered with the recieved files
-
-
-@Html.Action("Search") //for the partial view (the list of searched files
-//this table needs to be in the partial view ->
-<table class="table">
-<tr>
-    <th>
-        Icon
-    </th>
-    <th>
-        @Html.DisplayNameFor(model => model.Name)
-    </th>
-    <th></th>
-</tr>
-
-@foreach (var item in Model)
-{
-    <tr>
-        <td>
-            <img src="@item.IconPath" width="50" height="50"/>
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @if (item.Tags.Count != 0)
-            {
-                @Html.ActionLink("View Tags", "view_tags", new { tags = item.Tags })
-            }
-            @Html.ActionLink("Add Tag", "add_tag", new { name = item.Name })  
-            @if (item.Tags.Count != 0)
-            {
-                @Html.ActionLink("Delete Tags", "del_tags", new { tags = item.Tags })
-            }
-        </td>
-        <td>
-            @if (item.IsRenderable())
-            {
-                @Html.ActionLink("Render", "Render", new { content = item.Content })
-            }
-        </td>
-    </tr>
-}
-
-</table>

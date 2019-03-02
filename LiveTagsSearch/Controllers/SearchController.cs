@@ -3,34 +3,36 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using File = LiveTagsSearch.Models.File;
+using LiveTagsSearch.Models;
 
 namespace LiveTagsSearch.Controllers
 {
     public class SearchController : Controller
     {
 
-        private string CurrentDirectory = "./";
+        private string CurrentDirectory = "./"; //this will probably be in the RouteModel
+        
+        //when a tag is added to a file, its hashcode is added here and the list of tags is updated
+        private static IDictionary<int, IList<string>> fileTagsTable = new Dictionary<int, IList<string>>();
+        //this is stateful
+        //for a stateless version of the app, this information needs to be in a local file
         
         public ViewResult Index()
         {
             ViewBag.Title = "Search Page";
+            ViewBag.CurrentDirectory = CurrentDirectory;
             
 //            var filesTask = LiveSearchFilesAsync();
 //            filesTask.Wait();
 //
 //            ViewBag.Files = filesTask.Result;
-
-            string[] files = Directory.GetFiles(CurrentDirectory);
-            string[] dirs = Directory.GetDirectories(CurrentDirectory);
-            
             
 //            foreach (var file in files)
 //            {
 //                System.Diagnostics.Debug.WriteLine(file);    
 //            }
 
-            return View(Combine(files, dirs).Select(f => new File(f)));
+            return View();
         }
 
         [NonAction]
@@ -71,12 +73,15 @@ namespace LiveTagsSearch.Controllers
             return File(img, "image/png");
         }
 
-        [ChildActionOnly]
+//        [HttpPost]
         public ActionResult Search()
         {
             //return the searched files
+            string[] files = Directory.GetFiles(CurrentDirectory);
+            string[] dirs = Directory.GetDirectories(CurrentDirectory);
+            var result = Combine(files, dirs).Select(f => new FileModel(f));
             
-            return PartialView("Search", new List<File>());
+            return PartialView("Search", result); //may need to redirect to Index with a new model
         }
         
 //        [NonAction]

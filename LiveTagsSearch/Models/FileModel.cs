@@ -4,7 +4,7 @@ using System.Web;
 
 namespace LiveTagsSearch.Models
 {
-    public class File
+    public class FileModel
     {
         public string Name { get; }
         public string IconPath { get; }
@@ -20,7 +20,7 @@ namespace LiveTagsSearch.Models
             {"dir", "Content/directory-icon.png"}
         };
 
-        public File(string name)
+        public FileModel(string name)
         {
             Name = name.Substring(name.LastIndexOf('/') + 1);
             string iconPathTemp;
@@ -38,7 +38,8 @@ namespace LiveTagsSearch.Models
         private string EvaluateIcon(string val)
         {
             string result;
-            if (fileIcons.TryGetValue(val, out result)) return result;
+            if (fileIcons.TryGetValue(val, out result)) 
+                return result;
             
             if (val.StartsWith("image"))
                 fileIcons.TryGetValue("image", out result);
@@ -48,20 +49,21 @@ namespace LiveTagsSearch.Models
             return result;
         }
 
-        public void AddTag(string tag)
-        {
-            Tags.Add(tag);
-        }
+        public void AddTag(string tag) => Tags.Add(tag);
 
-        public void DeleteTag(string tag)
-        {
-            Tags.Remove(tag);
-        }
+        public void DeleteTag(string tag) => Tags.Remove(tag);
 
         public bool IsRenderable()
         {
             var type = MimeMapping.GetMimeMapping(Name);
             return type.StartsWith("text") || type.StartsWith("image");
+        }
+
+        public override int GetHashCode()
+        {
+            return Name.GetHashCode() +
+                   IconPath.GetHashCode() +
+                   Content?.GetHashCode() ?? 0;
         }
     }
 }

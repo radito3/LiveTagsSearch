@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using LiveTagsSearch.Models;
 
 namespace LiveTagsSearch.Controllers
 {
@@ -16,6 +17,13 @@ namespace LiveTagsSearch.Controllers
             return View();
         }
 
+//        [ChildActionOnly]  
+        public ActionResult EmployeeLogin()  
+        {  
+            RouteModel model = new RouteModel(); 
+            return PartialView("RoutePartialView", model);  
+        }  
+        
         public ActionResult Contact()
         {
             ViewBag.Message = "For any bugs, submit a pull request to the official repo";
