@@ -10,7 +10,7 @@ namespace LiveTagsSearch.Controllers
     public class SearchController : Controller
     {
 
-        private string CurrentDirectory = "./"; //this will probably be in the RouteModel
+        private RouteModel Model = new RouteModel { Route = "./" };
         
         //when a tag is added to a file, its hashcode is added here and the list of tags is updated
         private static IDictionary<int, IList<string>> fileTagsTable = new Dictionary<int, IList<string>>();
@@ -19,8 +19,8 @@ namespace LiveTagsSearch.Controllers
         
         public ViewResult Index()
         {
-            ViewBag.Title = "Search Page";
-            ViewBag.CurrentDirectory = CurrentDirectory;
+            ViewBag.Title = "Search for files";
+//            ViewBag.CurrentDirectory = CurrentDirectory;
             
 //            var filesTask = LiveSearchFilesAsync();
 //            filesTask.Wait();
@@ -32,7 +32,7 @@ namespace LiveTagsSearch.Controllers
 //                System.Diagnostics.Debug.WriteLine(file);    
 //            }
 
-            return View();
+            return View(Model);
         }
 
         [NonAction]
@@ -77,8 +77,8 @@ namespace LiveTagsSearch.Controllers
         public ActionResult Search()
         {
             //return the searched files
-            string[] files = Directory.GetFiles(CurrentDirectory);
-            string[] dirs = Directory.GetDirectories(CurrentDirectory);
+            string[] files = Directory.GetFiles(Model.Route);
+            string[] dirs = Directory.GetDirectories(Model.Route);
             var result = Combine(files, dirs).Select(f => new FileModel(f));
             
             return PartialView("Search", result); //may need to redirect to Index with a new model

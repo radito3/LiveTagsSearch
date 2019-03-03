@@ -1,4 +1,4 @@
-@model LiveTagsSearch.Models.FileModel
+@model LiveTagsSearch.Models.RouteModel
 
 <h3>@ViewBag.Title</h3>
 
@@ -7,7 +7,7 @@
     <table>
         <tr class="form-group">
             <td class="col-md-4">
-                @Html.TextBox("Search", (string) ViewBag.CurrentDirectory, new { @class = "col-md-10 form-control"})
+                @Html.TextBoxFor(m => m.Route, new { @class = "col-md-10 form-control"})
             </td>
             <td class="col-md-3">
                 <input type="submit" value="Search" class="btn btn-default" />
@@ -16,7 +16,8 @@
                 <input type="button" 
                        class="glyphicon glyphicon-arrow-left" @*the icon and colour don't show up*@
                        style="color: forestgreen" 
-                       date-toggle="tooltip" title="Move a directory back"/>
+                       date-toggle="tooltip"
+                       title="Move a directory back"/>
             </td>
         </tr>
     </table>
@@ -30,13 +31,6 @@
 
 
 @Html.Action("Search") @*//for the partial view (the list of searched files)*@
-
-
-
-
-
-
-
 
 <script type="text/javascript">
     
