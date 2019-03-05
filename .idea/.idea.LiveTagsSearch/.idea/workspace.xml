@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b03e8051-0db3-4611-a205-b5c18135ed9c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LiveTagsSearch/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LiveTagsSearch/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LiveTagsSearch/Views/Search/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LiveTagsSearch/Views/Search/Index.cshtml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,20 +14,21 @@
     <session id="-1173152747">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.3" value="2" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.56" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="config" value="2" />
-          <entry key="cs" value="59" />
-          <entry key="cshtml" value="24" />
+          <entry key="cs" value="62" />
+          <entry key="cshtml" value="25" />
           <entry key="csproj" value="1" />
           <entry key="css" value="1" />
           <entry key="ico" value="1" />
@@ -39,12 +38,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="59" />
+          <entry key="C#" value="62" />
           <entry key="CSS" value="1" />
           <entry key="Config" value="2" />
           <entry key="Csproj" value="1" />
           <entry key="Image" value="2" />
-          <entry key="Razor" value="24" />
+          <entry key="Razor" value="25" />
           <entry key="Solution File" value="1" />
         </counts>
       </usages-collector>
@@ -52,13 +51,13 @@
         <counts>
           <entry key="cs" value="4782" />
           <entry key="cshtml" value="2223" />
-          <entry key="txt" value="201" />
+          <entry key="txt" value="221" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="C#" value="4782" />
-          <entry key="PLAIN_TEXT" value="201" />
+          <entry key="PLAIN_TEXT" value="221" />
           <entry key="Razor" value="2223" />
         </counts>
       </usages-collector>
@@ -66,13 +65,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+            <state relative-caret-position="597">
+              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
               <folding>
-                <marker date="1551622314979" expanded="true" signature="6:138" ph="..." />
+                <marker date="1551622314979" expanded="false" signature="6:138" ph="..." />
                 <marker date="1551622314979" expanded="true" signature="176:3112" ph="{...}" />
                 <marker date="1551622314979" expanded="true" signature="225:3110" ph="{...}" />
                 <marker date="1551622314979" expanded="true" signature="527:636" ph="/* this is stateful ... */" />
@@ -90,84 +89,33 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Controllers/HomeController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-              <folding>
-                <marker date="1551525854740" expanded="true" signature="6:50" ph="..." />
-                <marker date="1551525854740" expanded="true" signature="88:775" ph="{...}" />
-                <marker date="1551525854740" expanded="true" signature="135:773" ph="{...}" />
-                <marker date="1551525854740" expanded="true" signature="177:224" ph="{...}" />
-                <marker date="1551525854740" expanded="true" signature="261:370" ph="{...}" />
-                <marker date="1551525854740" expanded="true" signature="447:580" ph="{...}" />
-                <marker date="1551525854740" expanded="true" signature="629:767" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Search/Index.cshtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+            <state relative-caret-position="578">
+              <caret line="32" column="78" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="78" />
               <folding>
-                <marker date="1551621955340" expanded="true" signature="66:814" ph="@..." />
-                <marker date="1551621955340" expanded="true" signature="126:814" ph="{...}" />
-                <marker date="1551621955340" expanded="true" signature="133:812" ph="&lt;table.../&gt;" />
-                <marker date="1551621955340" expanded="true" signature="149:799" ph="&lt;tr.../&gt;" />
-                <marker date="1551621955340" expanded="true" signature="185:313" ph="&lt;td.../&gt;" />
-                <marker date="1551621955340" expanded="true" signature="326:444" ph="&lt;td.../&gt;" />
-                <marker date="1551621955340" expanded="true" signature="457:785" ph="&lt;td.../&gt;" />
-                <marker date="1551621955340" expanded="true" signature="816:1090" ph="@*...*@" />
-                <marker date="1551621955340" expanded="true" signature="1180:1640" ph="&lt;script.../&gt;" />
-                <marker date="1551621955340" expanded="true" signature="1221:1625" ph="/* don't know if this will be needed ... */" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Models/FileModel.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1064">
-              <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
-              <folding>
-                <marker date="1551527785869" expanded="true" signature="6:68" ph="..." />
-                <marker date="1551527785869" expanded="true" signature="101:2174" ph="{...}" />
-                <marker date="1551527785869" expanded="true" signature="130:2172" ph="{...}" />
-                <marker date="1551527785869" expanded="true" signature="399:687" ph="{...}" />
-                <marker date="1551527785869" expanded="true" signature="727:1249" ph="{...}" />
-                <marker date="1551527785869" expanded="true" signature="999:1163" ph="{...}" />
-                <marker date="1551527785869" expanded="true" signature="1298:1664" ph="{...}" />
-                <marker date="1551527785869" expanded="true" signature="1822:1971" ph="{...}" />
-                <marker date="1551527785869" expanded="true" signature="2014:2166" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Home/RoutePartialView.cshtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-              <folding>
-                <marker date="1551525754045" expanded="true" signature="43:855" ph="&lt;section.../&gt;" />
-                <marker date="1551525754045" expanded="true" signature="74:842" ph="@..." />
-                <marker date="1551525754045" expanded="true" signature="231:842" ph="{...}" />
-                <marker date="1551525754045" expanded="true" signature="350:618" ph="&lt;div.../&gt;" />
-                <marker date="1551525754045" expanded="true" signature="475:601" ph="&lt;div.../&gt;" />
-                <marker date="1551525754045" expanded="true" signature="629:826" ph="&lt;div.../&gt;" />
-                <marker date="1551525754045" expanded="true" signature="668:809" ph="&lt;div.../&gt;" />
+                <marker date="1551622413856" expanded="true" signature="66:814" ph="@..." />
+                <marker date="1551622413856" expanded="true" signature="126:814" ph="{...}" />
+                <marker date="1551622413856" expanded="true" signature="133:812" ph="&lt;table.../&gt;" />
+                <marker date="1551622413856" expanded="true" signature="149:799" ph="&lt;tr.../&gt;" />
+                <marker date="1551622413856" expanded="true" signature="185:313" ph="&lt;td.../&gt;" />
+                <marker date="1551622413856" expanded="true" signature="326:444" ph="&lt;td.../&gt;" />
+                <marker date="1551622413856" expanded="true" signature="457:785" ph="&lt;td.../&gt;" />
+                <marker date="1551622413856" expanded="true" signature="816:1090" ph="@*...*@" />
+                <marker date="1551622413856" expanded="true" signature="1173:1633" ph="&lt;script.../&gt;" />
+                <marker date="1551622413856" expanded="true" signature="1214:1618" ph="/* don't know if this will be needed ... */" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>java</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -219,6 +167,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E1F83F60-8CF6-42F5-AE87-20379D2E1591/88/1ab34d2e/MimeMapping.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E1F83F60-8CF6-42F5-AE87-20379D2E1591/6c/5149964f/MimeTypes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B78DCEFD-6C18-4245-BE8B-F4A1E52466D9/c9/dc9014ef/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A7D6518F-E74A-48E2-99DD-26D34C85BD58/fd/d3ead406/MimeTypes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A7D6518F-E74A-48E2-99DD-26D34C85BD58/98/59a05dfa/MimeMapping.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -236,8 +186,8 @@
         <option value="$PROJECT_DIR$/LiveTagsSearch/Views/Home/Index.cshtml" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/Controllers/HomeController.cs" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/Models/FileModel.cs" />
-        <option value="$PROJECT_DIR$/LiveTagsSearch/Views/Search/Index.cshtml" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs" />
+        <option value="$PROJECT_DIR$/LiveTagsSearch/Views/Search/Index.cshtml" />
       </list>
     </option>
   </component>
@@ -258,9 +208,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
       <pane id="FileSystemExplorer">
         <subPane>
           <expand>
@@ -268,53 +215,12 @@
               <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
               <item name="LiveTagsSearch" type="34e6ba20:FileSystemExplorerNode" />
             </path>
-            <path>
-              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
-              <item name="LiveTagsSearch" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="LiveTagsSearch" type="34e6ba20:FileSystemExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
-              <item name="LiveTagsSearch" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="LiveTagsSearch" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="Controllers" type="34e6ba20:FileSystemExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
-              <item name="LiveTagsSearch" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="LiveTagsSearch" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="Models" type="34e6ba20:FileSystemExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
-              <item name="LiveTagsSearch" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="LiveTagsSearch" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="Views" type="34e6ba20:FileSystemExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
-              <item name="LiveTagsSearch" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="LiveTagsSearch" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="Views" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="Home" type="34e6ba20:FileSystemExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
-              <item name="LiveTagsSearch" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="LiveTagsSearch" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="Views" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="Search" type="34e6ba20:FileSystemExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
-              <item name="LiveTagsSearch" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="LiveTagsSearch" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="Views" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="Shared" type="34e6ba20:FileSystemExplorerNode" />
-            </path>
           </expand>
           <select />
         </subPane>
+      </pane>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
       </pane>
     </panes>
   </component>
@@ -374,7 +280,9 @@
       <workItem from="1550675329380" duration="11223000" />
       <workItem from="1550759861788" duration="709000" />
       <workItem from="1551451450896" duration="8414000" />
-      <workItem from="1551522191163" duration="8666000" />
+      <workItem from="1551522191163" duration="9268000" />
+      <workItem from="1551692504777" duration="4710000" />
+      <workItem from="1551797082873" duration="5782000" />
     </task>
     <task id="LOCAL-00001" summary="Add File model &amp; file type icons">
       <created>1550336048370</created>
@@ -411,11 +319,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551529391198</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Small refactoring">
+      <created>1551622425831</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1551622425831</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36619000" />
+    <option name="totallyTimeSpent" value="47713000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -430,7 +345,7 @@
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26602563" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2724359" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -470,7 +385,8 @@
     <MESSAGE value="Add Search Controller &amp; Search page" />
     <MESSAGE value="Update file searching &amp; add TODO" />
     <MESSAGE value="Work on appearance &amp; testing for functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Work on appearance &amp; testing for functions" />
+    <MESSAGE value="Small refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -483,16 +399,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/App_Start/BundleConfig.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="39" lean-forward="true" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Properties/AssemblyInfo.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Content/site.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -722,32 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Search/Search.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-          <folding>
-            <marker date="1551525565411" expanded="true" signature="53:1170" ph="&lt;table.../&gt;" />
-            <marker date="1551525565411" expanded="true" signature="79:236" ph="&lt;tr.../&gt;" />
-            <marker date="1551525565411" expanded="true" signature="92:127" ph="&lt;th.../&gt;" />
-            <marker date="1551525565411" expanded="true" signature="136:208" ph="&lt;th.../&gt;" />
-            <marker date="1551525565411" expanded="true" signature="242:1160" ph="@..." />
-            <marker date="1551525565411" expanded="true" signature="270:1160" ph="{...}" />
-            <marker date="1551525565411" expanded="true" signature="285:1154" ph="&lt;tr.../&gt;" />
-            <marker date="1551525565411" expanded="true" signature="302:391" ph="&lt;td.../&gt;" />
-            <marker date="1551525565411" expanded="true" signature="404:483" ph="&lt;td.../&gt;" />
-            <marker date="1551525565411" expanded="true" signature="496:938" ph="&lt;td.../&gt;" />
-            <marker date="1551525565411" expanded="true" signature="517:668" ph="@..." />
-            <marker date="1551525565411" expanded="true" signature="543:668" ph="{...}" />
-            <marker date="1551525565411" expanded="true" signature="768:920" ph="@..." />
-            <marker date="1551525565411" expanded="true" signature="794:920" ph="{...}" />
-            <marker date="1551525565411" expanded="true" signature="951:1140" ph="&lt;td.../&gt;" />
-            <marker date="1551525565411" expanded="true" signature="972:1122" ph="@..." />
-            <marker date="1551525565411" expanded="true" signature="997:1122" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B78DCEFD-6C18-4245-BE8B-F4A1E52466D9/a3/8ef645ab/KeyValuePair.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -773,10 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-          <folding>
-            <marker date="1551525590376" expanded="true" signature="31:117" ph="{...}" />
-            <marker date="1551525590376" expanded="true" signature="61:115" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -784,16 +660,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="430">
           <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-          <folding>
-            <marker date="1551525786196" expanded="true" signature="0:37" ph="@..." />
-            <marker date="1551525786196" expanded="true" signature="39:319" ph="&lt;div.../&gt;" />
-            <marker date="1551525786196" expanded="true" signature="321:1447" ph="&lt;div.../&gt;" />
-            <marker date="1551525786196" expanded="true" signature="343:785" ph="&lt;div.../&gt;" />
-            <marker date="1551525786196" expanded="true" signature="407:655" ph="&lt;p.../&gt;" />
-            <marker date="1551525786196" expanded="true" signature="790:1126" ph="&lt;div.../&gt;" />
-            <marker date="1551525786196" expanded="true" signature="1131:1440" ph="&lt;div.../&gt;" />
-            <marker date="1551525786196" expanded="true" signature="1449:1516" ph="&lt;div.../&gt;" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Shared/_Layout.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Controllers/HomeController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -801,22 +681,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-          <folding>
-            <marker date="1551525754045" expanded="true" signature="43:855" ph="&lt;section.../&gt;" />
-            <marker date="1551525754045" expanded="true" signature="74:842" ph="@..." />
-            <marker date="1551525754045" expanded="true" signature="231:842" ph="{...}" />
-            <marker date="1551525754045" expanded="true" signature="350:618" ph="&lt;div.../&gt;" />
-            <marker date="1551525754045" expanded="true" signature="475:601" ph="&lt;div.../&gt;" />
-            <marker date="1551525754045" expanded="true" signature="629:826" ph="&lt;div.../&gt;" />
-            <marker date="1551525754045" expanded="true" signature="668:809" ph="&lt;div.../&gt;" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A7D6518F-E74A-48E2-99DD-26D34C85BD58/98/59a05dfa/MimeMapping.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A7D6518F-E74A-48E2-99DD-26D34C85BD58/fd/d3ead406/MimeTypes.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="191" column="35" selection-start-line="191" selection-start-column="31" selection-end-line="191" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Models/FileModel.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+        <state relative-caret-position="589">
+          <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
           <folding>
             <marker date="1551527785869" expanded="true" signature="6:68" ph="..." />
             <marker date="1551527785869" expanded="true" signature="101:2174" ph="{...}" />
@@ -831,67 +716,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Shared/_Layout.cshtml">
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Search/Search.cshtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        <state relative-caret-position="342">
+          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
           <folding>
-            <marker date="1550682228723" expanded="true" signature="16:1679" ph="&lt;html.../&gt;" />
-            <marker date="1550682228723" expanded="true" signature="23:279" ph="&lt;head.../&gt;" />
-            <marker date="1550682228723" expanded="true" signature="280:1671" ph="&lt;body.../&gt;" />
-            <marker date="1550682228723" expanded="true" signature="291:1310" ph="&lt;div.../&gt;" />
-            <marker date="1550682228723" expanded="true" signature="352:1299" ph="&lt;div.../&gt;" />
-            <marker date="1550682228723" expanded="true" signature="388:850" ph="&lt;div.../&gt;" />
-            <marker date="1550682228723" expanded="true" signature="432:709" ph="&lt;button.../&gt;" />
-            <marker date="1550682228723" expanded="true" signature="863:1284" ph="&lt;div.../&gt;" />
-            <marker date="1550682228723" expanded="true" signature="918:1265" ph="&lt;ul.../&gt;" />
-            <marker date="1550682228723" expanded="true" signature="1315:1532" ph="&lt;div.../&gt;" />
-            <marker date="1550682228723" expanded="true" signature="1397:1521" ph="&lt;footer.../&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Search/Index.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-          <folding>
-            <marker date="1551621955340" expanded="true" signature="66:814" ph="@..." />
-            <marker date="1551621955340" expanded="true" signature="126:814" ph="{...}" />
-            <marker date="1551621955340" expanded="true" signature="133:812" ph="&lt;table.../&gt;" />
-            <marker date="1551621955340" expanded="true" signature="149:799" ph="&lt;tr.../&gt;" />
-            <marker date="1551621955340" expanded="true" signature="185:313" ph="&lt;td.../&gt;" />
-            <marker date="1551621955340" expanded="true" signature="326:444" ph="&lt;td.../&gt;" />
-            <marker date="1551621955340" expanded="true" signature="457:785" ph="&lt;td.../&gt;" />
-            <marker date="1551621955340" expanded="true" signature="816:1090" ph="@*...*@" />
-            <marker date="1551621955340" expanded="true" signature="1180:1640" ph="&lt;script.../&gt;" />
-            <marker date="1551621955340" expanded="true" signature="1221:1625" ph="/* don't know if this will be needed ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Controllers/HomeController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-          <folding>
-            <marker date="1551525854740" expanded="true" signature="6:50" ph="..." />
-            <marker date="1551525854740" expanded="true" signature="88:775" ph="{...}" />
-            <marker date="1551525854740" expanded="true" signature="135:773" ph="{...}" />
-            <marker date="1551525854740" expanded="true" signature="177:224" ph="{...}" />
-            <marker date="1551525854740" expanded="true" signature="261:370" ph="{...}" />
-            <marker date="1551525854740" expanded="true" signature="447:580" ph="{...}" />
-            <marker date="1551525854740" expanded="true" signature="629:767" ph="{...}" />
+            <marker date="1551525565411" expanded="true" signature="53:1170" ph="&lt;table.../&gt;" />
+            <marker date="1551525565411" expanded="true" signature="79:236" ph="&lt;tr.../&gt;" />
+            <marker date="1551525565411" expanded="true" signature="92:127" ph="&lt;th.../&gt;" />
+            <marker date="1551525565411" expanded="true" signature="136:208" ph="&lt;th.../&gt;" />
+            <marker date="1551525565411" expanded="true" signature="242:1160" ph="@..." />
+            <marker date="1551525565411" expanded="true" signature="270:1160" ph="{...}" />
+            <marker date="1551525565411" expanded="true" signature="285:1154" ph="&lt;tr.../&gt;" />
+            <marker date="1551525565411" expanded="true" signature="302:391" ph="&lt;td.../&gt;" />
+            <marker date="1551525565411" expanded="true" signature="404:483" ph="&lt;td.../&gt;" />
+            <marker date="1551525565411" expanded="true" signature="496:938" ph="&lt;td.../&gt;" />
+            <marker date="1551525565411" expanded="true" signature="517:668" ph="@..." />
+            <marker date="1551525565411" expanded="true" signature="543:668" ph="{...}" />
+            <marker date="1551525565411" expanded="true" signature="768:920" ph="@..." />
+            <marker date="1551525565411" expanded="true" signature="794:920" ph="{...}" />
+            <marker date="1551525565411" expanded="true" signature="951:1140" ph="&lt;td.../&gt;" />
+            <marker date="1551525565411" expanded="true" signature="972:1122" ph="@..." />
+            <marker date="1551525565411" expanded="true" signature="997:1122" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        <state relative-caret-position="597">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
           <folding>
-            <marker date="1551622314979" expanded="true" signature="6:138" ph="..." />
+            <marker date="1551622314979" expanded="false" signature="6:138" ph="..." />
             <marker date="1551622314979" expanded="true" signature="176:3112" ph="{...}" />
             <marker date="1551622314979" expanded="true" signature="225:3110" ph="{...}" />
             <marker date="1551622314979" expanded="true" signature="527:636" ph="/* this is stateful ... */" />
@@ -904,6 +760,25 @@
             <marker date="1551622314979" expanded="true" signature="2223:2365" ph="{...}" />
             <marker date="1551622314979" expanded="true" signature="2424:2802" ph="{...}" />
             <marker date="1551622314979" expanded="true" signature="2812:3104" ph="/* [NonAction] ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Views/Search/Index.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="32" column="78" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="78" />
+          <folding>
+            <marker date="1551622413856" expanded="true" signature="66:814" ph="@..." />
+            <marker date="1551622413856" expanded="true" signature="126:814" ph="{...}" />
+            <marker date="1551622413856" expanded="true" signature="133:812" ph="&lt;table.../&gt;" />
+            <marker date="1551622413856" expanded="true" signature="149:799" ph="&lt;tr.../&gt;" />
+            <marker date="1551622413856" expanded="true" signature="185:313" ph="&lt;td.../&gt;" />
+            <marker date="1551622413856" expanded="true" signature="326:444" ph="&lt;td.../&gt;" />
+            <marker date="1551622413856" expanded="true" signature="457:785" ph="&lt;td.../&gt;" />
+            <marker date="1551622413856" expanded="true" signature="816:1090" ph="@*...*@" />
+            <marker date="1551622413856" expanded="true" signature="1173:1633" ph="&lt;script.../&gt;" />
+            <marker date="1551622413856" expanded="true" signature="1214:1618" ph="/* don't know if this will be needed ... */" />
           </folding>
         </state>
       </provider>
