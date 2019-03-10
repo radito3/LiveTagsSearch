@@ -1,7 +1,8 @@
 <h1>Search page</h1>
 
+<!--temporary html-->
 <div>
-  Directory:
+  <label>Directory: </label>
   <span>
     Search form
   </span>
@@ -9,12 +10,12 @@
     dir back button
   </span>
   <span>
-    <!--this will be a button-->
-    Search by name
+    <button (click)="searchType('Name')">Search by name</button>
   </span>
   <span>
-    <!--this will be a button-->
-    Search by tags
+    <button (click)="searchType('Tags')">Search by tags</button>
   </span>
 </div>
-<search-form></search-form>
+<search-form>
+  <!--probably the input type will be set in the opening tag here-->
+</search-form>

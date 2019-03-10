@@ -27,6 +27,8 @@ namespace AspNetSpa1.Controllers
             return Directory.GetCurrentDirectory();
         }
         
+        //when returning image content -> System.Convert.ToBase64String(image)
+        
         [NonAction]
         private static T[] Combine<T>(params IEnumerable<T>[] items) => items.SelectMany(i => i).Distinct().ToArray();
     }

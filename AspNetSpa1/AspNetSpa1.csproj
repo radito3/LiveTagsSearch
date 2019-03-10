@@ -21,9 +21,15 @@
         <!-- Don't publish the SPA source files, but do show them in the project files list -->
         <Content Remove="$(SpaRoot)**" />
         <Content Include="ClientApp\src\app\animations.ts" />
+        <Content Include="ClientApp\src\app\search\file-detail\file-detail.component.html" />
+        <Content Include="ClientApp\src\app\search\file-detail\file-detail.component.ts" />
         <Content Include="ClientApp\src\app\search\file-model.ts" />
         <Content Include="ClientApp\src\app\search\files-list\files-list.component.html" />
         <Content Include="ClientApp\src\app\search\files-list\files-list.component.ts" />
+        <Content Include="ClientApp\src\app\search\search-form\search-form.component.html" />
+        <Content Include="ClientApp\src\app\search\search-form\search-form.component.ts" />
+        <Content Include="ClientApp\src\app\search\search-routing.module.ts" />
+        <Content Include="ClientApp\src\app\search\search.module.ts" />
         <Content Include="ClientApp\src\app\search\search.component.html" />
         <Content Include="ClientApp\src\app\search\search.component.ts" />
         <None Remove="$(SpaRoot)**" />
@@ -31,8 +37,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="ClientApp\src\app\search\file-detail" />
-      <Folder Include="ClientApp\src\app\search\search-form" />
       <Folder Include="Content" />
     </ItemGroup>
 

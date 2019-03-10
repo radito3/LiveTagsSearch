@@ -1,20 +1,20 @@
-import {Component, Inject, Input} from '@angular/core';
-import { HttpClient } from "@angular/common/http";
-import { FileModel } from "./file-model";
+import { Component, Injectable, Input } from '@angular/core';
 
 @Component({
   selector: 'search-root',
   templateUrl: './search.component.html'
 })
+@Injectable({ //don't know if this is needed
+  providedIn: 'root'
+})
 export class SearchComponent {
   public path: string = './';
-  public _searchType: string = 'name';
-  private str: string | undefined;
+  public _searchType: string = 'Name';
 
   public dirBack() {
-    this.str = this.path.match(new RegExp('\\.\\/(\\.\\.\\/|[^\\/\\.]+\\/)*')).pop();
-    this.path += this.str == undefined || this.str == '../' ?
-      '../' : this.path.substring(0, this.path.substr(0, this.path.length - 1).lastIndexOf('/'));
+    let str = this.path.match(new RegExp('\\.\\/(\\.\\.\\/|[^\\/\\.]+\\/)*')).pop();
+    this.path = str == undefined || str == '../' ?
+      this.path + '../' : this.path.substring(0, this.path.substr(0, this.path.length - 1).lastIndexOf('/'));
   }
 
   // @Input

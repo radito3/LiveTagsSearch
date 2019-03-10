@@ -5,7 +5,7 @@ import {
 
 export const slideInAnimation =
   trigger('routeAnimation', [
-    transition('heroes <=> hero', [
+    transition('files <=> file', [
       style({ position: 'relative' }),
       query(':enter, :leave', [
         style({
