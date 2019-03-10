@@ -1,30 +1,28 @@
-import { Component, Inject } from '@angular/core';
+import {Component, Inject, Input} from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import { FileModel } from "./file-model";
 
 @Component({
+  selector: 'search-root',
   templateUrl: './search.component.html'
 })
 export class SearchComponent {
-  public files: FileModel[];
+  public path: string = './';
+  public _searchType: string = 'name';
+  private str: string | undefined;
 
-  constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
-    http.get<FileModel[]>(baseUrl + 'api/Search/Files').subscribe(result => {
-      this.files = result;
-    }, error => console.error(error));
+  public dirBack() {
+    this.str = this.path.match(new RegExp('\\.\\/(\\.\\.\\/|[^\\/\\.]+\\/)*')).pop();
+    this.path += this.str == undefined || this.str == '../' ?
+      '../' : this.path.substring(0, this.path.substr(0, this.path.length - 1).lastIndexOf('/'));
   }
 
-  public renderable(file: FileModel) {
-    return file.renderable;
+  // @Input
+  set searchType(searchType: string) {
+    this._searchType = searchType;
   }
 
-  public hasTags(file: FileModel) {
-    return file.tags.length != 0;
+  get searchType() {
+    return this._searchType;
   }
-}
-
-interface FileModel {
-  name: string;
-  iconPath: string;
-  renderable: boolean;
-  tags: string[];
 }
