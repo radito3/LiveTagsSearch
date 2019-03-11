@@ -32,6 +32,7 @@
         <Content Include="ClientApp\src\app\search\search.module.ts" />
         <Content Include="ClientApp\src\app\search\search.component.html" />
         <Content Include="ClientApp\src\app\search\search.component.ts" />
+        <Content Include="ClientApp\src\app\search\search.service.ts" />
         <None Remove="$(SpaRoot)**" />
         <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
     </ItemGroup>

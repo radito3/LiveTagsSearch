@@ -4,18 +4,16 @@
 <div>
   <label>Directory: </label>
   <span>
-    Search form
+    <input type="search" placeholder="search form">
   </span>
   <span>
-    dir back button
+    <button class="btn btn-primary" (click)="dirBack()">dir back button</button>
   </span>
   <span>
-    <button (click)="searchType('Name')">Search by name</button>
+    <button class="btn btn-primary" (click)="searchType = 'Name'">Search by name</button>
   </span>
   <span>
-    <button (click)="searchType('Tags')">Search by tags</button>
+    <button class="btn btn-primary" (click)="searchType = 'Tags'">Search by tags</button>
   </span>
 </div>
-<search-form>
-  <!--probably the input type will be set in the opening tag here-->
-</search-form>
+<search-form [(searchType)] = searchType [(searchDir)] = path></search-form>

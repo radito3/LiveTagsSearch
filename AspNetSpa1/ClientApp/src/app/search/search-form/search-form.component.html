@@ -1,10 +1,7 @@
 <div>
-  <label>File name: </label>
-  <label>File tags: </label> <!--one or the other-->
-  <ngForm>
-    <!--input string-->
-  </ngForm>
+  <label>File {{searchType}}: </label>
+  <input type="search" placeholder="{{searchDir}}">
 </div>
-<files-list>
-  <!--search with the inputted string-->
-</files-list>
+<files-list [(route)] = searchDir
+            [(searchType)] = searchType
+            [(searchValue)] = searchString></files-list>

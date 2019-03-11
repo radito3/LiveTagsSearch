@@ -20,7 +20,7 @@ namespace AspNetSpa1.Models
             {"other", "Content/file-icon.png"},
             {"dir", "Content/directory-icon.png"}
         };
-
+        
         public FileModel(string name)
         {
             Name = name.Substring(name.LastIndexOf('/') + 1);

@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import {Component, Input} from "@angular/core";
 
 @Component({
   selector: 'search-form',
@@ -6,7 +6,6 @@ import { Component } from "@angular/core";
 })
 export class SearchFormComponent {
   public searchString: string;
-  public searchType: string; //need to get this from the parent component
-
-  //...
+  @Input() public searchType: string;
+  @Input() public searchDir: string;
 }

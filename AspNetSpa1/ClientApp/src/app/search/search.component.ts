@@ -1,11 +1,8 @@
-import { Component, Injectable, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'search-root',
   templateUrl: './search.component.html'
-})
-@Injectable({ //don't know if this is needed
-  providedIn: 'root'
 })
 export class SearchComponent {
   public path: string = './';
@@ -14,10 +11,10 @@ export class SearchComponent {
   public dirBack() {
     let str = this.path.match(new RegExp('\\.\\/(\\.\\.\\/|[^\\/\\.]+\\/)*')).pop();
     this.path = str == undefined || str == '../' ?
-      this.path + '../' : this.path.substring(0, this.path.substr(0, this.path.length - 1).lastIndexOf('/'));
+      this.path + '../' :
+      this.path.substring(0, this.path.substr(0, this.path.length - 1).lastIndexOf('/') + 1);
   }
 
-  // @Input
   set searchType(searchType: string) {
     this._searchType = searchType;
   }

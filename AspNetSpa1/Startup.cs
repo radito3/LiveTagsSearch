@@ -49,6 +49,9 @@ namespace AspNetSpa1
                 routes.MapRoute(
                     name: "default",
                     template: "{controller}/{action=Index}/{id?}");
+//                routes.MapRoute(
+//                    name: "search",
+//                    template: "api/{controller}/{action=Files}/{*params}");
             });
 
             app.UseSpa(spa =>
