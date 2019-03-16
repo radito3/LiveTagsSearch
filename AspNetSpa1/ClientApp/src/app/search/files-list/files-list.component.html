@@ -1,7 +1,7 @@
 <p *ngIf="!files"><em>Loading...</em></p>
 
 <table *ngIf="files" class="table table-striped">
-  <tr *ngFor="let file of files">
+  <tr *ngFor="let file of files | FilterPipe: searchValue | OrderPipe: 'name'">
     <th>
       <img src="{{ file.icon }}" width="50" height="50"/>
     </th>

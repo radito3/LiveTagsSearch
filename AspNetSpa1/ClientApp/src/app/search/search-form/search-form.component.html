@@ -1,6 +1,6 @@
 <div>
   <label>File {{searchType}}: </label>
-  <input type="search" placeholder="{{searchDir}}">
+  <input type="text" [(ngModel)]="searchString" placeholder="Search">
 </div>
 <files-list [(route)] = searchDir
             [(searchType)] = searchType

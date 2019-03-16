@@ -14,6 +14,7 @@ import { SearchFormComponent } from "./search/search-form/search-form.component"
 import { FilesListComponent } from "./search/files-list/files-list.component";
 import { FileDetailComponent } from "./search/file-detail/file-detail.component";
 import { SearchService } from "./search/search.service";
+import { FilterPipe, OrderPipe } from "./search/files-list/pipes";
 
 @NgModule({
   declarations: [
@@ -25,7 +26,9 @@ import { SearchService } from "./search/search.service";
     SearchComponent,
     SearchFormComponent,
     FilesListComponent,
-    FileDetailComponent
+    FileDetailComponent,
+    FilterPipe,
+    OrderPipe
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

@@ -26,6 +26,7 @@
         <Content Include="ClientApp\src\app\search\file-model.ts" />
         <Content Include="ClientApp\src\app\search\files-list\files-list.component.html" />
         <Content Include="ClientApp\src\app\search\files-list\files-list.component.ts" />
+        <Content Include="ClientApp\src\app\search\files-list\pipes.ts" />
         <Content Include="ClientApp\src\app\search\search-form\search-form.component.html" />
         <Content Include="ClientApp\src\app\search\search-form\search-form.component.ts" />
         <Content Include="ClientApp\src\app\search\search-routing.module.ts" />
