@@ -31,9 +31,9 @@ namespace AspNetSpa1.Controllers
         [HttpGet("[action]")]
         public IEnumerable<FileModel> Files([FromQuery] string route, [FromQuery] string searchType, [FromQuery] string value)
         {
-            var rr = route.Equals("undefined") ? CurrentDirectory : route;
-            string[] files = Directory.GetFiles(rr);
-            string[] dirs = Directory.GetDirectories(rr);
+//            var rr = route.Equals("undefined") ? CurrentDirectory : route;
+            string[] files = Directory.GetFiles(route);
+            string[] dirs = Directory.GetDirectories(route);
             return Combine(files, dirs).Select(f => new FileModel(f));
         }
 

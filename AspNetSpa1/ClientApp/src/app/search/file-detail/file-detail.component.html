@@ -1,4 +1,4 @@
-<div *ngIf="file | async as file">
+<div *ngIf="file | async">
   <h2>"{{ file.name }}"</h2>
   <!--add tag-->
   <div>
@@ -7,7 +7,7 @@
   </div>
   <!--delete tag may be in the list of tags-->
   <div *ngIf="file.isRenderable()">
-    <button (click)="file.render()">Render</button>
+    <button (click)="render()">Render</button>
   </div>
   <div *ngIf="content">
     <div *ngIf="file.isText()">
@@ -17,7 +17,7 @@
       <img [src]="content"/>
     </div>
   </div>
-  <p>
-    <button (click)="getFiles(file)">Back</button>
-  </p>
+  <!--<p>-->
+    <!--<button (click)="getFiles(file)">Back</button>-->
+  <!--</p>-->
 </div>

@@ -8,22 +8,24 @@ namespace AspNetSpa1.Models
     {
         public string Name { get; }
         public string IconPath { get; }
+        public string Type { get; }
         public bool Renderable { get; }
 //        public FileStream Content { get; }
         public List<string> Tags { get; }
 
         public static Dictionary<string, string> fileIcons = new Dictionary<string, string>
         {
-            {"text/plain", "Content/txt-file-icon.png"},
-            {"image", "Content/picture-icon.png"},
-            {"application/octet-stream", "Content/exe-file-icon.png"},
-            {"other", "Content/file-icon.png"},
-            {"dir", "Content/directory-icon.png"}
+            {"text/plain", "assets/txt-file-icon.png"},
+            {"image", "assets/picture-icon.png"},
+            {"application/octet-stream", "assets/exe-file-icon.png"},
+            {"other", "assets/file-icon.png"},
+            {"dir", "assets/directory-icon.png"}
         };
         
         public FileModel(string name)
         {
             Name = name.Substring(name.LastIndexOf('/') + 1);
+            Type = "text";//_getMimeType(name);
             string iconPathTemp;
             if (File.GetAttributes(name).HasFlag(FileAttributes.Directory))
                 fileIcons.TryGetValue("dir", out iconPathTemp);

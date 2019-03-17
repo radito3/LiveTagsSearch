@@ -1,7 +1,16 @@
 <div>
-  <label>File {{searchType}}: </label>
-  <input type="text" [(ngModel)]="searchString" placeholder="Search">
+  <span>
+    <label>File {{searchType}}: </label>
+    <input type="text" [(ngModel)]="searchString" placeholder="Search" class="input-group-sm">
+    <label>Sort by: </label>
+    <select [(ngModel)]="orderProp">
+      <option value="Name" selected="selected">Name</option>
+      <option value="Tags">Tags count</option>
+      <option value="Type">Type</option>
+    </select>
+  </span>
 </div>
-<files-list [(route)] = searchDir
-            [(searchType)] = searchType
-            [(searchValue)] = searchString></files-list>
+<files-list [(route)]=searchDir
+            [(searchType)]=searchType
+            [(searchValue)]=searchString
+            [(orderProp)]=orderProp></files-list>

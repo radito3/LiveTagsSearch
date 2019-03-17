@@ -1,19 +1,18 @@
 <h1>Search page</h1>
 
-<!--temporary html-->
 <div>
-  <label>Directory: </label>
+  <label class="col-form-label">Directory: </label>
   <span>
-    <input type="search" placeholder="search form">
+    <input type="text" placeholder="{{path}}" value="{{path}}" class="input-group-sm">
   </span>
   <span>
-    <button class="btn btn-primary" (click)="dirBack()">dir back button</button>
+    <button class="btn btn-group-sm" (click)="dirBack()">Dir back</button>
   </span>
   <span>
-    <button class="btn btn-primary" (click)="searchType = 'Name'">Search by name</button>
+    <button class="btn btn-group-sm" (click)="searchType='Name'">Search by name</button>
   </span>
   <span>
-    <button class="btn btn-primary" (click)="searchType = 'Tags'">Search by tags</button>
+    <button class="btn btn-group-sm" (click)="searchType='Tags'">Search by tags</button>
   </span>
 </div>
 <search-form [(searchType)]=searchType [(searchDir)]=path></search-form>

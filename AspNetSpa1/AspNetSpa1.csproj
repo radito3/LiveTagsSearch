@@ -36,10 +36,8 @@
         <Content Include="ClientApp\src\app\search\search.service.ts" />
         <None Remove="$(SpaRoot)**" />
         <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Content" />
+        <None Include="ClientApp\src\assets\file-icon.png" />
+        <None Include="ClientApp\src\assets\picture-icon.png" />
     </ItemGroup>
 
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

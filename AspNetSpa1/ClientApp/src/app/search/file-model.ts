@@ -1,6 +1,6 @@
 export class FileModel {
   name: string;
-  icon: string;
+  iconPath: string;
   type: string;
   content: string | null; //this is unneeded in requests that need a list of files
   //only when there is a request for a single file does this field is needed

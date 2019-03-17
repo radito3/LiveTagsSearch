@@ -6,6 +6,7 @@ import {Component, Input} from "@angular/core";
 })
 export class SearchFormComponent {
   public searchString: string;
+  public orderProp: string = 'Name';
   @Input() public searchType: string;
   @Input() public searchDir: string;
 }

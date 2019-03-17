@@ -8,7 +8,7 @@ import { HttpClient } from "@angular/common/http";
   selector: 'file-detail',
   templateUrl: './file-detail.component.html'
 })
-export class FileDetailComponent implements OnInit {
+export class FileDetailComponent/* implements OnInit */{
   public file: FileModel;
   public content: string;
 
@@ -21,12 +21,13 @@ export class FileDetailComponent implements OnInit {
     this.http.get<string>(this.baseUrl + 'api/Search/File/' + this.file.name)
       .subscribe(result => {
         //this will be fixed to be within the new file model
-        this.content = this.file.isText() ? result : 'data:image/jpeg;base64,' + result['image'];
+        this.content = result;
+        // this.content = this.file.isText() ? result : 'data:image/jpeg;base64,' + result['image'];
       }, error => console.error(error));
   }
 
-  ngOnInit() {
-
-  }
+  // ngOnInit() {
+  //
+  // }
 
 }

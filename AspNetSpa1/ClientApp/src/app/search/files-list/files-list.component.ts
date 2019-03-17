@@ -1,7 +1,7 @@
-import { FileModel } from "../file-model";
-import { HttpClient, HttpParams } from "@angular/common/http";
+import { FileModel }                from "../file-model";
+import { HttpClient, HttpParams }   from "@angular/common/http";
 import { Component, Inject, Input } from "@angular/core";
-import {SearchComponent} from "../search.component";
+import { SearchComponent }          from "../search.component";
 
 @Component({
   selector: 'files-list',
@@ -10,8 +10,8 @@ import {SearchComponent} from "../search.component";
 export class FilesListComponent {
   @Input() public searchType: string;
   @Input() public searchValue: string;
+  @Input() public orderProp: string;
   @Input() public route: string;
-
   public files: FileModel[];
 
   constructor(private http: HttpClient,
@@ -19,17 +19,6 @@ export class FilesListComponent {
               @Inject(SearchComponent) comp: SearchComponent) {
     http.get<FileModel[]>(baseUrl + 'api/Search/Files',
       { params: new HttpParams().append('route', comp.path)})
-      .subscribe(result => {
-        this.files = result;
-      }, error => console.error(error));
-  }
-
-  public filterFiles() {
-    this.http.get<FileModel[]>(this.baseUrl + 'api/Search/Files',
-      { params: new HttpParams()
-          .append('route', this.route)
-          .append('searchType', this.searchType)
-          .append('value', this.searchValue)})
       .subscribe(result => {
         this.files = result;
       }, error => console.error(error));
