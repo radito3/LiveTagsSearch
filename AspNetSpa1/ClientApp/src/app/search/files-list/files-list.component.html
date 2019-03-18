@@ -1,6 +1,6 @@
 <p *ngIf="!files"><em>Loading...</em></p>
 
-<table *ngIf="files" class="table table-striped">
+<table *ngIf="files" class="table table-borderless">
   <tr *ngFor="let file of files | filter: searchValue: searchType: route | order: orderProp">
     <th>
       <img src="{{ file.iconPath }}" width="50" height="50"/>
