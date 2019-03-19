@@ -10,7 +10,7 @@ namespace AspNetSpa1.Models
         public string IconPath { get; }
         public string Type { get; }
         public bool Renderable { get; }
-//        public FileStream Content { get; }
+        public string Content { get; }
         public List<string> Tags { get; }
 
         public static Dictionary<string, string> fileIcons = new Dictionary<string, string>
@@ -25,7 +25,7 @@ namespace AspNetSpa1.Models
         public FileModel(string name)
         {
             Name = name.Substring(name.LastIndexOf('/') + 1);
-            Type = "text";//_getMimeType(name);
+            Type = _getMimeType(name);
             string iconPathTemp;
             if (File.GetAttributes(name).HasFlag(FileAttributes.Directory))
                 fileIcons.TryGetValue("dir", out iconPathTemp);
@@ -36,6 +36,13 @@ namespace AspNetSpa1.Models
 //            }
             IconPath = iconPathTemp;
             Tags = new List<string>();
+            if (Name.Equals("appsettings.json"))
+            {
+                Tags.Add("json");
+                Tags.Add("json1");
+                Tags.Add("json2");
+                Content = File.ReadAllText(Name);
+            }
             Renderable = IsRenderable();
         }
 
@@ -59,7 +66,7 @@ namespace AspNetSpa1.Models
         public bool IsRenderable()
         {
             var type = _getMimeType(Name);
-            return type.StartsWith("text") || type.StartsWith("image");
+            return type.StartsWith("text") || type.StartsWith("image") || type.EndsWith("json") || type.EndsWith("xml");
         }
 
         private static string _getMimeType(string fileName)

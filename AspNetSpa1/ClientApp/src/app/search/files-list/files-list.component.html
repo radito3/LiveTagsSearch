@@ -5,8 +5,8 @@
     <th>
       <img src="{{ file.iconPath }}" width="50" height="50"/>
     </th>
-    <th>
-      <a [routerLink]="['/file', file.name]">
+    <th class="nav-item" [routerLinkActive]='["link-active"]'>
+      <a class="nav-link" [routerLink]='["/file", file.name]'>
         {{ file.name }}
       </a>
     </th>

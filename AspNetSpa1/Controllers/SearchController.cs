@@ -12,16 +12,7 @@ namespace AspNetSpa1.Controllers
         private string CurrentDirectory = "./";
         private static IDictionary<int, IList<string>> fileTagsTable = new Dictionary<int, IList<string>>();
         
-//        [HttpGet("[action]")]
-//        public IEnumerable<FileModel> Files()
-//        {
-//            string[] files = Directory.GetFiles(CurrentDirectory);
-//            string[] dirs = Directory.GetDirectories(CurrentDirectory);
-//            //don't know if there needs to be more in this method
-//            return Combine(files, dirs).Select(f => new FileModel(f));
-//        }
-
-        [HttpGet("file/{name}")]
+        [HttpGet("File/{name}")]
         public FileModel GetFile([FromRoute] string name)
         {
             //should get to whole route of the file from the http parameters
@@ -31,13 +22,20 @@ namespace AspNetSpa1.Controllers
         [HttpGet("[action]")]
         public IEnumerable<FileModel> Files([FromQuery] string route, [FromQuery] string searchType, [FromQuery] string value)
         {
-//            var rr = route.Equals("undefined") ? CurrentDirectory : route;
+            if (string.IsNullOrEmpty(searchType))
+                return AllFiles(route);
+
+            return AllFiles(route)
+                .Where(f => searchType.Equals("Name") ? f.Name.Contains(value) : f.Tags.Contains(value)); 
+        }
+
+        [NonAction]
+        private static IEnumerable<FileModel> AllFiles(string route)
+        {
             string[] files = Directory.GetFiles(route);
             string[] dirs = Directory.GetDirectories(route);
             return Combine(files, dirs).Select(f => new FileModel(f));
         }
-
-        //when returning image content -> System.Convert.ToBase64String(image)
         
         [NonAction]
         private static T[] Combine<T>(params IEnumerable<T>[] items) => items.SelectMany(i => i).Distinct().ToArray();

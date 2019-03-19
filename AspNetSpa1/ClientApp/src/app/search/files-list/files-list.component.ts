@@ -2,6 +2,7 @@ import { FileModel }                from "../file-model";
 import { HttpClient, HttpParams }   from "@angular/common/http";
 import { Component, Inject, Input } from "@angular/core";
 import { SearchComponent }          from "../search.component";
+import {SearchService} from "../search.service";
 
 @Component({
   selector: 'files-list',
@@ -16,7 +17,10 @@ export class FilesListComponent {
 
   constructor(private http: HttpClient,
               @Inject('BASE_URL') private baseUrl: string,
-              @Inject(SearchComponent) comp: SearchComponent) {
+              @Inject(SearchComponent) comp: SearchComponent,
+              private service: SearchService) {
+    //need to remove this
+    //this functionality is in the service
     http.get<FileModel[]>(baseUrl + 'api/Search/Files',
       { params: new HttpParams().append('route', comp.path)})
       .subscribe(result => {

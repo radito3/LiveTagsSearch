@@ -41,10 +41,10 @@ import { FilterPipe, OrderPipe } from "./search/files-list/pipes";
       { path: 'search', component: SearchComponent,
         children: [
           { path: '', component: SearchFormComponent },
-          { path: 'files', component: FilesListComponent, data: { animation: 'files' } },
-          { path: 'file/:name', component: FileDetailComponent, data: { animation: 'file' } }
+          { path: 'files', component: FilesListComponent, data: { animation: 'files' } }
         ]
-      }
+      },
+      { path: 'search/file/:name', component: FileDetailComponent, data: { animation: 'file' } }
     ])
   ],
   providers: [SearchService],

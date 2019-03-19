@@ -3,7 +3,7 @@
 <div>
   <label class="col-form-label">Directory: </label>
   <span>
-    <input type="text" placeholder="{{path}}" value="{{path}}" class="input-group-sm">
+    <input type="text" placeholder="{{path}}" value="{{path}}" [(ngModel)]="path" class="input-group-sm">
   </span>
   <span>
     <button class="btn btn-group-sm" (click)="dirBack()">Dir back</button>

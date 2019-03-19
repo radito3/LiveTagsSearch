@@ -7,7 +7,7 @@ export class FileModel {
   tags: string[];
 
   public isRenderable(): boolean {
-    return this.isText() || this.isImg();
+    return this.isText() || this.isImg() || this.type.endsWith("json") || this.type.endsWith("xml");
   }
 
   public isText(): boolean {
