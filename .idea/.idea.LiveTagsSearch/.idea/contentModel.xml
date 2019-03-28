@@ -144,12 +144,8 @@
                   <e p="file-detail.component.ts" t="Include" />
                 </e>
                 <e p="file-model.ts" t="Include" />
-                <e p="files-list" t="Include">
-                  <e p="files-list.component.html" t="Include" />
-                  <e p="files-list.component.ts" t="Include" />
-                  <e p="pipes.ts" t="Include" />
-                </e>
                 <e p="search-form" t="Include">
+                  <e p="pipes.ts" t="Include" />
                   <e p="search-form.component.html" t="Include" />
                   <e p="search-form.component.ts" t="Include" />
                 </e>

@@ -2,7 +2,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { FileModel } from "../file-model";
 import { SearchService } from "../search.service";
 
-@Pipe({ name: 'filter' })
+@Pipe({
+  name: 'filter'
+})
 export class FilterPipe implements PipeTransform {
 
   constructor(private service: SearchService) {}
@@ -11,13 +13,26 @@ export class FilterPipe implements PipeTransform {
     if (!inputVal) {
       return value;
     }
-    return searchType == 'Name' ?
-      value.filter((el: FileModel) => el.name.toLowerCase().indexOf(inputVal.toLowerCase()) > -1) :
-      this.service.getFiles(searchRoute, 'tags', inputVal);
+
+    if (searchType == 'Name') {
+      return value.filter((el: FileModel) => el.name.toLowerCase().indexOf(inputVal.toLowerCase()) > -1);
+    } else {
+      //need to return result only after getFiles has returned!
+      let res: FileModel[] = [];
+      this.service.getFiles(searchRoute, 'Tags', inputVal)
+        .toPromise()
+        .then(value => {
+            console.log(value);
+            res = value;
+          }, reason => console.log(reason));
+      return res;
+    }
   }
 }
 
-@Pipe({ name: 'order' })
+@Pipe({
+  name: 'order'
+})
 export class OrderPipe implements PipeTransform {
 
   private fns: Array<OrderFunction> = [

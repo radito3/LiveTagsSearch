@@ -10,7 +10,18 @@
     </select>
   </span>
 </div>
-<files-list [(route)]=searchDir
-            [(searchType)]=searchType
-            [(searchValue)]=searchString
-            [(orderProp)]=orderProp></files-list>
+
+<p *ngIf="!files"><em>Loading...</em></p>
+
+<table *ngIf="files" class="table table-borderless">
+  <tr *ngFor="let file of files | filter: searchString: searchType: searchDir | order: orderProp">
+    <th>
+      <img src="{{ file.iconPath }}" width="50" height="50"/>
+    </th>
+    <th class="nav-item" >
+      <p>{{ file.name }}</p>
+    </th>
+    <th>Tags: {{ file.tags.length }}</th>
+  </tr>
+</table>
+

@@ -9,21 +9,27 @@ import {Observable} from "rxjs";
 })
 export class SearchService {
 
-  private res: FileModel[] = [];
-
   constructor(private http: HttpClient,
               @Inject('BASE_URL') private baseUrl: string) {}
 
-  public getFiles(route: string = './', searchType?: string, searchValue?: string): FileModel[] {
+  public getFiles(route: string = './', searchType?: string, searchValue?: string): Observable<FileModel[]> {
     let params = new HttpParams().append('route', route);
 
-    this.http.get<FileModel[]>(this.baseUrl + 'api/Search/Files',
-      { params: searchType == undefined ? params :
-          params.append('searchType', searchType)
-          .append('value', searchValue) })
-      .pipe(debounceTime(300), distinctUntilChanged())
-      .subscribe(result => this.res = result,error => console.error(error));
-    return this.res;
+    if (searchType != undefined) {
+      params.append('searchType', searchType);
+    }
+
+    if (searchValue != undefined) {
+      params.append('value', searchValue);
+    }
+
+    return this.http.get<FileModel[]>(this.baseUrl + 'api/Search/Files', { params: params })
+      .pipe(debounceTime(300), distinctUntilChanged());
+  }
+
+  public hasRoot(route: string): Observable<boolean> {
+    return this.http.get<boolean>(this.baseUrl + 'api/Search/HasRoot',
+      { params: new HttpParams().append('route', route) });
   }
 
   public getFile(fileName: string): Observable<FileModel> {

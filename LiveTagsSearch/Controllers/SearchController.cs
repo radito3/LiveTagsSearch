@@ -29,6 +29,12 @@ namespace LiveTagsSearch.Controllers
                 .Where(f => searchType.Equals("Name") ? f.Name.Contains(value) : f.Tags.Contains(value)); 
         }
 
+        [HttpGet("[action]")]
+        public bool HasRoot([FromQuery] string route)
+        {
+            return new DirectoryInfo(route).Parent != null;
+        }
+
         [NonAction]
         private static IEnumerable<FileModel> AllFiles(string route)
         {

@@ -1,12 +1,10 @@
 <h1>Search page</h1>
 
 <div>
-  <label class="col-form-label">Directory: </label>
+  <p>Directory: {{path}}</p>
   <span>
-    <input type="text" placeholder="{{path}}" value="{{path}}" [(ngModel)]="path" class="input-group-sm">
-  </span>
-  <span>
-    <button class="btn btn-group-sm" (click)="dirBack()">Dir back</button>
+    <button type="button" mdbBtn color="default" rounded="true" data-toggle="modal" data-target="#basicExample"
+            (click)="frame.show()" mdbWavesEffect>Change Directory</button>
   </span>
   <span>
     <button class="btn btn-group-sm" (click)="searchType='Name'">Search by name</button>
@@ -15,4 +13,45 @@
     <button class="btn btn-group-sm" (click)="searchType='Tags'">Search by tags</button>
   </span>
 </div>
-<search-form [(searchType)]=searchType [(searchDir)]=path></search-form>
+
+<div mdbModal #frame="mdbModal" class="modal fade top" id="frameModalTop" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-info" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+        <p class="heading lead">Change directory</p>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame.hide()">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body">
+        <div class="text-center">
+          <i class="fas fa-check fa-4x mb-3 animated rotateIn"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iusto nulla aperiam blanditiis ad consequatur
+            in dolores culpa, dignissimos, eius non possimus fugiat. Esse ratione fuga, enim, ab officiis totam.</p>
+        </div>
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        <a type="button" mdbBtn color="primary" class="waves-light" mdbWavesEffect>Get it now
+          <i class="far fa-gem ml-1"></i>
+        </a>
+
+        <!--my button-->
+        <a *ngIf="hasRootDir==true" type="button" mdbBtn color="primary" class="waves-light" mdbWavesEffect (click)="dirBack()">Dir back</a>
+        <a type="button" mdbBtn color="primary" class="waves-light" mdbWavesEffect>Save</a>
+
+        <a type="button" mdbBtn color="primary" outline="true" class="waves-effect" mdbWavesEffect (click)="frame.hide()">Cancel</a>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+
+<search-form [(searchType)]=searchType [(searchDir)]=path (hasRootDir)="listenForRoot($event)"></search-form>

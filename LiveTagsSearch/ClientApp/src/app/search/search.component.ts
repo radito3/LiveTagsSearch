@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'search-root',
@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
 export class SearchComponent {
   public path: string = './';
   public _searchType: string = 'Name';
+  public hasRootDir: boolean;
 
   public dirBack() {
+    //should get the name of the ../ directory to display it in modal
     let str = this.path.match(new RegExp('\\.\\/(\\.\\.\\/|[^\\/\\.]+\\/)*')).pop();
     this.path = str == undefined || str == '../' ?
       this.path + '../' :
@@ -21,5 +23,9 @@ export class SearchComponent {
 
   get searchType() {
     return this._searchType;
+  }
+
+  public listenForRoot(val: boolean) {
+    this.hasRootDir = val;
   }
 }

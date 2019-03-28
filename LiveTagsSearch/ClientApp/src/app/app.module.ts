@@ -13,10 +13,9 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { SearchComponent } from "./search/search.component";
 import { SearchFormComponent } from "./search/search-form/search-form.component";
-import { FilesListComponent } from "./search/files-list/files-list.component";
 import { FileDetailComponent } from "./search/file-detail/file-detail.component";
 import { SearchService } from "./search/search.service";
-import { FilterPipe, OrderPipe } from "./search/files-list/pipes";
+import { FilterPipe, OrderPipe } from "./search/search-form/pipes";
 
 @NgModule({
   declarations: [
@@ -27,7 +26,6 @@ import { FilterPipe, OrderPipe } from "./search/files-list/pipes";
     FetchDataComponent,
     SearchComponent,
     SearchFormComponent,
-    FilesListComponent,
     FileDetailComponent,
     FilterPipe,
     OrderPipe
@@ -42,8 +40,7 @@ import { FilterPipe, OrderPipe } from "./search/files-list/pipes";
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'search', component: SearchComponent,
         children: [
-          { path: '', component: SearchFormComponent },
-          { path: 'files', component: FilesListComponent }
+          { path: '', component: SearchFormComponent }
         ]
       },
       { path: 'search/file/:name', component: FileDetailComponent },
