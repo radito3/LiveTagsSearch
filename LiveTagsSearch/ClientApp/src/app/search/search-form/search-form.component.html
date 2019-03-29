@@ -1,27 +1,30 @@
 <div>
-  <span>
-    <label>File {{searchType}}: </label>
-    <input type="text" [(ngModel)]="searchString" placeholder="Search" class="input-group-sm">
-    <label>Sort by: </label>
-    <select [(ngModel)]="orderProp">
-      <option value="Name" selected="selected">Name</option>
-      <option value="Tags">Tags count</option>
-      <option value="Type">Type</option>
-    </select>
-  </span>
+  <div class="md-form">
+    <input mdbInput type="text" id="form1" [(ngModel)]="searchString" class="form-control">
+    <label for="form1" class="">File {{searchType}}</label>
+  </div>
+
+  <label for="order">Sort by: </label>
+  <select [(ngModel)]="orderProp" class="browser-default custom-select" id="order">
+    <option value="Name" selected>Name</option>
+    <option value="Tags">Tags count</option>
+    <option value="Type">Type</option>
+  </select>
 </div>
 
 <p *ngIf="!files"><em>Loading...</em></p>
 
-<table *ngIf="files" class="table table-borderless">
-  <tr *ngFor="let file of files | filter: searchString: searchType: searchDir | order: orderProp">
+<table mdbTable *ngIf="files">
+  <tbody>
+  <tr mdbTableRow *ngFor="let file of files | filter: searchString: searchType: searchDir | order: orderProp">
     <th>
       <img src="{{ file.iconPath }}" width="50" height="50"/>
     </th>
-    <th class="nav-item" >
+    <th class="nav-item">
       <p>{{ file.name }}</p>
     </th>
     <th>Tags: {{ file.tags.length }}</th>
   </tr>
+  </tbody>
 </table>
 

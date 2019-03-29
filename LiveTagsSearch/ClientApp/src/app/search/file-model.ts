@@ -2,10 +2,10 @@ export class FileModel {
   name: string;
   iconPath: string;
   type: string;
-  content: string | null; //this is unneeded in requests that need a list of files
-  //only when there is a request for a single file does this field is needed
+  content: string | null;
   tags: string[];
 
+  //would be better if this is a property
   public isRenderable(): boolean {
     return this.isText() || this.isImg() || this.type.endsWith("json") || this.type.endsWith("xml");
   }
@@ -18,12 +18,3 @@ export class FileModel {
     return this.type.startsWith('image');
   }
 }
-
-
-//should make another class that contains full info on the model
-/*the first class needs to be reworked only to include:
-  name,
-  icon,
-  tagsCount
-
-*/

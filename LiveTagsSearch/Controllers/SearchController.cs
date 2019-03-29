@@ -12,6 +12,7 @@ namespace LiveTagsSearch.Controllers
 //        private string CurrentDirectory = "./";
         private static IDictionary<int, IList<string>> fileTagsTable = new Dictionary<int, IList<string>>();
         
+        //should not be needed
         [HttpGet("File/{name}")]
         public FileModel GetFile([FromRoute] string name)
         {

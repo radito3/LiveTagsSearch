@@ -32,6 +32,7 @@ export class SearchService {
       { params: new HttpParams().append('route', route) });
   }
 
+  //this should not be needed
   public getFile(fileName: string): Observable<FileModel> {
     return this.http.get<FileModel>(this.baseUrl + 'api/Search/File/' + fileName);
   }
