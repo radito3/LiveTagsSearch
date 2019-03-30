@@ -47,7 +47,7 @@ export class FileDetailComponent implements OnInit {
     this.file = this.service.getFile(name);
   }
 
-  public isRenderable(file: FileModel): boolean {
-    return file.isRenderable();
-  }
+  // public isRenderable(file: FileModel): boolean {
+  //   return file.isRenderable();
+  // }
 }

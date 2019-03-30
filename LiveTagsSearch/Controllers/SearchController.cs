@@ -36,6 +36,18 @@ namespace LiveTagsSearch.Controllers
             return new DirectoryInfo(route).Parent != null;
         }
 
+        [HttpGet("[action]")]
+        public IEnumerable<string> FolderName([FromQuery] string route)
+        {
+            return new [] { new DirectoryInfo(route).Name };
+        }
+
+        [HttpGet("[action]")]
+        public IEnumerable<string> Subfolders([FromQuery] string route)
+        {
+            return new DirectoryInfo(route).GetDirectories().Select(dir => dir.Name);
+        }
+
         [NonAction]
         private static IEnumerable<FileModel> AllFiles(string route)
         {

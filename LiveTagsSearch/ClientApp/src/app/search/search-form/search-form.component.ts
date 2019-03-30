@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Inject, Input, Output} from "@angular/core";
+import {Component, EventEmitter, Inject, Input, Output, ViewChild} from "@angular/core";
 import {FileModel} from "../file-model";
 import {HttpClient} from "@angular/common/http";
 import {SearchService} from "../search.service";
@@ -13,6 +13,9 @@ export class SearchFormComponent {
   @Input() public searchType: string;
   private _searchDir: string;
   @Output() public hasRootDir: EventEmitter<boolean> = new EventEmitter<boolean>();
+
+  @ViewChild('content') public contentModal;
+  public content: string;
 
   public files: FileModel[];
 
@@ -35,5 +38,10 @@ export class SearchFormComponent {
 
   get searchDir() {
     return this._searchDir;
+  }
+
+  public show(title: string, value: string){
+    this.content = value;
+    this.contentModal.show();
   }
 }

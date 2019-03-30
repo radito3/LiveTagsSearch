@@ -32,6 +32,16 @@ export class SearchService {
       { params: new HttpParams().append('route', route) });
   }
 
+  public folderName(route: string): Observable<string[]> {
+    return this.http.get<string[]>(this.baseUrl + 'api/Search/FolderName',
+      { params: new HttpParams().append('route', route) });
+  }
+
+  public subfolders(route: string): Observable<string[]> {
+    return this.http.get<string[]>(this.baseUrl + 'api/Search/Subfolders',
+      { params: new HttpParams().append('route', route) });
+  }
+
   //this should not be needed
   public getFile(fileName: string): Observable<FileModel> {
     return this.http.get<FileModel>(this.baseUrl + 'api/Search/File/' + fileName);

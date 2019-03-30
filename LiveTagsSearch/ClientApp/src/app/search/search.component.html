@@ -1,7 +1,7 @@
 <h1>Search page</h1>
 
 <div>
-  <p>Directory: {{_path}}</p>
+  <p>Directory: {{folderName}}</p>
   <span>
     <button type="button" mdbBtn color="default" rounded="true" data-toggle="modal" data-target="#basicExample"
             (click)="frame.show()" mdbWavesEffect>Change Directory</button>
@@ -30,11 +30,13 @@
 
       <!--Body-->
       <div class="modal-body">
-        <div class="text-center">
-          <i class="fas fa-check fa-4x mb-3 animated rotateIn"></i>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iusto nulla aperiam blanditiis ad consequatur
-            in dolores culpa, dignissimos, eius non possimus fugiat. Esse ratione fuga, enim, ab officiis totam.</p>
-        </div>
+        <p>Current: {{folderName}}</p>
+        <!--<div class="text-center">-->
+          <!--<i class="fas fa-check fa-4x mb-3 animated rotateIn"></i>-->
+          <ul class="list-group">
+            <li class="list-group-item" *ngFor="let subdir of subfolders">{{subdir}}</li>
+          </ul>
+        <!--</div>-->
       </div>
 
       <!--Footer-->
@@ -44,7 +46,7 @@
         </a>
 
         <!--my button-->
-        <a *ngIf="hasRootDir==true" type="button" mdbBtn color="primary" class="waves-light" mdbWavesEffect (click)="dirBack()">Dir back</a>
+        <a *ngIf="hasRootDir == true" type="button" mdbBtn color="primary" class="waves-light" mdbWavesEffect (click)="dirBack()">Dir back</a>
         <a type="button" mdbBtn color="primary" class="waves-light" mdbWavesEffect>Save</a>
 
         <a type="button" mdbBtn color="primary" outline="true" class="waves-effect" mdbWavesEffect (click)="frame.hide()">Cancel</a>

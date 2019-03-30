@@ -1,7 +1,7 @@
 <div>
   <div class="md-form">
-    <input mdbInput type="text" id="form1" [(ngModel)]="searchString" class="form-control">
     <label for="form1" class="">File {{searchType}}</label>
+    <input mdbInput type="text" id="form1" [(ngModel)]="searchString" class="form-control form-control-sm">
   </div>
 
   <label for="order">Sort by: </label>
@@ -15,16 +15,82 @@
 <p *ngIf="!files"><em>Loading...</em></p>
 
 <table mdbTable *ngIf="files">
+  <thead>
+    <tr>
+      <th *ngFor="let head of ['Type', 'Name', '', '']" scope="col">{{head}}</th>
+    </tr>
+  </thead>
   <tbody>
   <tr mdbTableRow *ngFor="let file of files | filter: searchString: searchType: searchDir | order: orderProp">
     <th>
       <img src="{{ file.iconPath }}" width="50" height="50"/>
     </th>
     <th class="nav-item">
-      <p>{{ file.name }}</p>
+      {{ file.name }}
     </th>
-    <th>Tags: {{ file.tags.length }}</th>
+    <th>
+      <a data-toggle="modal" data-target="#tags" (click)="frame.show(file.tags.join(','))">Edit Tags</a>
+    </th>
+    <th *ngIf="file.renderable == true">
+      <button mdbBtn type="button" color="default" rounded="true" data-toggle="modal" data-target="#render" mdbWavesEffect>Render</button>
+    </th>
   </tr>
   </tbody>
 </table>
 
+<div mdbModal class="modal fade top" id="tags" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-info" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+        <p class="heading lead">File tags:</p>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame.hide()">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body">
+
+        {{content.toString()}}
+
+        <p>test</p>
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        <a type="button" mdbBtn color="primary" outline="true" class="waves-effect" mdbWavesEffect (click)="frame.hide()">Cancel</a>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+
+<div mdbModal #content="mdbModal" #frame="mdbModal" class="modal fade top" id="render" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-info" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class="heading lead">File tags:</p>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame.hide()">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+
+        {{content}}
+
+        <p>rendered text or image</p>
+      </div>
+
+      <div class="modal-footer justify-content-center">
+        <a type="button" mdbBtn color="primary" outline="true" class="waves-effect" mdbWavesEffect (click)="frame.hide()">Close</a>
+      </div>
+    </div>
+  </div>
+</div>

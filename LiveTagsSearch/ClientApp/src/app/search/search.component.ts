@@ -1,18 +1,24 @@
 import {Component} from '@angular/core';
 import {SearchService} from "./search.service";
-// import {Observable} from "rxjs";
 
 @Component({
   selector: 'search-root',
   templateUrl: './search.component.html'
 })
 export class SearchComponent {
-  public _path: string = './';
-  public _searchType: string = 'Name';
+  private _path: string = './';
+  private _searchType: string = 'Name';
   public hasRootDir: boolean;
-  // public rootDirName: Observable<string>;
+  public folderName: string;
+  public subfolders: string[];
 
-  constructor(private service: SearchService) {}
+  constructor(private service: SearchService) {
+    this.service.folderName(this._path)
+      .subscribe(val => this.folderName = val[0], error => console.log(error));
+
+    this.service.subfolders(this._path)
+      .subscribe(val => this.subfolders = val, error => console.log(error));
+  }
 
   public dirBack() {
     let str = this._path.match(new RegExp('\\.\\/(\\.\\.\\/|[^\\/\\.]+\\/)*')).pop();
@@ -20,7 +26,11 @@ export class SearchComponent {
       this._path + '../' :
       this._path.substring(0, this._path.substr(0, this._path.length - 1).lastIndexOf('/') + 1);
 
-    // this.rootDirName = this.service.getFolderName(this._path);
+    this.service.folderName(this._path)
+      .subscribe(val => this.folderName = val[0], error => console.log(error));
+
+    this.service.subfolders(this._path)
+      .subscribe(val => this.subfolders = val, error => console.log(error));
   }
 
   set searchType(searchType: string) {
@@ -30,14 +40,6 @@ export class SearchComponent {
   get searchType() {
     return this._searchType;
   }
-
-  // get folder(): Observable<string> {
-  //   return this.service.getFolderName(this._path);
-  // }
-  //
-  // async getFolder(): string {
-  //   return await this.service.getFolderNameAsync(this._path);
-  // }
 
   public listenForRoot(val: boolean) {
     this.hasRootDir = val;
