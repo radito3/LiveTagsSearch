@@ -11,6 +11,7 @@ export class SearchComponent {
   public hasRootDir: boolean;
   public folderName: string;
   public subfolders: string[];
+  private tempFolder: string;
 
   constructor(private service: SearchService) {
     this.service.folderName(this._path)
@@ -20,7 +21,7 @@ export class SearchComponent {
       .subscribe(val => this.subfolders = val, error => console.log(error));
   }
 
-  public dirBack() {
+  dirBack() {
     let str = this._path.match(new RegExp('\\.\\/(\\.\\.\\/|[^\\/\\.]+\\/)*')).pop();
     this._path = str == undefined || str == '../' ?
       this._path + '../' :
@@ -41,7 +42,18 @@ export class SearchComponent {
     return this._searchType;
   }
 
-  public listenForRoot(val: boolean) {
+  listenForRoot(val: boolean) {
     this.hasRootDir = val;
+  }
+
+  save(): void {
+    if (this.tempFolder != null) {
+      this._path += this.tempFolder + '/';
+      this.folderName = this.tempFolder;
+    }
+  }
+
+  cancel(): void {
+    this.tempFolder = null;
   }
 }

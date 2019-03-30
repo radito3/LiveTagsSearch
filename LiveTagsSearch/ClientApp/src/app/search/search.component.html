@@ -1,7 +1,7 @@
 <h1>Search page</h1>
 
 <div>
-  <p>Directory: {{folderName}}</p>
+  <h4>Directory: {{folderName}}</h4>
   <span>
     <button type="button" mdbBtn color="default" rounded="true" data-toggle="modal" data-target="#basicExample"
             (click)="frame.show()" mdbWavesEffect>Change Directory</button>
@@ -17,42 +17,32 @@
 <div mdbModal #frame="mdbModal" class="modal fade top" id="frameModalTop" tabindex="-1" role="dialog"
      aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-notify modal-info" role="document">
-    <!--Content-->
     <div class="modal-content">
-      <!--Header-->
       <div class="modal-header">
         <p class="heading lead">Change directory</p>
-
         <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame.hide()">
           <span aria-hidden="true" class="white-text">&times;</span>
         </button>
       </div>
 
-      <!--Body-->
       <div class="modal-body">
         <p>Current: {{folderName}}</p>
-        <!--<div class="text-center">-->
+        <div class="text-center">
           <!--<i class="fas fa-check fa-4x mb-3 animated rotateIn"></i>-->
           <ul class="list-group">
-            <li class="list-group-item" *ngFor="let subdir of subfolders">{{subdir}}</li>
+            <li class="list-group-item" *ngFor="let subdir of subfolders">
+              <a (click)="tempFolder = subdir"lass="waves-light">{{subdir}}</a>
+            </li>
           </ul>
-        <!--</div>-->
+        </div>
       </div>
 
-      <!--Footer-->
       <div class="modal-footer justify-content-center">
-        <a type="button" mdbBtn color="primary" class="waves-light" mdbWavesEffect>Get it now
-          <i class="far fa-gem ml-1"></i>
-        </a>
-
-        <!--my button-->
         <a *ngIf="hasRootDir == true" type="button" mdbBtn color="primary" class="waves-light" mdbWavesEffect (click)="dirBack()">Dir back</a>
-        <a type="button" mdbBtn color="primary" class="waves-light" mdbWavesEffect>Save</a>
-
-        <a type="button" mdbBtn color="primary" outline="true" class="waves-effect" mdbWavesEffect (click)="frame.hide()">Cancel</a>
+        <a type="button" mdbBtn color="primary" class="waves-light" (click)="save(); frame.hide()" mdbWavesEffect>Save</a>
+        <a type="button" mdbBtn color="primary" outline="true" class="waves-effect" mdbWavesEffect (click)="frame.hide(); cancel()">Cancel</a>
       </div>
     </div>
-    <!--/.Content-->
   </div>
 </div>
 

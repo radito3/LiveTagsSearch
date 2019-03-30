@@ -8,9 +8,11 @@ import {Observable} from "rxjs";
   providedIn: "root"
 })
 export class SearchService {
+  private readonly apiUrl: string;
 
-  constructor(private http: HttpClient,
-              @Inject('BASE_URL') private baseUrl: string) {}
+  constructor(private http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
+    this.apiUrl = baseUrl + 'api/Search/';
+  }
 
   public getFiles(route: string = './', searchType?: string, searchValue?: string): Observable<FileModel[]> {
     let params = new HttpParams().append('route', route);
@@ -23,27 +25,27 @@ export class SearchService {
       params.append('value', searchValue);
     }
 
-    return this.http.get<FileModel[]>(this.baseUrl + 'api/Search/Files', { params: params })
+    return this.http.get<FileModel[]>(this.apiUrl + 'Files', { params: params })
       .pipe(debounceTime(300), distinctUntilChanged());
   }
 
   public hasRoot(route: string): Observable<boolean> {
-    return this.http.get<boolean>(this.baseUrl + 'api/Search/HasRoot',
+    return this.http.get<boolean>(this.apiUrl + 'HasRoot',
       { params: new HttpParams().append('route', route) });
   }
 
   public folderName(route: string): Observable<string[]> {
-    return this.http.get<string[]>(this.baseUrl + 'api/Search/FolderName',
+    return this.http.get<string[]>(this.apiUrl + 'FolderName',
       { params: new HttpParams().append('route', route) });
   }
 
   public subfolders(route: string): Observable<string[]> {
-    return this.http.get<string[]>(this.baseUrl + 'api/Search/Subfolders',
+    return this.http.get<string[]>(this.apiUrl + 'Subfolders',
       { params: new HttpParams().append('route', route) });
   }
 
   //this should not be needed
   public getFile(fileName: string): Observable<FileModel> {
-    return this.http.get<FileModel>(this.baseUrl + 'api/Search/File/' + fileName);
+    return this.http.get<FileModel>(this.apiUrl + 'api/Search/File/' + fileName);
   }
 }
