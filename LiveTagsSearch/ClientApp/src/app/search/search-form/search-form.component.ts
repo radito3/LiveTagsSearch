@@ -40,7 +40,9 @@ export class SearchFormComponent {
     return this._searchDir;
   }
 
-  public show(title: string, value: string){
+  public show(title: string, value: string) {
+    //if file.type == image
+    //if file.type == text
     this.content = value;
     this.contentModal.show();
   }

@@ -1,26 +1,18 @@
+using System.IO;
+
 namespace LiveTagsSearch.Models
 {
-    public class TextFile : AbstractFile
+    public class TextFile : AbstractRenderableFile
     {
-        public override string Name { get; }
+        private readonly string _content;
+        
+        public override string Type => "text";
+        public override string Content => _content;
+        public override string IconPath => "assets/txt-file-icon.png";
         
         public TextFile(string name) : base(name)
         {
-        }
-
-        public override bool IsRenderable()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public override void AddTag(string tag)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public override void DeleteTag(string tag)
-        {
-            throw new System.NotImplementedException();
+            _content = File.ReadAllText(name);
         }
     }
 }

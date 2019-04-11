@@ -9,19 +9,19 @@ namespace LiveTagsSearch.Controllers
     [Route("api/[controller]")]
     public class SearchController : Controller
     {
-//        private string CurrentDirectory = "./";
-        private static IDictionary<int, IList<string>> fileTagsTable = new Dictionary<int, IList<string>>();
+        private static IDictionary<string, IList<string>> fileTagsTable = new Dictionary<string, IList<string>>();
         
-        //should not be needed
+        //will be deleted
         [HttpGet("File/{name}")]
-        public FileModel GetFile([FromRoute] string name)
+        public IFile GetFile([FromRoute] string name)
         {
             //should get to whole route of the file from the http parameters
-            return new FileModel(name);
+            return FileFactory.GetFile(name);
         }
 
+        //may modify
         [HttpGet("[action]")]
-        public IEnumerable<FileModel> Files([FromQuery] string route, [FromQuery] string searchType, [FromQuery] string value)
+        public IEnumerable<IFile> Files([FromQuery] string route, [FromQuery] string searchType, [FromQuery] string value)
         {
             if (string.IsNullOrEmpty(searchType))
                 return AllFiles(route);
@@ -49,11 +49,11 @@ namespace LiveTagsSearch.Controllers
         }
 
         [NonAction]
-        private static IEnumerable<FileModel> AllFiles(string route)
+        private static IEnumerable<IFile> AllFiles(string route)
         {
             string[] files = Directory.GetFiles(route);
             string[] dirs = Directory.GetDirectories(route);
-            return Combine(files, dirs).Select(f => new FileModel(f));
+            return Combine(files, dirs).Select(FileFactory.GetFile);
         }
         
         [NonAction]

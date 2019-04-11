@@ -4,43 +4,31 @@ using System.Linq;
 
 namespace LiveTagsSearch.Models
 {
-    public class ImageFile : AbstractFile
+    public class ImageFile : AbstractRenderableFile
     {
-        private FileStream _content;
+        private readonly FileStream _content;
         
         public override string Content
         {
             get
             {
-                IList<byte[]> byteses = new List<byte[]>();
+                IList<byte[]> bytesList = new List<byte[]>();
                 byte[] buff = new byte[255];
                 while (_content.Read(buff, 0, 255) != -1)
                 {
-                    byteses.Add(buff);
+                    bytesList.Add(buff);
                 }
-                byte[] array = byteses.SelectMany(i => i).ToArray();
+                byte[] array = bytesList.SelectMany(i => i).ToArray();
                 return System.Convert.ToBase64String(array);
             }
         }
+        
+        public override string Type => "image";
+        public override string IconPath => "assets/picture-icon.png";
 
         public ImageFile(string name) : base(name)
         {
             _content = File.OpenRead(name);
-        }
-
-        public override bool IsRenderable()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public override void AddTag(string tag)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public override void DeleteTag(string tag)
-        {
-            throw new System.NotImplementedException();
         }
     }
 }

@@ -191,10 +191,14 @@
         <e p="LiveTagsSearch.csproj" t="IncludeRecursive" />
         <e p="Models" t="Include">
           <e p="AbstractFile.cs" t="Include" />
+          <e p="AbstractNonRenderableFile.cs" t="Include" />
+          <e p="AbstractRenderableFile.cs" t="Include" />
+          <e p="DirFile.cs" t="Include" />
+          <e p="ExeFile.cs" t="Include" />
           <e p="FileFactory.cs" t="Include" />
-          <e p="FileModel.cs" t="Include" />
           <e p="IFile.cs" t="Include" />
           <e p="ImageFile.cs" t="Include" />
+          <e p="OthFile.cs" t="Include" />
           <e p="TextFile.cs" t="Include" />
         </e>
         <e p="Pages" t="Include">

@@ -1,32 +1,30 @@
 using System.Collections.Generic;
-using Microsoft.AspNetCore.StaticFiles;
+using System.IO;
 
 namespace LiveTagsSearch.Models
 {
     public abstract class AbstractFile : IFile
     {
         public virtual string Name { get; }
-        public virtual string Icon { get; }
+        public virtual string IconPath { get; }
         public virtual string Type { get; }
         public virtual string Content { get; }
-        public virtual IEnumerable<string> Tags { get; }
+        public virtual ICollection<string> Tags { get; }
+        public virtual bool Renderable { get; }
 
-        public AbstractFile(string name)
+        //this will be written in the log file
+        protected readonly string _fullPath;
+
+        protected AbstractFile(string name)
         {
-            //TODO make model files structure to include inheritance and polymorphism
-            //must include the 2 different file models needed for the angular app
+            Name = name.Substring(name.LastIndexOf('/') + 1);
+            Tags = new List<string>();
+            _fullPath = Path.GetFullPath(name);
         }
         
-        public abstract bool IsRenderable();
-        public abstract void AddTag(string tag);
-        public abstract void DeleteTag(string tag);
+        //TODO figure out how the tag system will work - with only the info in the log file or with a cached collection of files
+        public void AddTag(string tag) => Tags.Add(tag);
 
-        protected string _getMimeType(string fileName)
-        {
-            var provider = new FileExtensionContentTypeProvider();
-            if(!provider.TryGetContentType(fileName, out var contentType))
-                contentType = "application/octet-stream";
-            return contentType;
-        }
+        public void DeleteTag(string tag) => Tags.Remove(tag);
     }
 }

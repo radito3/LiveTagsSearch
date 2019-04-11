@@ -5,12 +5,12 @@ namespace LiveTagsSearch.Models
     public interface IFile
     {
         string Name { get; }
-        string Icon { get; }
+        string IconPath { get; }
         string Type { get; }
         string Content { get; }
-        IEnumerable<string> Tags { get; }
+        ICollection<string> Tags { get; }
+        bool Renderable { get; }
         
-        bool IsRenderable();
         void AddTag(string tag);
         void DeleteTag(string tag);
     }

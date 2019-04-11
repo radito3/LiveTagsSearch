@@ -26,7 +26,7 @@ export class OrderPipe implements PipeTransform {
 
   private fns: Array<OrderFunction> = [
     {orderProp: 'Name', orderFn: (a, b) => a.name.localeCompare(b.name)},
-    {orderProp: 'Type', orderFn: (a, b) => a.type == 'dir' && b.type == 'dir' ? 0 : a.type == 'dir' ? 1 : -1},
+    {orderProp: 'Type', orderFn: (a, b) => a.type == 'dir' && b.type == 'dir' ? 0 : a.type == 'dir' ? -1 : 1},
     {orderProp: 'Tags', orderFn: (a, b) => a.tags.length < b.tags.length ? 1 : -1}
   ];
 
