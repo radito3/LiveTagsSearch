@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using LiveTagsSearch.Models;
+using LiveTagsSearch.Util;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LiveTagsSearch.Controllers
@@ -9,6 +10,8 @@ namespace LiveTagsSearch.Controllers
     [Route("api/[controller]")]
     public class SearchController : Controller
     {
+        
+        //will be moved
         private static IDictionary<string, IList<string>> fileTagsTable = new Dictionary<string, IList<string>>();
         
         //will be deleted
@@ -51,12 +54,7 @@ namespace LiveTagsSearch.Controllers
         [NonAction]
         private static IEnumerable<IFile> AllFiles(string route)
         {
-            string[] files = Directory.GetFiles(route);
-            string[] dirs = Directory.GetDirectories(route);
-            return Combine(files, dirs).Select(FileFactory.GetFile);
+            return ActionProvider<string, string>.GetFilesDirectories(route).Select(FileFactory.GetFile);
         }
-        
-        [NonAction]
-        private static T[] Combine<T>(params IEnumerable<T>[] items) => items.SelectMany(i => i).Distinct().ToArray();
     }
 }
