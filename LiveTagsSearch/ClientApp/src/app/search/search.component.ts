@@ -3,7 +3,8 @@ import {SearchService} from "./search.service";
 
 @Component({
   selector: 'search-root',
-  templateUrl: './search.component.html'
+  templateUrl: './search.component.html',
+  styleUrls: ['./search.component.css']
 })
 export class SearchComponent {
   private _path: string = './';
