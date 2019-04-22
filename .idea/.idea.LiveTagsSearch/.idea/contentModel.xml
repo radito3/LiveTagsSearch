@@ -216,6 +216,7 @@
           <e p="CombinerAction.cs" t="Include" />
           <e p="DirectoriesAction.cs" t="Include" />
           <e p="FilesAction.cs" t="Include" />
+          <e p="MimeExtensionProvider.cs" t="Include" />
         </e>
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />

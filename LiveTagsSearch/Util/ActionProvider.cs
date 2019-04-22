@@ -13,7 +13,7 @@ namespace LiveTagsSearch.Util
             return combiner.Action(new [] { ap1.Action(path), ap2.Action(path) });
         }
         
-        protected virtual TOut Action(TIn arg)
+        public virtual TOut Action(TIn arg)
         {
             throw new ArgumentException();
         }
