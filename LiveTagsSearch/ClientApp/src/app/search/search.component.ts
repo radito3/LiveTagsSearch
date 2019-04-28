@@ -3,8 +3,7 @@ import {SearchService} from "./search.service";
 
 @Component({
   selector: 'search-root',
-  templateUrl: './search.component.html',
-  styleUrls: ['./search.component.css']
+  templateUrl: './search.component.html'
 })
 export class SearchComponent {
   private _path: string = './';
@@ -51,6 +50,8 @@ export class SearchComponent {
     if (this.tempFolder != null) {
       this._path += this.tempFolder + '/';
       this.folderName = this.tempFolder;
+      this.service.subfolders(this._path)
+        .subscribe(val => this.subfolders = val, error => console.log(error));
     }
   }
 

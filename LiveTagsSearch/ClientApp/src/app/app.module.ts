@@ -13,7 +13,6 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { SearchComponent } from "./search/search.component";
 import { SearchFormComponent } from "./search/search-form/search-form.component";
-import { FileDetailComponent } from "./search/file-detail/file-detail.component";
 import { SearchService } from "./search/search.service";
 import { FilterPipe, OrderPipe } from "./search/search-form/pipes";
 
@@ -26,7 +25,6 @@ import { FilterPipe, OrderPipe } from "./search/search-form/pipes";
     FetchDataComponent,
     SearchComponent,
     SearchFormComponent,
-    FileDetailComponent,
     FilterPipe,
     OrderPipe
   ],
@@ -42,8 +40,7 @@ import { FilterPipe, OrderPipe } from "./search/search-form/pipes";
         children: [
           { path: '', component: SearchFormComponent }
         ]
-      },
-      { path: 'search/file/:name', component: FileDetailComponent },
+      }
     ]),
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),

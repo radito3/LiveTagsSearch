@@ -8,7 +8,7 @@ namespace LiveTagsSearch.Models
         public virtual string Name { get; }
         public virtual string IconPath { get; }
         public virtual string Type { get; }
-        public virtual string Content { get; }
+        public virtual string Content { get; protected set; }
         public virtual ICollection<string> Tags { get; }
         public virtual bool Renderable { get; }
 

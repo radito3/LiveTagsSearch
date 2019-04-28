@@ -14,8 +14,9 @@ export class SearchFormComponent {
   private _searchDir: string;
   @Output() public hasRootDir: EventEmitter<boolean> = new EventEmitter<boolean>();
 
-  @ViewChild('content') public contentModal;
-  public content: string;
+  @ViewChild('modal') public contentModal;
+  public contentTitle: string;
+  public file1: FileModel;
 
   public files: FileModel[];
 
@@ -40,10 +41,9 @@ export class SearchFormComponent {
     return this._searchDir;
   }
 
-  public show(title: string, value: string) {
-    //if file.type == image
-    //if file.type == text
-    this.content = value;
+  public show(title: string, value: FileModel) {
+    this.contentTitle = title;
+    this.file1 = value;
     this.contentModal.show();
   }
 }

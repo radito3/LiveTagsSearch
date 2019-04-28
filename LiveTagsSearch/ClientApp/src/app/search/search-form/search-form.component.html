@@ -29,63 +29,30 @@
       {{ file.name }}
     </th>
     <th>
-      <a data-toggle="modal" data-target="#tags" (click)="frame.show(file.tags.join(','))">Edit Tags</a>
+      <a data-toggle="modal" data-target="#tags" (click)="show('File tags:', file)">Edit Tags</a>
     </th>
     <th *ngIf="file.renderable == true">
-      <button mdbBtn type="button" color="default" rounded="true" data-toggle="modal" data-target="#render" mdbWavesEffect>Render</button>
+      <button mdbBtn type="button" color="default" rounded="true" data-toggle="modal" (click)="show(file.name, file)" mdbWavesEffect>Render</button>
     </th>
   </tr>
   </tbody>
 </table>
 
-<div mdbModal class="modal fade top" id="tags" tabindex="-1" role="dialog"
+<div mdbModal #modal="mdbModal" #frame="mdbModal" class="modal fade top" tabindex="-1" role="dialog"
      aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-notify modal-info" role="document">
-    <!--Content-->
     <div class="modal-content">
-      <!--Header-->
       <div class="modal-header">
-        <p class="heading lead">File tags:</p>
+        <p class="heading lead">{{contentTitle}}</p>
 
         <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame.hide()">
           <span aria-hidden="true" class="white-text">&times;</span>
         </button>
       </div>
 
-      <!--Body-->
-      <div class="modal-body">
-
-        {{content.toString()}}
-
-        <p>test</p>
-      </div>
-
-      <!--Footer-->
-      <div class="modal-footer justify-content-center">
-        <a type="button" mdbBtn color="primary" outline="true" class="waves-effect" mdbWavesEffect (click)="frame.hide()">Cancel</a>
-      </div>
-    </div>
-    <!--/.Content-->
-  </div>
-</div>
-
-<div mdbModal #content="mdbModal" #frame="mdbModal" class="modal fade top" id="render" tabindex="-1" role="dialog"
-     aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-notify modal-info" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <p class="heading lead">File tags:</p>
-
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame.hide()">
-          <span aria-hidden="true" class="white-text">&times;</span>
-        </button>
-      </div>
-
-      <div class="modal-body">
-
-        {{content}}
-
-        <p>rendered text or image</p>
+      <div class="modal-body" *ngIf="file1">
+        <pre *ngIf="file1.type == 'text'">{{file1.content}}</pre>
+        <img *ngIf="file1.type == 'image'" src="data:image/jpeg;base64,{{file1.content}}">
       </div>
 
       <div class="modal-footer justify-content-center">

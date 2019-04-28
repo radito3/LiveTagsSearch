@@ -43,9 +43,4 @@ export class SearchService {
     return this.http.get<string[]>(this.apiUrl + 'Subfolders',
       { params: new HttpParams().append('route', route) });
   }
-
-  //this should not be needed
-  public getFile(fileName: string): Observable<FileModel> {
-    return this.http.get<FileModel>(this.apiUrl + 'api/Search/File/' + fileName);
-  }
 }

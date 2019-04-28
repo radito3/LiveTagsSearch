@@ -14,14 +14,6 @@ namespace LiveTagsSearch.Controllers
         //will be moved
         private static IDictionary<string, IList<string>> fileTagsTable = new Dictionary<string, IList<string>>();
         
-        //will be deleted
-        [HttpGet("File/{name}")]
-        public IFile GetFile([FromRoute] string name)
-        {
-            //should get to whole route of the file from the http parameters
-            return FileFactory.GetFile(name);
-        }
-
         //may modify
         [HttpGet("[action]")]
         public IEnumerable<IFile> Files([FromQuery] string route, [FromQuery] string searchType, [FromQuery] string value)
