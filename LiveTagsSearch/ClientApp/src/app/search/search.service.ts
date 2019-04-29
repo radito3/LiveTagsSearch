@@ -43,4 +43,15 @@ export class SearchService {
     return this.http.get<string[]>(this.apiUrl + 'Subfolders',
       { params: new HttpParams().append('route', route) });
   }
+
+  public editTags(file: FileModel, tags: string[]) {
+    let resultJson: Observable<Object> = this.http.post(this.apiUrl + 'EditTags', { file: file, tags: tags });
+
+    resultJson.subscribe(value => {
+      console.log(value);
+      //if status == 200 -> ok
+      //else -> handle error
+    },
+      error => console.log(error));
+  }
 }

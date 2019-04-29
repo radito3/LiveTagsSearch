@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="26c6ecf2-15de-4432-899d-c9914afdd088" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LiveTagsSearch/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LiveTagsSearch/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/pipes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/pipes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,56 +40,56 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="browserslist" value="1" />
-          <entry key="cs" value="157" />
+          <entry key="cs" value="162" />
           <entry key="cshtml" value="3" />
           <entry key="csproj" value="2" />
           <entry key="css" value="1" />
-          <entry key="html" value="26" />
+          <entry key="html" value="30" />
           <entry key="js" value="2" />
           <entry key="json" value="11" />
           <entry key="md" value="1" />
           <entry key="png" value="2" />
           <entry key="scss" value="3" />
-          <entry key="ts" value="92" />
+          <entry key="ts" value="106" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="157" />
+          <entry key="C#" value="162" />
           <entry key="CSS" value="1" />
           <entry key="Csproj" value="2" />
-          <entry key="HTML" value="26" />
+          <entry key="HTML" value="30" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="10" />
           <entry key="JavaScript" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Razor" value="3" />
           <entry key="SCSS" value="3" />
-          <entry key="TypeScript" value="92" />
+          <entry key="TypeScript" value="106" />
           <entry key="tsconfig" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="4281" />
+          <entry key="cs" value="4351" />
           <entry key="csproj" value="6" />
           <entry key="css" value="2" />
-          <entry key="html" value="2012" />
+          <entry key="html" value="2067" />
           <entry key="json" value="65" />
-          <entry key="ts" value="4283" />
-          <entry key="txt" value="341" />
+          <entry key="ts" value="4979" />
+          <entry key="txt" value="370" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="4281" />
+          <entry key="C#" value="4351" />
           <entry key="CSS" value="2" />
           <entry key="Csproj" value="6" />
-          <entry key="HTML" value="2010" />
+          <entry key="HTML" value="2065" />
           <entry key="JSON" value="65" />
           <entry key="JavaScript" value="2" />
-          <entry key="PLAIN_TEXT" value="341" />
-          <entry key="TypeScript" value="4283" />
+          <entry key="PLAIN_TEXT" value="370" />
+          <entry key="TypeScript" value="4979" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -103,26 +107,28 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="730">
+              <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
               <folding>
-                <marker date="1556466506500" expanded="true" signature="6:157" ph="..." />
-                <marker date="1556466506500" expanded="true" signature="276:1642" ph="{...}" />
-                <marker date="1556466506500" expanded="true" signature="613:866" ph="{...}" />
-                <marker date="1556466506500" expanded="true" signature="951:1031" ph="{...}" />
-                <marker date="1556466506500" expanded="true" signature="1134:1215" ph="{...}" />
-                <marker date="1556466506500" expanded="true" signature="1318:1424" ph="{...}" />
-                <marker date="1556466506500" expanded="true" signature="1510:1636" ph="{...}" />
+                <marker date="1556530856930" expanded="false" signature="6:157" ph="..." />
+                <marker date="1556530856930" expanded="true" signature="195:1803" ph="{...}" />
+                <marker date="1556530856930" expanded="true" signature="276:1801" ph="{...}" />
+                <marker date="1556530856930" expanded="true" signature="613:866" ph="{...}" />
+                <marker date="1556530856930" expanded="true" signature="951:1031" ph="{...}" />
+                <marker date="1556530856930" expanded="true" signature="1134:1215" ph="{...}" />
+                <marker date="1556530856930" expanded="true" signature="1318:1424" ph="{...}" />
+                <marker date="1556530856930" expanded="true" signature="1509:1583" ph="{...}" />
+                <marker date="1556530856930" expanded="true" signature="1669:1795" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
-              <caret line="55" column="57" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
+            <state relative-caret-position="817">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="e#0#88#0" expanded="true" />
               </folding>
@@ -130,13 +136,34 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="57" column="37" lean-forward="true" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="37" />
+            <state relative-caret-position="640">
+              <caret line="58" column="39" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
-                <element signature="n#src#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="893">
+              <caret line="47" column="79" selection-start-line="47" selection-start-column="79" selection-end-line="47" selection-end-column="79" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -164,39 +191,44 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AE601DC-949B-4D37-B7CA-0C7C4778B210/19/ae01e000/StringComparer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Models/AbstractRenderableFile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3C975FEE-D763-4EB3-A0F2-D028EF0A1823/78/d4a670a3/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B4EF600F-4A59-4FE2-865A-8F97F915FB9D/b9/d16849d9/HttpMethodAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Models/TextFile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AE601DC-949B-4D37-B7CA-0C7C4778B210/6f/33d87ab0/Lazy`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Models/FileFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AE601DC-949B-4D37-B7CA-0C7C4778B210/40/be8c2a5a/MethodBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4A99E6B3-2D7A-47B9-98FE-2FDEBAA35E2E/35/87326cbe/DirectoryInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AE601DC-949B-4D37-B7CA-0C7C4778B210/26/66c2610d/Assembly.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4A99E6B3-2D7A-47B9-98FE-2FDEBAA35E2E/99/50d7b38e/Directory.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A791E1BE-51F4-4D96-BD34-AB3F42C91961/f9/498913fe/DirectoryInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/87E8CE02-3EE4-404D-9082-6C8A5038171A/f7/da10a2d2/BindingSource.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85F8575C-E520-4076-98C3-5295D73E25DD/af/cc77d779/FactAttribute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Models/OthFile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Util/DirectoriesAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Util/FilesAction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Models/DirFile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Util/CombinerAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AE601DC-949B-4D37-B7CA-0C7C4778B210/0e/4a05fe97/Base64FormattingOptions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Controllers/SampleDataController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B4EF600F-4A59-4FE2-865A-8F97F915FB9D/6f/84c36cdf/FromBodyAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AE601DC-949B-4D37-B7CA-0C7C4778B210/05/0bc4572b/Func`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AE601DC-949B-4D37-B7CA-0C7C4778B210/33/62ffbb54/Convert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AE601DC-949B-4D37-B7CA-0C7C4778B210/0a/cb6cc074/Func`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Models/AbstractNonRenderableFile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B4EF600F-4A59-4FE2-865A-8F97F915FB9D/0d/f9bf6baf/FromQueryAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B4EF600F-4A59-4FE2-865A-8F97F915FB9D/9c/614f4fcb/HttpPostAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Pages/Error.cshtml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Models/ExeFile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Pages/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AE601DC-949B-4D37-B7CA-0C7C4778B210/6c/cb98d2dc/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Pages/Error.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Util/ActionProvider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Models/AbstractFile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/76DEF016-194A-4B34-8E32-044F29ABD18E/1a/091539b4/Func`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D76C9973-4477-4BEE-BA17-46860B1E587B/6b/2c719379/Environment.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8246F26C-6C11-487F-9FE9-3C9A8FB2C1BC/47/97e314e8/PageModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4A99E6B3-2D7A-47B9-98FE-2FDEBAA35E2E/99/50d7b38e/Directory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A791E1BE-51F4-4D96-BD34-AB3F42C91961/f9/498913fe/DirectoryInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Models/OthFile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Models/DirFile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AE601DC-949B-4D37-B7CA-0C7C4778B210/0e/4a05fe97/Base64FormattingOptions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Controllers/SampleDataController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AE601DC-949B-4D37-B7CA-0C7C4778B210/33/62ffbb54/Convert.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Models/AbstractNonRenderableFile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Models/ExeFile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LiveTagsSearch/Models/AbstractFile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D76C9973-4477-4BEE-BA17-46860B1E587B/6b/2c719379/Environment.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AE601DC-949B-4D37-B7CA-0C7C4778B210/80/eb650c71/ICollection`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AE601DC-949B-4D37-B7CA-0C7C4778B210/b6/6093abf7/IList`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AE601DC-949B-4D37-B7CA-0C7C4778B210/04/eaceb119/LazyHelper.cs" root0="SKIP_HIGHLIGHTING" />
@@ -212,7 +244,6 @@
         <option value="$PROJECT_DIR$/LiveTagsSearch/Models/Subfolder.cs" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/subfolder-model.ts" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/file-model.ts" />
-        <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/pipes.ts" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/Models/DirFile.cs" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/Models/ExeFile.cs" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/Models/IFile.cs" />
@@ -231,19 +262,20 @@
         <option value="$PROJECT_DIR$/LiveTagsSearch/Util/MimeExtensionProvider.cs" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.component.css" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.component.ts" />
-        <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.component.html" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/Models/AbstractFile.cs" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/Models/TextFile.cs" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/Models/AbstractNonRenderableFile.cs" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/Models/AbstractRenderableFile.cs" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/Models/ImageFile.cs" />
-        <option value="$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.service.ts" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/home/home.component.html" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/nav-menu/nav-menu.component.html" />
-        <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.html" />
+        <option value="$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.ts" />
+        <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.component.html" />
+        <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/pipes.ts" />
+        <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.service.ts" />
+        <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.html" />
       </list>
     </option>
   </component>
@@ -359,12 +391,6 @@
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="LiveTagsSearch" type="24d0babc:SolutionExplorerModelNode" />
               <item name="LiveTagsSearch" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Models" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="LiveTagsSearch" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="LiveTagsSearch" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Util" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
@@ -449,7 +475,7 @@
       <workItem from="1555953081734" duration="3961000" />
       <workItem from="1556454211577" duration="5449000" />
       <workItem from="1556462925683" duration="2796000" />
-      <workItem from="1556527404958" duration="1975000" />
+      <workItem from="1556527404958" duration="6958000" />
     </task>
     <task id="LOCAL-00001" summary="Update components structure &amp; fix directory refreshing">
       <created>1553793791127</created>
@@ -500,11 +526,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556467090339</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Update tags displaying">
+      <created>1556530039555</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1556530039556</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80368000" />
+    <option name="totallyTimeSpent" value="85351000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -519,12 +552,12 @@
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945116" visible="true" weight="0.24946581" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945116" visible="true" weight="0.24946581" />
       <window_info id="Structure" order="1" sideWeight="0.50054884" side_tool="true" weight="0.25320512" />
       <window_info id="Favorites" order="2" sideWeight="0.50054884" side_tool="true" weight="0.25320512" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29088914" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49839744" weight="0.29088914" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39956093" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -536,7 +569,7 @@
       <window_info anchor="bottom" id="Unit Tests" order="11" />
       <window_info anchor="bottom" id="REST Client" order="12" />
       <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49893162" weight="0.32930845" />
-      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50106835" side_tool="true" weight="0.32930845" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5016026" side_tool="true" weight="0.29088914" />
       <window_info anchor="bottom" id="TypeScript" order="15" weight="0.32930845" />
       <window_info anchor="bottom" id="Build" order="16" weight="0.32930845" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -566,7 +599,8 @@
     <MESSAGE value="Update OOP basics implementation" />
     <MESSAGE value="Update file type provider" />
     <MESSAGE value="Update file rendering &amp; fix image file conversion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update file rendering &amp; fix image file conversion" />
+    <MESSAGE value="Update tags displaying" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update tags displaying" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -579,58 +613,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/home/home.component.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AE601DC-949B-4D37-B7CA-0C7C4778B210/6c/cb98d2dc/Action`1.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AE601DC-949B-4D37-B7CA-0C7C4778B210/0a/cb6cc074/Func`1.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AE601DC-949B-4D37-B7CA-0C7C4778B210/05/0bc4572b/Func`2.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Models/OthFile.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4675F5DE-17C5-47CE-952C-524EBE664779/8e/2b3c0478/RegistryKey.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3895">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85F8575C-E520-4076-98C3-5295D73E25DD/af/cc77d779/FactAttribute.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/LiveTagsSearch.csproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Util/MimeExtensionProviderTest.cs" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AE601DC-949B-4D37-B7CA-0C7C4778B210/26/66c2610d/Assembly.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -741,24 +723,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.component.css" />
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/node_modules/@angular/core/src/metadata/di.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-48">
           <caret line="294" column="4" selection-start-line="294" selection-start-column="4" selection-end-line="294" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/file-model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -806,9 +774,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-routing.module.ts" />
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.module.ts" />
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/pipes.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="817">
@@ -821,13 +786,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/home/home.component.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -860,49 +818,138 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/node_modules/@angular/common/http/src/client.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="2391" column="4" selection-start-line="2391" selection-start-column="4" selection-end-line="2391" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B4EF600F-4A59-4FE2-865A-8F97F915FB9D/b9/d16849d9/HttpMethodAttribute.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-38">
+          <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B4EF600F-4A59-4FE2-865A-8F97F915FB9D/9c/614f4fcb/HttpPostAttribute.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B4EF600F-4A59-4FE2-865A-8F97F915FB9D/0d/f9bf6baf/FromQueryAttribute.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/87E8CE02-3EE4-404D-9082-6C8A5038171A/f7/da10a2d2/BindingSource.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1131">
+          <caret line="69" column="11" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B4EF600F-4A59-4FE2-865A-8F97F915FB9D/6f/84c36cdf/FromBodyAttribute.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/file-model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="730">
+          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+          <folding>
+            <marker date="1556530856930" expanded="false" signature="6:157" ph="..." />
+            <marker date="1556530856930" expanded="true" signature="195:1803" ph="{...}" />
+            <marker date="1556530856930" expanded="true" signature="276:1801" ph="{...}" />
+            <marker date="1556530856930" expanded="true" signature="613:866" ph="{...}" />
+            <marker date="1556530856930" expanded="true" signature="951:1031" ph="{...}" />
+            <marker date="1556530856930" expanded="true" signature="1134:1215" ph="{...}" />
+            <marker date="1556530856930" expanded="true" signature="1318:1424" ph="{...}" />
+            <marker date="1556530856930" expanded="true" signature="1509:1583" ph="{...}" />
+            <marker date="1556530856930" expanded="true" signature="1669:1795" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/node_modules/@angular/router/src/utils/collection.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="38" column="12" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#0#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/pipes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/node_modules/typescript/lib/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="1231" column="4" selection-start-line="1231" selection-start-column="4" selection-end-line="1231" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="893">
+          <caret line="47" column="79" selection-start-line="47" selection-start-column="79" selection-end-line="47" selection-end-column="79" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs">
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="198">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
-            <marker date="1556466506500" expanded="true" signature="6:157" ph="..." />
-            <marker date="1556466506500" expanded="true" signature="276:1642" ph="{...}" />
-            <marker date="1556466506500" expanded="true" signature="613:866" ph="{...}" />
-            <marker date="1556466506500" expanded="true" signature="951:1031" ph="{...}" />
-            <marker date="1556466506500" expanded="true" signature="1134:1215" ph="{...}" />
-            <marker date="1556466506500" expanded="true" signature="1318:1424" ph="{...}" />
-            <marker date="1556466506500" expanded="true" signature="1510:1636" ph="{...}" />
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="57" column="37" lean-forward="true" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="37" />
-          <folding>
-            <element signature="n#src#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="55" column="57" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#88#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="640">
+          <caret line="58" column="39" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
         </state>
       </provider>
     </entry>

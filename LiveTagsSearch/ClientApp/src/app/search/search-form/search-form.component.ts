@@ -57,4 +57,9 @@ export class SearchFormComponent {
     this.contentToDisplay = file.tags.join(", ");
     this.contentModal.show();
   }
+
+  public editTags() {
+    console.log("in edit tags");
+    this.service.editTags(this.files[0], ['1', '2'])
+  }
 }

@@ -40,7 +40,7 @@
 
 <div mdbModal #modal="mdbModal" #frame="mdbModal" class="modal fade top" tabindex="-1" role="dialog"
      aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-notify modal-info" role="document">
+  <div class="modal-dialog modal-dialog-scrollable modal-notify modal-info" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <p class="heading lead">{{modalTitle}}</p>
@@ -55,10 +55,13 @@
           <pre *ngIf="fileType == 'text'">{{contentToDisplay}}</pre>
           <img *ngIf="fileType == 'image'" src="data:image/jpeg;base64,{{contentToDisplay}}">
         </div>
-        <p *ngIf="modalType == 'tags'">No tags present</p>
+        <div *ngIf="modalType == 'tags'">
+          No tags present <!--temporary-->
+        </div>
       </div>
 
       <div class="modal-footer justify-content-center">
+        <a *ngIf="modalType == 'tags'" type="button" mdbBtn color="primary" outline="true" class="waves-effect" mdbWavesEffect (click)="editTags()">Save</a>
         <a type="button" mdbBtn color="primary" outline="true" class="waves-effect" mdbWavesEffect (click)="frame.hide()">Close</a>
       </div>
     </div>

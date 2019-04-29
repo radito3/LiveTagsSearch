@@ -27,7 +27,7 @@
 
       <div class="modal-body">
         <p>Current: {{folderName}}</p>
-        <div class="text-center">
+        <div class="text-center" *ngIf="subfolders">
           <!--<i class="fas fa-check fa-4x mb-3 animated rotateIn"></i>-->
           <ul class="list-group" *ngIf="subfolders.length != 0">
             <li class="list-group-item" *ngFor="let subdir of subfolders">
@@ -38,7 +38,7 @@
         </div>
       </div>
 
-      <div class="modal-footer justify-content-center">
+      <div class="modal-footer justify-content-center" *ngIf="subfolders">
         <a *ngIf="hasRootDir == true" type="button" mdbBtn color="primary" class="waves-light" mdbWavesEffect (click)="dirBack()">Dir back</a>
         <a *ngIf="subfolders.length != 0" type="button" mdbBtn color="primary" class="waves-light" (click)="save(); frame.hide()" mdbWavesEffect>Save</a>
         <a type="button" mdbBtn color="primary" outline="true" class="waves-effect" mdbWavesEffect (click)="frame.hide(); cancel()">Cancel</a>

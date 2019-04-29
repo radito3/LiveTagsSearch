@@ -43,6 +43,12 @@ namespace LiveTagsSearch.Controllers
             return new DirectoryInfo(route).GetDirectories().Select(dir => dir.Name);
         }
 
+        [HttpPost("[action]")]
+        public void EditTags([FromBody] string body)
+        {
+            System.Diagnostics.Debug.WriteLine(body);
+        }
+
         [NonAction]
         private static IEnumerable<IFile> AllFiles(string route)
         {

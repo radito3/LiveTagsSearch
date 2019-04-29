@@ -6,6 +6,7 @@ import { FileModel } from "../file-model";
 })
 export class FilterPipe implements PipeTransform {
 
+  //may colour the matched letters
   transform(value: FileModel[], inputVal: string, searchType: string, searchRoute: string): FileModel[] {
     if (!inputVal) {
       return value;
@@ -14,7 +15,9 @@ export class FilterPipe implements PipeTransform {
     if (searchType == 'Name') {
       return value.filter((el: FileModel) => el.name.toLowerCase().indexOf(inputVal.toLowerCase()) > -1);
     } else {
-      return value.filter(val => val.tags.indexOf(inputVal) > -1);
+      let regex = new RegExp('([\d\w])*(' + inputVal + ')(\1)*', 'i');
+
+      return value.filter((val: FileModel) => val.tags.some((tag: string) => regex.test(tag)));
     }
   }
 }
