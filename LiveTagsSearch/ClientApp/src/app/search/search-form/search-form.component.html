@@ -29,10 +29,10 @@
       {{ file.name }}
     </th>
     <th>
-      <a data-toggle="modal" data-target="#tags" (click)="show('File tags:', file)">Edit Tags</a>
+      <a data-toggle="modal" data-target="#tags" (click)="showTags(file)">Edit Tags</a>
     </th>
     <th *ngIf="file.renderable == true">
-      <button mdbBtn type="button" color="default" rounded="true" data-toggle="modal" (click)="show(file.name, file)" mdbWavesEffect>Render</button>
+      <button mdbBtn type="button" color="default" rounded="true" data-toggle="modal" (click)="showContent(file)" mdbWavesEffect>Render</button>
     </th>
   </tr>
   </tbody>
@@ -43,16 +43,19 @@
   <div class="modal-dialog modal-notify modal-info" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <p class="heading lead">{{contentTitle}}</p>
+        <p class="heading lead">{{modalTitle}}</p>
 
         <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame.hide()">
           <span aria-hidden="true" class="white-text">&times;</span>
         </button>
       </div>
 
-      <div class="modal-body" *ngIf="file1">
-        <pre *ngIf="file1.type == 'text'">{{file1.content}}</pre>
-        <img *ngIf="file1.type == 'image'" src="data:image/jpeg;base64,{{file1.content}}">
+      <div class="modal-body">
+        <div *ngIf="modalType == 'content'">
+          <pre *ngIf="fileType == 'text'">{{contentToDisplay}}</pre>
+          <img *ngIf="fileType == 'image'" src="data:image/jpeg;base64,{{contentToDisplay}}">
+        </div>
+        <p *ngIf="modalType == 'tags'">No tags present</p>
       </div>
 
       <div class="modal-footer justify-content-center">

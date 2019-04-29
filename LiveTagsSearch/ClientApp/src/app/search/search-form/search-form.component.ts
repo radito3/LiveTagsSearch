@@ -15,8 +15,10 @@ export class SearchFormComponent {
   @Output() public hasRootDir: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   @ViewChild('modal') public contentModal;
-  public contentTitle: string;
-  public file1: FileModel;
+  public fileType: string;
+  public modalTitle: string;
+  public modalType: string;
+  public contentToDisplay: string;
 
   public files: FileModel[];
 
@@ -41,9 +43,18 @@ export class SearchFormComponent {
     return this._searchDir;
   }
 
-  public show(title: string, value: FileModel) {
-    this.contentTitle = title;
-    this.file1 = value;
+  public showContent(file: FileModel) {
+    this.modalType = 'content';
+    this.modalTitle = file.name;
+    this.fileType = file.type;
+    this.contentToDisplay = file.content;
+    this.contentModal.show();
+  }
+
+  public showTags(file: FileModel) {
+    this.modalType = 'tags';
+    this.modalTitle = "Edit tags for " + file.name + ":";
+    this.contentToDisplay = file.tags.join(", ");
     this.contentModal.show();
   }
 }
