@@ -12,6 +12,7 @@ namespace LiveTagsSearch.Models
         public ImageFile(string name) : base(name)
         {
             Content = Convert.ToBase64String(File.ReadAllBytes(name));
+            Tags.Add("img");
         }
     }
 }

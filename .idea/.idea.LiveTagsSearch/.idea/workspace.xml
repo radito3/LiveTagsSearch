@@ -4,11 +4,8 @@
     <list default="true" id="26c6ecf2-15de-4432-899d-c9914afdd088" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LiveTagsSearch/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LiveTagsSearch/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/pipes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/pipes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LiveTagsSearch/Models/ImageFile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LiveTagsSearch/Models/ImageFile.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +37,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="browserslist" value="1" />
-          <entry key="cs" value="162" />
+          <entry key="cs" value="163" />
           <entry key="cshtml" value="3" />
           <entry key="csproj" value="2" />
           <entry key="css" value="1" />
@@ -50,12 +47,12 @@
           <entry key="md" value="1" />
           <entry key="png" value="2" />
           <entry key="scss" value="3" />
-          <entry key="ts" value="106" />
+          <entry key="ts" value="108" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="162" />
+          <entry key="C#" value="163" />
           <entry key="CSS" value="1" />
           <entry key="Csproj" value="2" />
           <entry key="HTML" value="30" />
@@ -65,31 +62,31 @@
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Razor" value="3" />
           <entry key="SCSS" value="3" />
-          <entry key="TypeScript" value="106" />
+          <entry key="TypeScript" value="108" />
           <entry key="tsconfig" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="4351" />
+          <entry key="cs" value="4363" />
           <entry key="csproj" value="6" />
           <entry key="css" value="2" />
-          <entry key="html" value="2067" />
+          <entry key="html" value="2072" />
           <entry key="json" value="65" />
-          <entry key="ts" value="4979" />
-          <entry key="txt" value="370" />
+          <entry key="ts" value="5115" />
+          <entry key="txt" value="406" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="4351" />
+          <entry key="C#" value="4363" />
           <entry key="CSS" value="2" />
           <entry key="Csproj" value="6" />
-          <entry key="HTML" value="2065" />
+          <entry key="HTML" value="2070" />
           <entry key="JSON" value="65" />
           <entry key="JavaScript" value="2" />
-          <entry key="PLAIN_TEXT" value="370" />
-          <entry key="TypeScript" value="4979" />
+          <entry key="PLAIN_TEXT" value="406" />
+          <entry key="TypeScript" value="5115" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -107,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="730">
-              <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+            <state relative-caret-position="616">
+              <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
               <folding>
                 <marker date="1556530856930" expanded="false" signature="6:157" ph="..." />
                 <marker date="1556530856930" expanded="true" signature="195:1803" ph="{...}" />
@@ -127,8 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="1103">
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
               <folding>
                 <element signature="e#0#88#0" expanded="true" />
               </folding>
@@ -136,22 +133,37 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="58" column="39" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
+            <state relative-caret-position="19">
+              <caret line="42" column="50" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.component.ts">
+        <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/pipes.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="399">
+              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
+                <element signature="e#0#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Models/ImageFile.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+              <folding>
+                <marker date="1556541187646" expanded="false" signature="6:30" ph="..." />
+                <marker date="1556541187646" expanded="true" signature="63:484" ph="{...}" />
+                <marker date="1556541187646" expanded="true" signature="117:482" ph="{...}" />
+                <marker date="1556541187646" expanded="true" signature="356:476" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -160,8 +172,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="893">
-              <caret line="47" column="79" selection-start-line="47" selection-start-column="79" selection-end-line="47" selection-end-column="79" />
+            <state relative-caret-position="285">
+              <caret line="44" column="3" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -266,16 +278,16 @@
         <option value="$PROJECT_DIR$/LiveTagsSearch/Models/TextFile.cs" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/Models/AbstractNonRenderableFile.cs" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/Models/AbstractRenderableFile.cs" />
-        <option value="$PROJECT_DIR$/LiveTagsSearch/Models/ImageFile.cs" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/home/home.component.html" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/nav-menu/nav-menu.component.html" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs" />
-        <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.ts" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.component.html" />
-        <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/pipes.ts" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.service.ts" />
+        <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.ts" />
         <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.html" />
+        <option value="$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/pipes.ts" />
+        <option value="$PROJECT_DIR$/LiveTagsSearch/Models/ImageFile.cs" />
       </list>
     </option>
   </component>
@@ -391,6 +403,12 @@
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="LiveTagsSearch" type="24d0babc:SolutionExplorerModelNode" />
               <item name="LiveTagsSearch" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Models" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="LiveTagsSearch" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="LiveTagsSearch" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Util" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
@@ -475,7 +493,7 @@
       <workItem from="1555953081734" duration="3961000" />
       <workItem from="1556454211577" duration="5449000" />
       <workItem from="1556462925683" duration="2796000" />
-      <workItem from="1556527404958" duration="6958000" />
+      <workItem from="1556527404958" duration="8106000" />
     </task>
     <task id="LOCAL-00001" summary="Update components structure &amp; fix directory refreshing">
       <created>1553793791127</created>
@@ -533,11 +551,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556530039556</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Update tags filtering &amp; start on edit tags impl">
+      <created>1556540241932</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1556540241932</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85351000" />
+    <option name="totallyTimeSpent" value="86499000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -557,7 +582,7 @@
       <window_info id="Favorites" order="2" sideWeight="0.50054884" side_tool="true" weight="0.25320512" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49839744" weight="0.29088914" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49839744" visible="true" weight="0.29088914" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39956093" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -600,7 +625,8 @@
     <MESSAGE value="Update file type provider" />
     <MESSAGE value="Update file rendering &amp; fix image file conversion" />
     <MESSAGE value="Update tags displaying" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update tags displaying" />
+    <MESSAGE value="Update tags filtering &amp; start on edit tags impl" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update tags filtering &amp; start on edit tags impl" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -765,13 +791,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Models/ImageFile.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-routing.module.ts" />
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.module.ts" />
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/app.module.ts">
@@ -867,24 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-          <folding>
-            <marker date="1556530856930" expanded="false" signature="6:157" ph="..." />
-            <marker date="1556530856930" expanded="true" signature="195:1803" ph="{...}" />
-            <marker date="1556530856930" expanded="true" signature="276:1801" ph="{...}" />
-            <marker date="1556530856930" expanded="true" signature="613:866" ph="{...}" />
-            <marker date="1556530856930" expanded="true" signature="951:1031" ph="{...}" />
-            <marker date="1556530856930" expanded="true" signature="1134:1215" ph="{...}" />
-            <marker date="1556530856930" expanded="true" signature="1318:1424" ph="{...}" />
-            <marker date="1556530856930" expanded="true" signature="1509:1583" ph="{...}" />
-            <marker date="1556530856930" expanded="true" signature="1669:1795" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/node_modules/@angular/router/src/utils/collection.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
@@ -899,26 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="e#0#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/pipes.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/node_modules/typescript/lib/lib.es5.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -926,19 +907,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.service.ts">
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Controllers/SearchController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="893">
-          <caret line="47" column="79" selection-start-line="47" selection-start-column="79" selection-end-line="47" selection-end-column="79" />
+        <state relative-caret-position="616">
+          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1556530856930" expanded="false" signature="6:157" ph="..." />
+            <marker date="1556530856930" expanded="true" signature="195:1803" ph="{...}" />
+            <marker date="1556530856930" expanded="true" signature="276:1801" ph="{...}" />
+            <marker date="1556530856930" expanded="true" signature="613:866" ph="{...}" />
+            <marker date="1556530856930" expanded="true" signature="951:1031" ph="{...}" />
+            <marker date="1556530856930" expanded="true" signature="1134:1215" ph="{...}" />
+            <marker date="1556530856930" expanded="true" signature="1318:1424" ph="{...}" />
+            <marker date="1556530856930" expanded="true" signature="1509:1583" ph="{...}" />
+            <marker date="1556530856930" expanded="true" signature="1669:1795" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="418">
           <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
@@ -948,8 +937,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="58" column="39" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
+        <state relative-caret-position="19">
+          <caret line="42" column="50" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/search-form.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1103">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="e#0#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="44" column="3" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/ClientApp/src/app/search/search-form/pipes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveTagsSearch/Models/ImageFile.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding>
+            <marker date="1556541187646" expanded="false" signature="6:30" ph="..." />
+            <marker date="1556541187646" expanded="true" signature="63:484" ph="{...}" />
+            <marker date="1556541187646" expanded="true" signature="117:482" ph="{...}" />
+            <marker date="1556541187646" expanded="true" signature="356:476" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
