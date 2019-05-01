@@ -11,12 +11,12 @@ export class FilterPipe implements PipeTransform {
     if (!inputVal) {
       return value;
     }
-
+    
+    let regex = new RegExp('([\\d\\w])*(' + inputVal + ')(\\1)*', 'i');
+    
     if (searchType == 'Name') {
-      return value.filter((el: FileModel) => el.name.toLowerCase().indexOf(inputVal.toLowerCase()) > -1);
+      return value.filter((val: FileModel) => regex.text(val.name));
     } else {
-      let regex = new RegExp('([\\d\\w])*(' + inputVal + ')(\\1)*', 'i');
-
       return value.filter((val: FileModel) => val.tags.some((tag: string) => regex.test(tag)));
     }
   }
