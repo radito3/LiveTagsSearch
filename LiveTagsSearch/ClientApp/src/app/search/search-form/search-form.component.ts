@@ -3,7 +3,6 @@ import {FileModel} from "../file-model";
 import {HttpClient} from "@angular/common/http";
 import {SearchService} from "../search.service";
 
-//too many responsibilities in this class, must split it
 @Component({
   selector: 'search-form',
   templateUrl: './search-form.component.html'
@@ -20,6 +19,7 @@ export class SearchFormComponent {
   public modalTitle: string;
   public modalType: string;
   public contentToDisplay: string;
+  private currentFile: FileModel;
 
   public files: FileModel[];
 
@@ -56,11 +56,11 @@ export class SearchFormComponent {
     this.modalType = 'tags';
     this.modalTitle = "Edit tags for " + file.name + ":";
     this.contentToDisplay = file.tags.join(", ");
+    this.currentFile = file;
     this.contentModal.show();
   }
 
   public editTags() {
-    console.log("in edit tags");
-    this.service.editTags(this.files[0], ['1', '2']);
+    this.service.editTags(this.currentFile);
   }
 }

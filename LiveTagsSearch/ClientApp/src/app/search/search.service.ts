@@ -44,14 +44,9 @@ export class SearchService {
       { params: new HttpParams().append('route', route) });
   }
 
-  public editTags(file: FileModel, tags: string[]) {
-    let resultJson: Observable<Object> = this.http.post(this.apiUrl + 'EditTags', { file: file, tags: tags });
+  public editTags(file: FileModel) {
+    let resultJson: Observable<FileModel> = this.http.post<FileModel>(this.apiUrl + 'EditTags', file);
 
-    resultJson.subscribe(value => {
-      console.log(value);
-      //if status == 200 -> ok
-      //else -> handle error
-    },
-      error => console.log(error));
+    resultJson.subscribe(value => {}, error => console.log(error));
   }
 }

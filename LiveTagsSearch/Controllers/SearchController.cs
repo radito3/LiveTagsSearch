@@ -4,6 +4,7 @@ using System.Linq;
 using LiveTagsSearch.Models;
 using LiveTagsSearch.Util;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json.Linq;
 
 namespace LiveTagsSearch.Controllers
 {
@@ -11,18 +12,16 @@ namespace LiveTagsSearch.Controllers
     public class SearchController : Controller
     {
         
-        //will be moved
-        private static IDictionary<string, IList<string>> fileTagsTable = new Dictionary<string, IList<string>>();
-        
-        //may modify
         [HttpGet("[action]")]
         public IEnumerable<IFile> Files([FromQuery] string route, [FromQuery] string searchType, [FromQuery] string value)
         {
             if (string.IsNullOrEmpty(searchType))
+                //first search for tags in the file, then return list of files
                 return AllFiles(route);
 
-            return AllFiles(route)
-                .Where(f => searchType.Equals("Name") ? f.Name.Contains(value) : f.Tags.Contains(value)); 
+            return searchType.Equals("Name") ? 
+                AllFiles(route).Where(f => f.Name.Contains(value)) 
+                : AllFiles(route).Where(f => f.Tags.Any(tag => tag.Contains(value)));
         }
 
         [HttpGet("[action]")]
@@ -44,9 +43,21 @@ namespace LiveTagsSearch.Controllers
         }
 
         [HttpPost("[action]")]
-        public void EditTags([FromBody] string body)
+        public void EditTags([FromBody] object body)
         {
-            System.Diagnostics.Debug.WriteLine(body);
+            JObject.FromObject(body).TryGetValue("tags", out var tags);
+            var tagg = tags?.Values<string>().ToArray();
+            //write tags to file
+            //file format ->
+            /*
+             *    {
+             *         "files-with-tags": [
+             *             { "path": <full_path>, "tags": [ "tag1", "tag2", ...] },
+             *             ...
+             *         ]
+             *    }
+             * 
+             */
         }
 
         [NonAction]

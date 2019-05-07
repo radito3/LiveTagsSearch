@@ -6,16 +6,16 @@ import { FileModel } from "../file-model";
 })
 export class FilterPipe implements PipeTransform {
 
-  //may colour the matched letters
+  //TODO colour the matched letters
   transform(value: FileModel[], inputVal: string, searchType: string, searchRoute: string): FileModel[] {
     if (!inputVal) {
       return value;
     }
-    
+
     let regex = new RegExp('([\\d\\w])*(' + inputVal + ')(\\1)*', 'i');
-    
+
     if (searchType == 'Name') {
-      return value.filter((val: FileModel) => regex.text(val.name));
+      return value.filter((val: FileModel) => regex.test(val.name));
     } else {
       return value.filter((val: FileModel) => val.tags.some((tag: string) => regex.test(tag)));
     }
