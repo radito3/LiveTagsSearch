@@ -8,10 +8,7 @@ namespace LiveTagsSearch.Models
         string IconPath { get; }
         string Type { get; }
         string Content { get; }
-        ICollection<string> Tags { get; }
+        ICollection<string> Tags { get; set; }
         bool Renderable { get; }
-        
-        void AddTag(string tag);
-        void DeleteTag(string tag);
     }
 }

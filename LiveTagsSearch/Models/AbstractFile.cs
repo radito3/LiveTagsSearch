@@ -9,7 +9,7 @@ namespace LiveTagsSearch.Models
         public virtual string IconPath { get; }
         public virtual string Type { get; }
         public virtual string Content { get; protected set; }
-        public virtual ICollection<string> Tags { get; }
+        public virtual ICollection<string> Tags { get; set; }
         public virtual bool Renderable { get; }
 
         //this will be written in the log file
@@ -21,10 +21,5 @@ namespace LiveTagsSearch.Models
             Tags = new List<string>();
             _fullPath = Path.GetFullPath(name);
         }
-        
-        //TODO figure out how the tag system will work - with only the info in the log file or with a cached collection of files
-        public void AddTag(string tag) => Tags.Add(tag);
-
-        public void DeleteTag(string tag) => Tags.Remove(tag);
     }
 }

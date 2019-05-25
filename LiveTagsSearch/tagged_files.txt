@@ -1,0 +1,4 @@
+[
+{"path":"/home/rivanov/RiderProjects/LiveTagsSearch/LiveTagsSearch/ClientApp","tags":[dir,ghhh,lkj]}
+{"path":"/home/rivanov/RiderProjects/LiveTagsSearch/LiveTagsSearch/.gitignore","tags":["asdsadf"]}
+]

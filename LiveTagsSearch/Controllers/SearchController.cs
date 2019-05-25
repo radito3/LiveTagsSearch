@@ -16,7 +16,6 @@ namespace LiveTagsSearch.Controllers
         public IEnumerable<IFile> Files([FromQuery] string route, [FromQuery] string searchType, [FromQuery] string value)
         {
             if (string.IsNullOrEmpty(searchType))
-                //first search for tags in the file, then return list of files
                 return AllFiles(route);
 
             return searchType.Equals("Name") ? 
@@ -49,24 +48,17 @@ namespace LiveTagsSearch.Controllers
             JObject.FromObject(body).TryGetValue("name", out var name);
             var fileTags = tags?.Values<string>().ToArray();
             var fileName = name?.Value<string>();
-            Path.GetFullPath(fileName);
-            //write tags to file
-            //file format ->
-            /*
-             *    {
-             *         "files-with-tags": [
-             *             { "path": <full_path>, "tags": [ "tag1", "tag2", ...] },
-             *             ...
-             *         ]
-             *    }
-             * 
-             */
+            var fullPath = Path.GetFullPath(fileName);
+            
+            FileEditor.WriteToFile(fullPath, fileTags);
         }
 
         [NonAction]
         private static IEnumerable<IFile> AllFiles(string route)
         {
-            return ActionProvider<string, string>.GetFilesDirectories(route).Select(FileFactory.GetFile);
+            return ActionProvider<string, string>.GetFilesDirectories(route)
+                .Select(FileFactory.GetFile)
+                .MapWithTags();
         }
     }
 }

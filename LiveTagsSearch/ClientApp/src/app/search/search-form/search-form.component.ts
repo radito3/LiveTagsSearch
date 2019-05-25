@@ -56,13 +56,27 @@ export class SearchFormComponent {
   public showTags(file: FileModel) {
     this.modalType = 'tags';
     this.modalTitle = "Edit tags for " + file.name + ":";
-    this.contentToDisplay = file.tags;
+    this.contentToDisplay = file.tags.map(tag => {
+      //this remapping shouldn't be needed
+      if (tag.indexOf("[") != -1) {
+        tag = tag.substring(1);
+      }
+      if (tag.indexOf("]") != -1) {
+        tag = tag.substring(0, tag.length - 1);
+      }
+      if (tag.indexOf("\"") != -1) {
+        tag = tag.substring(tag.indexOf("\"") + 1, tag.lastIndexOf("\""));
+      }
+      return tag;
+    });
     this.currentFile = file;
     this.contentModal.show();
   }
 
   public addTag1() {
-    (<string[]>this.contentToDisplay).push(this.tagString);
+    if (this.tagString != "") {
+      (<string[]>this.contentToDisplay).push(this.tagString);
+    }
     this.tagString = "";
   }
 
@@ -71,18 +85,7 @@ export class SearchFormComponent {
   }
 
   public editTags() {
-    let mismatch = false;
-    this.currentFile.tags.forEach(tag => {
-      if ((<string[]>this.contentToDisplay).indexOf(tag) < 0) {
-        mismatch = true;
-      }
-    });
-
-    (<string[]>this.contentToDisplay).forEach(tag => {
-      if (this.currentFile.tags.indexOf(tag) < 0) {
-        mismatch = true;
-      }
-    });
+    let mismatch = this.currentFile.tags.sort().toString() == (<string[]>this.contentToDisplay).sort().toString();
 
     if (mismatch || this.currentFile.tags.length != (<string[]>this.contentToDisplay).length) {
       this.currentFile.tags = (<string[]>this.contentToDisplay);
