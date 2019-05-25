@@ -18,8 +18,9 @@ export class SearchFormComponent {
   public fileType: string;
   public modalTitle: string;
   public modalType: string;
-  public contentToDisplay: string;
+  public contentToDisplay: string | string[];
   private currentFile: FileModel;
+  private tagString: string;
 
   public files: FileModel[];
 
@@ -55,12 +56,37 @@ export class SearchFormComponent {
   public showTags(file: FileModel) {
     this.modalType = 'tags';
     this.modalTitle = "Edit tags for " + file.name + ":";
-    this.contentToDisplay = file.tags.join(", ");
+    this.contentToDisplay = file.tags;
     this.currentFile = file;
     this.contentModal.show();
   }
 
+  public addTag1() {
+    (<string[]>this.contentToDisplay).push(this.tagString);
+    this.tagString = "";
+  }
+
+  public deleteTag(tag: string) {
+    this.contentToDisplay = (<string[]>this.contentToDisplay).filter(val => !(val.localeCompare(tag) == 0));
+  }
+
   public editTags() {
-    this.service.editTags(this.currentFile);
+    let mismatch = false;
+    this.currentFile.tags.forEach(tag => {
+      if ((<string[]>this.contentToDisplay).indexOf(tag) < 0) {
+        mismatch = true;
+      }
+    });
+
+    (<string[]>this.contentToDisplay).forEach(tag => {
+      if (this.currentFile.tags.indexOf(tag) < 0) {
+        mismatch = true;
+      }
+    });
+
+    if (mismatch || this.currentFile.tags.length != (<string[]>this.contentToDisplay).length) {
+      this.currentFile.tags = (<string[]>this.contentToDisplay);
+      this.service.editTags(this.currentFile);
+    }
   }
 }

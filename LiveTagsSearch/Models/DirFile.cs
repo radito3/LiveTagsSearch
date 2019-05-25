@@ -7,6 +7,7 @@ namespace LiveTagsSearch.Models
         
         public DirFile(string name) : base(name)
         {
+            Tags.Add("dir");
         }
     }
 }

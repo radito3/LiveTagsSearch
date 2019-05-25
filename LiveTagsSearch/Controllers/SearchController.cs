@@ -46,7 +46,10 @@ namespace LiveTagsSearch.Controllers
         public void EditTags([FromBody] object body)
         {
             JObject.FromObject(body).TryGetValue("tags", out var tags);
-            var tagg = tags?.Values<string>().ToArray();
+            JObject.FromObject(body).TryGetValue("name", out var name);
+            var fileTags = tags?.Values<string>().ToArray();
+            var fileName = name?.Value<string>();
+            Path.GetFullPath(fileName);
             //write tags to file
             //file format ->
             /*

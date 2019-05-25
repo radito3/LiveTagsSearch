@@ -45,7 +45,7 @@ export class SearchService {
   }
 
   public editTags(file: FileModel) {
-    let resultJson: Observable<FileModel> = this.http.post<FileModel>(this.apiUrl + 'EditTags', file);
+    let resultJson = this.http.post(this.apiUrl + 'EditTags', file);
 
     resultJson.subscribe(value => {}, error => console.log(error));
   }

@@ -56,8 +56,27 @@
           <img *ngIf="fileType == 'image'" src="data:image/jpeg;base64,{{contentToDisplay}}">
         </div>
         <div *ngIf="modalType == 'tags'">
-          {{contentToDisplay}}
+          <table *ngIf="contentToDisplay.length != 0">
+            <thead>
+            <tr>
+              <th *ngFor="let head of ['Tag', '']" scope="col">{{head}}</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr mdbTableRow *ngFor="let tag of contentToDisplay">
+                <th> {{ tag }} </th>
+                <th>
+                  <button mdbBtn type="button" color="default" rounded="true" (click)="deleteTag(tag)" mdbWavesEffect>Delete</button>
+                </th>
+              </tr>
+            </tbody>
+          </table>
           <p *ngIf="contentToDisplay.length == 0">No tags present</p>
+        </div>
+
+        <div class="md-form">
+          <input mdbInput type="text" id="add-tag-form" [(ngModel)]="tagString" class="form-control form-control-sm">
+          <a type="button" mdbBtn color="primary" outline="true" class="waves-effect" mdbWavesEffect (click)="addTag1()">Add tag</a>
         </div>
       </div>
 

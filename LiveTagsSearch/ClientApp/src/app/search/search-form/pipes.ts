@@ -6,7 +6,6 @@ import { FileModel } from "../file-model";
 })
 export class FilterPipe implements PipeTransform {
 
-  //TODO colour the matched letters
   transform(value: FileModel[], inputVal: string, searchType: string, searchRoute: string): FileModel[] {
     if (!inputVal) {
       return value;
